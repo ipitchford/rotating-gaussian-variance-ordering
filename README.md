@@ -2,9 +2,9 @@
 
 *Rotation helps every observable exactly when friction is at least √2 — and what happens below it.*
 
-Release 0.1.0-candidate, 4 November 2026. Author: Anonymous. Unrefereed, AI-assisted research candidate.
+Release 0.2.0-candidate, 4 November 2026 (citation correction of 0.1.0-candidate, [10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497); see [CORRECTIONS.md](CORRECTIONS.md)). Author: Anonymous. Unrefereed, AI-assisted research candidate.
 
-- Version DOI: [10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497); concept DOI (all versions): [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496)
+- Version DOI: [10.5281/zenodo.23946160](https://doi.org/10.5281/zenodo.23946160); concept DOI (all versions): [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496)
 - Release page: https://evidencepress.org/releases/rotating-gaussian-variance-ordering/
 - Paper: [research_sampling/output/pdf/rotating_gaussian_variance.pdf](research_sampling/output/pdf/rotating_gaussian_variance.pdf) (29 pages; Markdown source [research_sampling/manuscript.md](research_sampling/manuscript.md))
 
@@ -44,7 +44,7 @@ Gaussian targets only. Nothing is claimed about numerical cost or discretised in
 Pavliotis found small friction (about 0.1) best in practice, and the threshold is a safety boundary, not a
 recommendation. Classical ingredients are credited, not claimed: Breuer-Major Hermite covariance identities,
 closure of symmetric unimodality under convolution (Lefèvre-Utev), Maini (2026)'s convolution-power variance formula,
-DNP's invariant-projection limit, and established replica coupling. Priority holds within bounded searches.
+DNP's invariant-projection limit, and established replica coupling. No earlier statement of the main results was found (see the novelty report).
 Assurance: internal AI-assisted review only, no human peer review, independent reproduction or formal verification.
 
 ## Layout

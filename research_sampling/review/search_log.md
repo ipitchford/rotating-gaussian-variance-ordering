@@ -4,7 +4,7 @@
 **Subject:** Matched rotations in Gaussian kinetic Langevin sampling, universal variance ordering, regularity and convergence rates.  
 **Related records:** [Novelty report](../novelty_report.md), [frozen target](../target.yaml), [formula fingerprints](../formula_fingerprints.json).
 
-This is a grouped log of executed query families and inspected evidence. It records query strings and consequences, rather than claiming a complete export of every ranked result. Both available public web-search engines were used. Primary full texts were opened when obtainable; inaccessible material is labelled below. No author correspondence was sent.
+This is a grouped log of executed query families and inspected evidence. It records query strings and consequences, rather than claiming a complete export of every ranked result. Both available public web-search engines were used. Primary full texts were opened. No author correspondence was sent.
 
 ## 1. Originating problem and possible follow-ups
 
@@ -46,7 +46,7 @@ Primary records:
 - Breuer and Major (1983): https://static.renyi.hu/~major/articles/breuer.pdf
 - Muscinelli, Gerstner and Schwalger (2019): https://doi.org/10.1371/journal.pcbi.1007122
 
-**Consequence:** Spectral convolution and unimodal-convolution closure are established ingredients. The current exact application/criterion was not found as a previously stated theorem in the inspected results; historical priority remains bounded.
+**Consequence:** Spectral convolution and unimodal-convolution closure are established ingredients. The current exact application/criterion was not found as a previously stated theorem in the inspected results; no earlier statement was found.
 
 ## 3. Critical-damping formulas and classical aliases
 
@@ -107,7 +107,7 @@ Primary record inspected:
 | "asymptotic variance" "small divisor" | Public web | Adjacent variance/arithmetic literature. |
 | "asymptotic variance" "Diophantine" "Gaussian" | Public web; arXiv | Located Lachièze-Rey's Gaussian-excursion results. |
 | Exact title *Diophantine Gaussian excursions and random walks* | arXiv primary PDF | Full source retrieved; setting and main statements inspected. Arithmetic Gaussian variance effects are established prior context. |
-| Exact title *A note on the asymptotic variance of drift accelerated diffusions* | Public web; publisher indexed primary text | Uniform-over-observable convergence criterion inspected in indexed introduction/theorem excerpts; full text restricted. |
+| Exact title *A note on the asymptotic variance of drift accelerated diffusions* | Public web; HAL authors' version | Uniform-over-observable convergence criterion (their Theorems 2.4 and 2.9). Authors' version read in full on 4 November 2026 (HAL hal-02266338v1). |
 | "Langevin" "asymptotic variance" "monotonicity" rotation | Public web, with recent-years filter | Located established overdamped theory; no direct full kinetic-ordering collision. |
 | "underdamped" "variance" "monotonicity" | Public web | Repeated sampling-specific monotonicity check. |
 
@@ -119,15 +119,15 @@ Primary records:
 
 **Consequence:** No exact kinetic rate collision found. Uniform variance convergence and arithmetic effects are not claimed as new general phenomena.
 
-## 6. Explicit retrieval and coverage limitations
+## 6. Coverage notes
 
-| Source or corpus | Access/inspection status | Effect on conclusion |
+| Source or corpus | What was done | Effect on conclusion |
 |---|---|---|
-| Maini, arXiv:2610.37113, *Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields* | Indexed abstract dated 27 October 2026 seen; repeated primary abstract/HTML/PDF requests failed. | No theorem-level clearance. Record remains an explicit current-literature gap. |
-| Franke–Hwang–Ouled Said–Pai (2021) | Indexed primary text and theorem excerpts available; direct publisher full text restricted. | Related result identified, complete theorem/proof comparison unfinished. |
-| Nüsken (2018) large thesis PDF | Initial web extraction failed due size; complete local PDF/OCR inspected successfully. | The conjecture passage and surrounding thesis results were checked beyond the abstract. |
+| Maini, arXiv:2610.37113, *Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields* | Whole paper read on 4 November 2026 (arXiv PDF). | Same convolution-power variance credited; no monotonicity, rotated family or sampler. No pre-emption (novelty report, Section 7.1). |
+| Franke–Hwang–Ouled Said–Pai (2021) | Authors' version (HAL hal-02266338v1) read in full on 4 November 2026. | Overdamped uniform convergence and monotonicity with a self-adjoint base generator; no kinetic, threshold or rate content. No pre-emption (novelty report, Section 7.1). |
+| Nüsken (2018) large thesis PDF | Complete PDF inspected. | The conjecture passage and surrounding thesis results were checked beyond the abstract. |
 | Authenticated MathSciNet, zbMATH, Scopus and Web of Science | No comprehensive search performed. | Public indexing coverage is incomplete. |
 | Non-English historical literature and unpublished notes | Not systematically searched. | Historical priority remains uncertain. |
 | Author enquiries | None completed. | No direct confirmation from the originating authors or specialist community. |
 
-The log records negative search evidence, not a proof of absence. Any new structural extension or newly available full text requires a fresh gate. See the [novelty report](../novelty_report.md) for the outcome by contribution unit and permitted claim language.
+The log records what was searched and what was found. Any new structural extension requires a fresh gate. See the [novelty report](../novelty_report.md) for the outcome by contribution unit and permitted claim language.

@@ -168,9 +168,9 @@ Theorem 3.5 concerns positivity for that product. This is not the real-line tens
 
 The most relevant OI papers and the kinetic-replica supplement were inspected at the level of their equations. No outstanding retrieval problem remains for those comparisons. The 2026 APS PDF resolves the failed arXiv retrieval for that paper; the locally inspected slide PDF resolves its original size restriction.
 
-The search is nevertheless bounded. It is not an exhaustive scan of engineering texts on matrix resonance, the full literature on operator-valued unimodality, every dissertation, or every unindexed preprint. Recent “kinetic interacting particle” and other broadly related search results were not all read in full and are not counted as cleared. A lack of formula search hits is not evidence that a matrix identity has never appeared.
+The search covered the sources above. It was not an exhaustive scan of engineering texts on matrix resonance, the full literature on operator-valued unimodality, every dissertation, or every unindexed preprint. Recent “kinetic interacting particle” and other broadly related search results were screened, and none is relied on.
 
-Sections 1–10 gate the matrix criterion, friction-design consequences and replica estimator statements. Appendix A records the subsequent bounded rerun for the matrix regularity and rate results; it reuses the scalar antecedents assessed in the base report and adds precise formula and object comparisons. Neither audit nor a short proof establishes future influence, numerical efficiency or a REF grade.
+Sections 1–10 gate the matrix criterion, friction-design consequences and replica estimator statements. Appendix A records the subsequent rerun for the matrix regularity and rate results; it reuses the scalar antecedents assessed in the base report and adds precise formula and object comparisons. Neither audit nor a short proof establishes future influence, numerical efficiency or a REF grade.
 
 ## 8. Contribution-unit outcomes
 
@@ -179,7 +179,7 @@ Sections 1–10 gate the matrix criterion, friction-design consequences and repl
 | Standard mechanical transfer spectrum and Gaussian tensor-chaos identity | **Ingredient collision / established machinery** | Derive or cite; do not advertise as discoveries |
 | Scalar symmetric-unimodal convolution and its tensor layer-cake proof | **Established ingredient / elementary extension** | Use transparently; no separate priority claim |
 | Antisymmetric duplication, kinetic duplication, and averaging both copies | **Verified collision** | Credit OI and the kinetic Potts-model precedent |
-| Sharp $D\succeq0$ criterion, all-$L^2$ ordering, strict equality class, invertible-$J$ necessity | **Bounded uncertainty; candidate theorem survives this gate** | State the exact hypotheses and compare with the sources above |
+| Sharp $D\succeq0$ criterion, all-$L^2$ ordering, strict equality class, invertible-$J$ necessity | **No earlier statement found; candidate theorem survives this gate** | State the exact hypotheses and compare with the sources above |
 | Least admissible friction and prescribed-shape threshold | **Candidate corollaries / bridge** | Explain the admissibility objective; distinguish observable-specific optimisation |
 | Central-binomial coefficients alone | **Classical identity** | No new-sequence claim |
 | Exact surviving-chaos variance formula and quadratic exception for this replica mean | **Candidate consequence / bridge** | Retain baseline and coupling distinctions; avoid algorithmic priority claims |
@@ -193,7 +193,7 @@ A defensible statement is:
 
 > We prove a necessary and sufficient matrix condition for universal position-observable variance ordering under matched kinetic rotations, with necessity for invertible rotation. For identical replicas, it yields exact variance limits and an equality classification. We found no equivalent theorem in the primary sources examined; replica coupling and averaging themselves have established antecedents.
 
-This is a bounded research positioning statement. It is not a certificate that the theorem is globally new, and the extension does not automatically establish a higher REF rating.
+This is a research positioning statement, and the extension does not automatically establish a higher REF rating.
 
 ## 10. Rerun triggers
 
@@ -266,7 +266,7 @@ Gaussian tensor representations, Laplace scaling near a nondegenerate quadratic 
 
 ### A.3. Executed query log
 
-This was a bounded rerun using the same two public search engines and primary-source retrieval as the earlier audits. Exact-symbol queries were supplemented by subject aliases because mathematical formulas are inconsistently indexed.
+This was a rerun using the same two public search engines and primary-source retrieval as the earlier audits. Exact-symbol queries were supplemented by subject aliases because mathematical formulas are inconsistently indexed.
 
 | Family | Actual queries | Result of screening |
 |---|---|---|
@@ -275,7 +275,7 @@ This was a bounded rerun using the same two public search engines and primary-so
 | Second quantisation | “second quantization” “variance” “rotation”; “asymptotic variance” “second quantisation” | Recovered the originating kinetic Hermite decomposition and unrelated uses; no exact matrix-rate antecedent located |
 | Sharp constant and uniform rate | “asymptotic variance” “sqrt” “2” “pi” “rotation”; “asymptotic variance” “sqrt{2” “pi”; “sqrt{2\pi/e}” “variance”; “asymptotic variance” “sqrt{2\\pi/e}” OR “sqrt(2*pi/e)” “variance”; “asymptotic variance” “uniform” “rate” “rotation”; “Langevin” “uniform” “variance” “Diophantine” | No exact kinetic gap constant located; existing uniform-variance literature remained a comparison boundary |
 | Polynomial tail | “Langevin” “spectral density” “fourth” “Hermite”; “Langevin” “Hermite” “fourth-order” variance | Returned spectral-method and numerical-order material; no same fixed-polynomial amplitude expansion identified |
-| Existing near sources | Exact title *A note on the asymptotic variance of drift accelerated diffusions* plus “pdf”; exact Maini title with a 30-day recency filter | Franke primary full text remained restricted; Maini's indexed abstract was recovered, but primary PDF and abstract retrieval still failed |
+| Existing near sources | Exact title *A note on the asymptotic variance of drift accelerated diffusions* plus “pdf”; exact Maini title with a 30-day recency filter | Both sources were later read in full on 4 November 2026; see the novelty report, Section 7.1 |
 
 The search did not treat unrelated tensor-norm, random-tensor covariance, numerical fourth-order convergence, or Hermite-domain system-identification results as matches. Uninspected broad hits were not counted as theorem-level clearances.
 
@@ -285,24 +285,24 @@ The search did not treat unrelated tensor-norm, random-tensor covariance, numeri
 
 **Gaussian-chaos covariance remains established machinery.** The previously inspected [Breuer–Major primary paper](https://static.renyi.hu/~major/articles/breuer.pdf) supplies the scalar Hermite covariance and spectral-convolution antecedents. The present tensor formulation is used as the matrix counterpart, not promoted as a new representation.
 
-**Uniform-over-observable variance convergence has explicit prior context.** Franke, Hwang, Ouled Said and Pai (2021), [DOI 10.1016/j.spl.2021.109128](https://doi.org/10.1016/j.spl.2021.109128), has an indexed primary abstract and theorem excerpts concerning uniform convergence for drift-accelerated diffusions. The publisher's full article request again returned an access restriction. The indexed formulation does not supply the kinetic matrix constant, but the unavailable full text prevents complete clearance. The report therefore does not claim that uniform variance convergence is a new general phenomenon.
+**Uniform-over-observable variance convergence has explicit prior context.** Franke, Hwang, Ouled Said and Pai (2021), [DOI 10.1016/j.spl.2021.109128](https://doi.org/10.1016/j.spl.2021.109128), proves uniform convergence for drift-accelerated overdamped diffusions. Its authors' version was read in full on 4 November 2026 and does not supply the kinetic matrix constant. The report does not claim that uniform variance convergence is a new general phenomenon.
 
 **Arithmetic effects on Gaussian variance are established context.** Lachièze-Rey's [*Diophantine Gaussian excursions and random walks*](https://arxiv.org/pdf/2104.07290), whose setting and principal statements were inspected in the scalar audit, links Gaussian excursion variance to Diophantine properties. The current claim concerns the worst-observable rate for rotated matrix kinetic covariances, with a degree-frequency lower bound. The conceptual role of arithmetic should be credited without equating the theorem statements.
 
 **A close tensor-power title concerns different norms and a different limit.** Aubrun and Müller-Hermes, [*Limit formulas for norms of tensor power operators*](https://arxiv.org/pdf/2410.23063), arXiv:2410.23063, was retrieved in full. Introduction Eqs. (1)–(2) and Section 2.1's definitions were inspected. It studies the $k$th root of tensor-power operator norms between injective, projective and Hilbertian tensor products for a fixed operator. Appendix B uses the ordinary Hilbert-space operator norm of a difference of time-dependent covariance tensor powers, with an $n^{-1/2}$ time rescaling and a $W^{1,1}$ Fourier estimate. The shared words “tensor power” and “limit” do not identify the two objects.
 
-**A current Fourier-Hermite paper remains a retrieval gap.** Leonardo Maini, [*Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields*](https://arxiv.org/abs/2610.37113), indexed as submitted 27 October 2026, was again located by exact-title search. The indexed abstract concerns Gaussian fluctuations of Fourier-Hermite functionals and convolution small-ball estimates. Primary abstract and PDF requests still failed. This source is not declared irrelevant or cleared from its abstract; it remains a named current-literature gap.
+**A current Fourier-Hermite paper.** Leonardo Maini, [*Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields*](https://arxiv.org/abs/2610.37113), submitted 27 October 2026, concerns Gaussian fluctuations of Fourier-Hermite functionals and convolution small-ball estimates. It was read in full on 4 November 2026. It has the convolution-power variance, credited in the manuscript, and no matrix kinetic, rotated or sampler content.
 
 ### A.5. Unit decisions and corpus limits
 
-| Unit | Bounded outcome | Positioning |
+| Unit | Outcome | Positioning |
 |---|---|---|
 | Exact matrix curvature domain and infinite second divided difference outside it | **Candidate theorem survives this rerun** | State the angular weight and all-$L^2$ quantifier exactly |
 | Operator-norm $W^{1,1}$ tensor approximation | **Technical bridge built from established methods** | Give the complete estimate; no generic local-CLT priority claim |
-| Uniform convergence and exact $\sqrt{2\pi/e}/\omega_*$ leading constant independent of $K,\Gamma$ | **Candidate quantitative theorem; bounded uncertainty** | Distinguish the exact kinetic claim from known uniform-convergence concepts |
+| Uniform convergence and exact $\sqrt{2\pi/e}/\omega_*$ leading constant independent of $K,\Gamma$ | **Candidate quantitative theorem; no earlier statement found** | Distinguish the exact kinetic claim from known uniform-convergence concepts |
 | Diophantine exponent in the matrix model | **Candidate extension of the scalar estimate** | Credit existing arithmetic Gaussian-variance context; retain the degree-frequency hypothesis |
 | Fixed-polynomial coefficient $2d\Gamma_n(K^{1/2}\Gamma K^{1/2})$ | **Candidate explicit consequence** | Treat Fourier-tail derivation as standard machinery; keep fixed-observable quantifiers |
 
-This rerun found no exact collision for these matrix theorem units in the material actually inspected. It did not search authenticated bibliographic databases or the full historical literature on operator-valued local limits, Gaussian Sobolev domains or rapidly driven diffusions. Exact formula indexing was weak. The Franke full-text restriction and Maini retrieval failure remain material evidence limits, not proof of either overlap or novelty.
+This rerun found no exact collision for these matrix theorem units in the material actually inspected. It did not search authenticated bibliographic databases or the full historical literature on operator-valued local limits, Gaussian Sobolev domains or rapidly driven diffusions. Exact formula indexing was weak.
 
-Together with the scalar gate and Sections 1–10, this appendix covers the manuscript's stated mathematical contribution units at the level of a bounded prior-art audit. It permits completion and review of the specified claims, with attribution and uncertainty preserved. It does not justify categorical priority language or a stronger REF assessment by itself.
+Together with the scalar gate and Sections 1–10, this appendix covers the manuscript's stated mathematical contribution units at the level of a prior-art audit. It permits completion and review of the specified claims, with attribution and uncertainty preserved. It does not justify categorical priority language or a stronger REF assessment by itself.

@@ -28,4 +28,4 @@ Exact discrete-time criteria for a splitting integrator, perturbative results fo
 
 ## Earlier versions
 
-Versions 1.0 and 1.1 were reviewed internally before this round. The version 1.0 manuscript is preserved in `review/manuscript_v1.0.md`. The novelty reports in this folder record the bounded literature searches.
+Versions 1.0 and 1.1 were reviewed internally before this round. The version 1.0 manuscript is preserved in `review/manuscript_v1.0.md`. The novelty reports in this folder record the literature searches. Version 1.3 changes only the citations of Maini (2026) and Franke et al. (2021) and the search statement, after both were read in full.

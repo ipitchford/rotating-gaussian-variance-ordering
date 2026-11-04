@@ -1,8 +1,8 @@
 # Rotating Gaussian kinetic samplers: research bundle
 
-Version 1.2 research materials, 4 November 2026. Author: Anonymous. Text CC0-1.0; code MIT.
+Version 1.3 research materials, 4 November 2026. Author: Anonymous. Text CC0-1.0; code MIT.
 
-Published as release 0.1.0-candidate: version DOI [10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497) (concept DOI [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496), all versions).
+Published as release 0.2.0-candidate, a citation correction of 0.1.0-candidate ([10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497)): version DOI [10.5281/zenodo.23946160](https://doi.org/10.5281/zenodo.23946160) (concept DOI [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496), all versions).
 
 ## Main outcome
 
@@ -37,7 +37,7 @@ Below the threshold, observables with only even Hermite components still improve
 | [verify_matrix_extension.py](code/verify_matrix_extension.py), [matrix_extension_results.json](code/matrix_extension_results.json) | Noncommuting matrix spectrum, tensor-convolution/Lyapunov agreement, exact-criterion boundary and mismatch checks. |
 | [verify_below_threshold.py](code/verify_below_threshold.py), [below_threshold_results.json](code/below_threshold_results.json) | Crossing points of Table 1 (friction below the threshold), from an exact formula cross-checked by quadrature. |
 | [variance_landscape.pdf](figures/variance_landscape.pdf), [PNG](figures/variance_landscape.png) | Four-panel analytic illustration; see [figure notes](figures/README.md). |
-| [novelty_report.md](novelty_report.md), [extension_novelty.md](review/extension_novelty.md), [independent extension search](review/extension_independent_novelty.md) | Bounded primary-source novelty investigations for the base result and extension. |
+| [novelty_report.md](novelty_report.md), [extension_novelty.md](review/extension_novelty.md), [independent extension search](review/extension_independent_novelty.md) | Primary-source novelty investigations for the base result and extension. |
 | [target.yaml](target.yaml), [formula_fingerprints.json](formula_fingerprints.json), [matrix target](extensions/anisotropic_target.yaml) | Frozen theorem targets, exact formulas, normalisations and prior-art search fingerprints. |
 | [REVIEW_RECORD.md](review/REVIEW_RECORD.md) | Internal AI-assisted review of version 1.2: objections, responses and what was left open. |
 | [LaTeX source](output/latex/rotating_gaussian_variance.tex) | Editable source for the rendered mathematical manuscript. |
@@ -75,6 +75,6 @@ V_f=\lim_{T\to\infty}T\operatorname{Var}\!\left(T^{-1}\int_0^T f(q_t)\,dt\right)
 
 This is **twice** the quantity \(\sigma_f^2\) in the originating [Duncan–Nüsken–Pavliotis paper](https://doi.org/10.1007/s10955-017-1906-8). Results concern stationary Gaussian dynamics and position observables. The rotations must preserve the stated symmetry. General non-Gaussian targets, arbitrary perturbations, numerical integrators and fixed-step observations do not inherit the ordering theorem automatically; explicit boundary examples are included.
 
-The literature work is a bounded search, not a certificate that no prior theorem exists. Standard transfer spectra, Gaussian chaos methods, unimodal convolution and existing replica coupling/averaging are acknowledged ingredients. The proposed contribution is the sharp criterion, universal ordering, exact regularity, quantitative rates and their proved consequences.
+No earlier statement of the main results was found in the literature search recorded in the novelty reports; Maini (2026) and Franke et al. (2021) were read in full. Standard transfer spectra, Gaussian chaos methods, unimodal convolution and existing replica coupling/averaging are acknowledged ingredients. The proposed contribution is the sharp criterion, universal ordering, exact regularity, quantitative rates and their proved consequences.
 
 The review record summarises AI-assisted internal checks. It is **not external peer review**.

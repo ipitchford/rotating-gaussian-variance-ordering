@@ -4,7 +4,7 @@ The authoritative manuscript is [manuscript.md](manuscript.md). The supplied [La
 
 ## Requirements
 
-Install Pandoc and a TeX distribution providing `pdflatex`. Version 1.2 was built with Homebrew Pandoc and pdfTeX; script letters render as calligraphic (`\\mathcal`) so the rsfs font is not required. Other compatible versions may produce small layout differences.
+Install Pandoc and a TeX distribution providing `pdflatex`. Version 1.3 was built with Homebrew Pandoc and pdfTeX; script letters render as calligraphic (`\\mathcal`) so the rsfs font is not required. Other compatible versions may produce small layout differences.
 
 The manuscript's YAML header explicitly requires the LaTeX packages `amsmath`, `amssymb`, `mathtools`, `microtype` and `booktabs`. Pandoc's generated header also uses the standard article class, Latin Modern fonts (`lmodern`), `iftex`, `fontenc`, `inputenc`, `textcomp`, `xcolor`, `geometry`, `graphicx`, `babel` with British English support, `etoolbox`, and `hyperref` (directly or through `bookmark`). Its optional package probes include `upquote`, `parskip` and `xurl`. A sufficiently complete TeX Live or MiKTeX installation supplies these dependencies.
 
@@ -23,7 +23,7 @@ pdflatex -interaction=nonstopmode -halt-on-error -file-line-error -output-direct
 
 The final document is [output/pdf/rotating_gaussian_variance.pdf](output/pdf/rotating_gaussian_variance.pdf). The second LaTeX pass resolves document links and references. The `.log` and auxiliary files are written beside the PDF; inspect the log if a command fails or reports unresolved references. These commands overwrite the generated LaTeX and PDF, while leaving the Markdown source unchanged.
 
-The manuscript SHA-256 is recorded in MANIFEST.sha256 (version 1.2; the publisher updates it after inserting the DOI).
+The manuscript SHA-256 is recorded in MANIFEST.sha256 (version 1.3; the publisher updates it after inserting the DOI).
 
 ```text
 see MANIFEST.sha256

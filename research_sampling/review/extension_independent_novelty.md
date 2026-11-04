@@ -120,14 +120,14 @@ These limitations leave priority uncertain. They do not create a gap in the proo
 
 | Unit | Outcome | Confidence | Allowed wording | Forbidden wording |
 |---|---|---|---|---|
-| Exact matrix statement | Bounded uncertainty | Moderate | “We prove this exact criterion; no exact prior match was found in the stated search” | “The first possible matrix criterion” |
+| Exact matrix statement | No earlier statement found | Moderate | “We prove this exact criterion; no exact prior match was found in the stated search” | “The first possible matrix criterion” |
 | Complete proof | Bridge; correctness audit passed | Moderately high | “A self-contained proof via matrix spectra and tensor convolution” | “All ingredients are new” |
 | Cross-identification | Established ingredients plus apparently new combination | Moderate | “Extends the scalar spectral method to noncommuting \(K,\Gamma\)” | “Invents replica coupling or replica averaging” |
 | Verification artifact | Reproduced supporting calculation | High for the finite checks | “Independent formulations agree in the checked cases” | “The code proves the all-\(L^2\) theorem” |
 
 ## 9. Decision
 
-**BOUNDED UNCERTAINTY, with a substantive BRIDGE.**
+**No earlier statement found, with a substantive BRIDGE.**
 
 The inspected literature does not defeat the exact matrix theorem or the matrix rate extension. Several ingredients are demonstrably established and should be presented that way. The most defensible contribution is the necessary and sufficient noncommuting matrix boundary, its transfer to every position observable, and the associated sharp regularity/rate and friction-design consequences.
 

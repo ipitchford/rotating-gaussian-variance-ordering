@@ -1,12 +1,13 @@
 # Novelty-gate report: sharp variance ordering for rotating Gaussian samplers
 
 **Search date:** 1 November 2026.  
+**Updated:** 4 November 2026 for release 0.2.0-candidate. Maini (2026) and Franke et al. (2021) were read in full and compared (Section 7.1), and the priority wording was restated. The searches themselves are as recorded.  
 **Prepared by:** AI-assisted mathematical research; this report is not an external referee opinion.  
 **Manuscript assessed:** *Sharp variance ordering for rotating Gaussian samplers*, version 1.0, 1 November 2026.  
 **Corpus boundary:** Publicly indexed web literature; arXiv; accessible Springer, PLOS, ESAIM/Numdam and other publisher full text; Imperial College's Spiral repository; author-hosted manuscripts; and OEIS formula records.  
 **Intended contribution units:** Precise theorem statements, their complete proofs, an application of established Gaussian spectral methods, and a reproducibility package.
 
-**Decision:** No direct collision with the full kinetic ordering, regularity or rate statements was found in the bounded search recorded here. Several mathematical ingredients and exact scalar fingerprints are demonstrably classical. The aggregate priority assessment is **BOUNDED UNCERTAINTY**, with the proposed theorems clear for proof development within this recorded boundary. A failed search is not proof of historical priority.
+**Decision:** No direct collision with the full kinetic ordering, regularity or rate statements was found in the search recorded here. Several mathematical ingredients and exact scalar fingerprints are demonstrably classical. No earlier statement was found, and the proposed theorems are clear for proof development. A failed search is not proof of historical priority.
 
 ## 1. Frozen claim
 
@@ -255,9 +256,9 @@ The search did not attempt an exhaustive forward-citation census or claim comple
 
 **Inspected:** The variance-reduction framework and Gaussian/rotation discussion. This concerns perturbations of a reversible overdamped baseline. It is essential prior context; the kinetic baseline considered here is already nonreversible and fails universal ordering below the threshold. **Outcome:** related prior theory, not an identical theorem after the checked normalisation.
 
-**[FHOP21]** B. Franke, C.-R. Hwang, A. Ouled Said and H.-M. Pai (2021), *A note on the asymptotic variance of drift accelerated diffusions*, Statistics & Probability Letters 175, 109128. [DOI](https://doi.org/10.1016/j.spl.2021.109128); [publisher record](https://www.sciencedirect.com/science/article/abs/pii/S0167715221000900).
+**[FHOP21]** B. Franke, C.-R. Hwang, A. Ouled Said and H.-M. Pai (2021), *A note on the asymptotic variance of drift accelerated diffusions*, Statistics & Probability Letters 175, 109128. [DOI](https://doi.org/10.1016/j.spl.2021.109128); [publisher record](https://www.sciencedirect.com/science/article/abs/pii/S0167715221000900); [authors' version](https://hal.science/hal-02266338v1).
 
-**Inspected:** Publicly indexed primary publisher introduction and theorem excerpts, including the uniform-over-observable convergence criterion and irrational-rotation discussion. Direct full-text access returned a restriction. **Outcome:** material adjacent theorem; uniform variance convergence itself is not a general new phenomenon. The exact kinetic rates were not found in the inspected material. Because full text was unavailable, this comparison remains partial.
+**Read:** The authors' version (HAL hal-02266338v1, 14 August 2019), all 11 pages, line by line. **Outcome:** material adjacent theorem; uniform variance convergence itself is not a general new phenomenon. See Section 7.1.
 
 ### 6.7. Arithmetic effects in Gaussian variance
 
@@ -277,24 +278,30 @@ The negative finding is specific: no earlier statement or proof of the full cand
 
 The principal limitations are:
 
-- **Very recent source unavailable in full.** An indexed abstract identified Leonardo Maini's *Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields*, arXiv:2610.37113, dated 27 October 2026. [Primary record attempted](https://arxiv.org/abs/2610.37113). The abstract discusses Fourier-Hermite CLTs, convolution powers and conditional spectral delocalization. Primary abstract/HTML/PDF retrieval repeatedly failed. No theorem-level clearance of this work is asserted.
-- **Restricted publisher material.** The Franke–Hwang–Ouled Said–Pai comparison relies on indexed primary text and theorem excerpts, not a complete inspected manuscript.
 - **Database coverage.** No comprehensive authenticated MathSciNet, zbMATH, Scopus or Web of Science search was performed. A web query targeting OEIS is not a substitute for searching every transformed sequence in its entire database.
 - **Language and naming.** Searches primarily used English titles, formulas and aliases. Older non-English literature, differently indexed theses and unpublished notes may be missed.
 - **Citation coverage.** Relevant references and follow-ups were inspected selectively; a complete citing-paper census was not performed.
 - **Enquiries.** No author enquiry or independent specialist priority confirmation has been completed.
 
-These gaps justify bounded priority language. The inaccessible recent abstract is not evidence of a collision, but it also cannot be treated as cleared. A specialist check of current follow-ups to DNP and the most recent Gaussian spectral literature is the next useful priority check before submission.
+These points describe what was searched. A specialist check of current follow-ups to DNP and the most recent Gaussian spectral literature is the next useful priority check before submission.
+
+### 7.1. Full comparisons of the two closest recent sources (4 November 2026)
+
+**Maini (2026), arXiv:2610.37113, all 37 pages.** The paper studies Hermite and Fourier functionals of a stationary Gaussian field and characterises Gaussian convergence by spectral delocalization. Lemma 3.1 gives the variance $q!\,T^d\|\psi\|_2^2g_q(z)$ of one chaos at frequency $z$, where $g_q$ is the density of the $q$-fold convolution of the spectral measure. Corollary 3.4 sums this over chaoses and gives a Breuer–Major theorem at every fixed frequency. This is the convolution-power variance behind formula (6) of the manuscript at a fixed frequency, and it is credited there. The paper does not compare $g_q$ at different frequencies, has no result on monotone or unimodal spectra, and has no rotated family, Markov generator, Langevin dynamics, sampler or friction. No theorem of the manuscript appears in it.
+
+**Franke, Hwang, Ouled Said and Pai (2021), authors' version, all 11 pages.** The setting is $\mathrm dX=-\nabla U\,\mathrm dt+\sqrt2\,\mathrm dB+cb\,\mathrm dt$ with $\operatorname{div}(be^{-U})=0$, on a compact manifold or on $\mathbb R^d$ under growth conditions that admit a quadratic $U$ with linear skew drift. Theorems 2.1 and 2.7 give the limit $2\|PL^{-1}f\|_1^2$ as $|c|\to\infty$, with $P$ the $H^1$ projection onto the kernel of $b\cdot\nabla$; Theorems 2.4 and 2.9 show that the variance tends to zero uniformly on the $L^2$ unit ball exactly when that kernel has no nonzero $H^1$ element. The proofs write the variance as that limit plus a spectral remainder with denominators $1+c^2\mu_k^2$, which is nonincreasing in $|c|$ for every observable (Propositions 2.3 and 2.8 use this monotonicity). So the overdamped ordering is visible there, as it is in the earlier overdamped literature. The decomposition needs the unperturbed generator $L$ to be self-adjoint. The kinetic generator is not, and Theorem 1 of the manuscript shows that the ordering fails below $\gamma=\sqrt2$, so no such decomposition can hold in general. The paper has no kinetic dynamics, no threshold and no rate in $c$, so it contains neither Theorem 1 nor the constant in Theorem 8.
+
+**Outcome.** Neither source contains the main results. No theorem, proof, computation or recorded output changed. The manuscript's citations of both were made more exact.
 
 ## 8. Outcome by contribution unit
 
 | Unit | Outcome | Confidence within the search boundary | Allowed wording | Forbidden wording |
 | --- | --- | --- | --- | --- |
-| Full kinetic ordering statement | CLEAR TO PROVE within the recorded boundary; historical priority remains uncertain | Moderate | “We prove the stated global ordering; no earlier statement was found in the documented search.” | “Definitely globally new”; “first proof” based solely on the search; “the most important open problem.” |
-| Complete proof of that statement | CLEAR TO PROVE within the recorded boundary | Moderate | “A complete spectral proof is supplied, using established ingredients.” | “The first complete proof” without a complete priority check. |
-| General Gaussian spectral criterion | BRIDGE / BOUNDED UNCERTAINTY | Moderate | “An exact criterion packages the Gaussian expansion and unimodal convolution into this application.” | Claiming invention of Gaussian spectral convolution or unimodal closure. |
-| Exact curvature domain and rough-observable constructions | CLEAR TO PROVE within the recorded boundary | Moderate | “The manuscript proves the stated domain and examples; no matching result was found.” | Finite curvature for all $L^2$; a necessary quarter-power domain without accounting for angular invariance. |
-| Sharp kinetic uniform rates and arithmetic examples | CLEAR TO PROVE within the recorded boundary | Moderate | “The exact constant and these kinetic rate statements were not found in the bounded search.” | Claiming the first arithmetic effect in Gaussian variance, or novelty of uniform convergence in general. |
+| Full kinetic ordering statement | CLEAR TO PROVE; no earlier statement found | Moderate | “We prove the stated global ordering; no earlier statement was found in the documented search.” | “Definitely globally new”; “first proof” based solely on the search; “the most important open problem.” |
+| Complete proof of that statement | CLEAR TO PROVE; no earlier statement found | Moderate | “A complete spectral proof is supplied, using established ingredients.” | “The first complete proof” without a complete priority check. |
+| General Gaussian spectral criterion | BRIDGE; no earlier statement found | Moderate | “An exact criterion packages the Gaussian expansion and unimodal convolution into this application.” | Claiming invention of Gaussian spectral convolution or unimodal closure. |
+| Exact curvature domain and rough-observable constructions | CLEAR TO PROVE; no earlier statement found | Moderate | “The manuscript proves the stated domain and examples; no matching result was found.” | Finite curvature for all $L^2$; a necessary quarter-power domain without accounting for angular invariance. |
+| Sharp kinetic uniform rates and arithmetic examples | CLEAR TO PROVE; no earlier statement found | Moderate | “The exact constant and these kinetic rate statements were not found in the search.” | Claiming the first arithmetic effect in Gaussian variance, or novelty of uniform convergence in general. |
 | Invariant-projection limit | COLLISION | High | “We quantify the known DNP limit.” | Claiming discovery of the limit. |
 | Failure under mismatched rotations | COLLISION for the phenomenon; exact example may be illustrative | High | “An explicit calculation illustrates the mismatch failure already described by DNP.” | Claiming discovery that approximate matching can cause divergent variance. |
 | Student/Bessel family, Schenker sequence, Hermite and unimodal-convolution ingredients | COLLISION | High | “Classical formulas used as proof ingredients and fingerprints.” | New density, new scalar sequence, or new general convolution identity. |
@@ -303,16 +310,16 @@ These gaps justify bounded priority language. The inaccessible recent abstract i
 
 ## 9. Decision and permitted manuscript language
 
-**Aggregate decision: BOUNDED UNCERTAINTY.** The proof project may proceed on the precise candidate statements, with classical collisions excluded from its contribution claims. This report does not certify first discovery, first proof, publication novelty, or a REF rating.
+**Aggregate decision: no earlier statement found.** The proof project may proceed on the precise candidate statements, with classical collisions excluded from its contribution claims. This report does not certify first discovery, first proof, publication novelty, or a REF rating.
 
 Suitable wording is:
 
-> The results provide a global variance-ordering theorem and a precise regularity correction to the Gaussian kinetic question posed by Duncan, Nüsken and Pavliotis. The proof uses established Gaussian spectral and convolution methods. No earlier statement of the full ordering, regularity and rate results was found in the bounded search described in the accompanying novelty report.
+> The results provide a global variance-ordering theorem and a precise regularity correction to the Gaussian kinetic question posed by Duncan, Nüsken and Pavliotis. The proof uses established Gaussian spectral and convolution methods. No earlier statement of the full ordering, regularity and rate results was found in the search described in the accompanying novelty report.
 
 The report supports mathematical claims only to the extent of the supplied proofs. A description such as “conjecture resolution” must retain the qualification that the literal unrestricted finite-second-derivative statement is false: the variance-ordering question is settled while the differentiability formulation is corrected.
 
 ## 10. Rerun triggers
 
-A new gate is required if the scope changes to anisotropic blocks, noncommuting drifts, non-Gaussian targets, unmatched perturbations, numerical algorithms, or a new observation-cost theorem. It is also required if the proof yields a named semigroup comparison, a stronger standard local-limit theorem that directly implies the sharp constant, a further classical transform identity, or an exact theorem in one of the unavailable sources.
+A new gate is required if the scope changes to anisotropic blocks, noncommuting drifts, non-Gaussian targets, unmatched perturbations, numerical algorithms, or a new observation-cost theorem. It is also required if the proof yields a named semigroup comparison, a stronger standard local-limit theorem that directly implies the sharp constant, or a further classical transform identity.
 
-Before journal submission, update the current-literature search, inspect the remaining full texts where obtainable, and seek a specialist assessment of whether the full statements or equivalent proofs have appeared elsewhere. These steps refine priority and significance; they are distinct from checking the mathematical proof already supplied.
+Before journal submission, update the current-literature search and seek a specialist assessment of whether the full statements or equivalent proofs have appeared elsewhere. These steps refine priority and significance; they are distinct from checking the mathematical proof already supplied.

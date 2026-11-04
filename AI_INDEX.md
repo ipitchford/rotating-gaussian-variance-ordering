@@ -1,10 +1,10 @@
-# AI index: sharp variance ordering for rotating Gaussian samplers (v0.1.0-candidate)
+# AI index: sharp variance ordering for rotating Gaussian samplers (v0.2.0-candidate)
 
 Machine-oriented map of claims, evidence and limits. Human readers should start with [README.md](README.md) and the
 paper [research_sampling/output/pdf/rotating_gaussian_variance.pdf](research_sampling/output/pdf/rotating_gaussian_variance.pdf)
 (source [research_sampling/manuscript.md](research_sampling/manuscript.md); generated LaTeX in
 [research_sampling/output/latex/rotating_gaussian_variance.tex](research_sampling/output/latex/rotating_gaussian_variance.tex)).
-Version DOI 10.5281/zenodo.23941497; concept DOI 10.5281/zenodo.23941496. Originating question: the conjecture of
+Version DOI 10.5281/zenodo.23946160; concept DOI 10.5281/zenodo.23941496. Originating question: the conjecture of
 Duncan, Nüsken and Pavliotis (J. Stat. Phys. 169 (2017) 1098-1131, DOI 10.1007/s10955-017-1906-8) stated after their
 parameter conditions (27) (arXiv:1705.00170v1 (35a)-(35c)).
 
@@ -45,6 +45,7 @@ rotation-invariant functions. Scalar spectrum S_γ(ξ) = 2γ/(ξ⁴ + (γ² − 
 - Frozen targets: [research_sampling/target.yaml](research_sampling/target.yaml), [research_sampling/extensions/anisotropic_target.yaml](research_sampling/extensions/anisotropic_target.yaml); fingerprints: [research_sampling/formula_fingerprints.json](research_sampling/formula_fingerprints.json).
 - Internal review (rating-free): [research_sampling/review/REVIEW_RECORD.md](research_sampling/review/REVIEW_RECORD.md).
 - [RESEARCH_GATES.json](RESEARCH_GATES.json): contribution map, sources read, limitation triage.
+- [CORRECTIONS.md](CORRECTIONS.md): what changed between versions.
 - Integrity: [MANIFEST.sha256](MANIFEST.sha256) and [research_sampling/MANIFEST.sha256](research_sampling/MANIFEST.sha256). Licences: [LICENSE](LICENSE). Citation: [CITATION.cff](CITATION.cff); archive metadata: [.zenodo.json](.zenodo.json).
 
 ## Limits
@@ -52,4 +53,4 @@ rotation-invariant functions. Scalar spectrum S_γ(ξ) = 2γ/(ξ⁴ + (γ² − 
 Unrefereed candidate: internal AI-assisted review only; no human peer review, independent reproduction or formal
 verification. Exact stationary continuous-time Gaussian dynamics with matched rotations; position observables.
 Table 1 values are computed, not proved. No statement about step-size discretisation, cost or optimal friction
-(DNP found small friction, about 0.1, best in practice). Priority holds only within bounded searches.
+(DNP found small friction, about 0.1, best in practice). No earlier statement of the main results was found in the searches recorded in the novelty report.

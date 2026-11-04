@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated novelty audits of 1 November 2026 (base result and matrix extension, plus an independent extension search) and the literature update of the 4 November revision round. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate and updated for release 0.2.0-candidate (Maini 2026 and Franke et al. 2021 read in full; novelty_report.md Section 7.1) from the dated novelty audits of 1 November 2026 (base result and matrix extension, plus an independent extension search) and the literature update of the 4 November revision round. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
  "contributionMap": [
   {
    "claim": "Theorem 1: universal variance ordering in |mu| for every L2 position observable iff gamma >= sqrt2 (endpoint included), with equality classification.",
@@ -136,7 +136,7 @@
   {
    "citation": "Maini, Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields, arXiv:2610.37113",
    "usedFor": "Convolution-power variance formula credited",
-   "readWhat": "Lemma 3.1 and its setting",
+   "readWhat": "Whole paper, line by line (4 November 2026, release 0.2.0-candidate); Lemma 3.1 and Corollary 3.4 are the overlap",
    "date": "2026-11-04",
    "evidenceLocator": "manuscript Section 1.4; review/REVIEW_RECORD.md"
   },
@@ -146,6 +146,13 @@
    "readWhat": "Supplementary equations (S71), (S75)-(S76)",
    "date": "2026-11-01",
    "evidenceLocator": "manuscript Section 8.4; review/extension_novelty.md"
+  },
+  {
+   "citation": "Franke, Hwang, Ouled Said and Pai, A note on the asymptotic variance of drift accelerated diffusions, Statist. Probab. Lett. 175 (2021) 109128",
+   "usedFor": "Overdamped uniform variance convergence and monotonicity in the drift amplitude, compared with Theorems 1 and 8",
+   "readWhat": "Authors' version, HAL hal-02266338v1, whole paper, line by line",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1.4; research_sampling/novelty_report.md Section 7.1"
   }
  ],
  "limitationTriage": [
@@ -198,7 +205,7 @@
    "cheap": true
   },
   {
-   "limitation": "Priority holds only within bounded searches.",
+   "limitation": "No earlier statement of the main results was found in the dated searches; no author enquiry was made.",
    "closingQuestion": "Have these statements appeared elsewhere?",
    "triedOrSearched": "Dated searches of 1 November 2026 and the 4 November literature update (see contributionMap); no author enquiry.",
    "estimatedCost": "days",
