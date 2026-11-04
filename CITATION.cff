@@ -4,8 +4,8 @@ title: "Sharp variance ordering for rotating Gaussian samplers"
 type: software
 authors:
   - name: Anonymous
-version: 0.2.0-candidate
-doi: 10.5281/zenodo.23946160
+version: 0.3.0-candidate
+doi: 10.5281/zenodo.23953250
 date-released: 2026-11-04
 repository-code: "https://github.com/ipitchford/rotating-gaussian-variance-ordering"
 url: "https://evidencepress.org/releases/rotating-gaussian-variance-ordering/"
@@ -14,8 +14,8 @@ license:
   - MIT
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23946160
-    description: "Version DOI (0.2.0-candidate)"
+    value: 10.5281/zenodo.23953250
+    description: "Version DOI (0.3.0-candidate)"
   - type: doi
     value: 10.5281/zenodo.23941496
     description: "Concept DOI (all versions)"

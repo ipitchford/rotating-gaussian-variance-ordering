@@ -1,10 +1,10 @@
-# AI index: sharp variance ordering for rotating Gaussian samplers (v0.2.0-candidate)
+# AI index: sharp variance ordering for rotating Gaussian samplers (v0.3.0-candidate)
 
 Machine-oriented map of claims, evidence and limits. Human readers should start with [README.md](README.md) and the
 paper [research_sampling/output/pdf/rotating_gaussian_variance.pdf](research_sampling/output/pdf/rotating_gaussian_variance.pdf)
 (source [research_sampling/manuscript.md](research_sampling/manuscript.md); generated LaTeX in
 [research_sampling/output/latex/rotating_gaussian_variance.tex](research_sampling/output/latex/rotating_gaussian_variance.tex)).
-Version DOI 10.5281/zenodo.23946160; concept DOI 10.5281/zenodo.23941496. Originating question: the conjecture of
+Version DOI 10.5281/zenodo.23953250; concept DOI 10.5281/zenodo.23941496. Originating question: the conjecture of
 Duncan, Nüsken and Pavliotis (J. Stat. Phys. 169 (2017) 1098-1131, DOI 10.1007/s10955-017-1906-8) stated after their
 parameter conditions (27) (arXiv:1705.00170v1 (35a)-(35c)).
 

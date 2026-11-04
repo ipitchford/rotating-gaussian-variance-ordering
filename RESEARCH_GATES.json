@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate and updated for release 0.2.0-candidate (Maini 2026 and Franke et al. 2021 read in full; novelty_report.md Section 7.1) from the dated novelty audits of 1 November 2026 (base result and matrix extension, plus an independent extension search) and the literature update of the 4 November revision round. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate and updated for releases 0.2.0-candidate and 0.3.0-candidate (Maini 2026 and the published text of Franke et al. 2021 read in full; novelty_report.md Section 7.1) from the dated novelty audits of 1 November 2026 (base result and matrix extension, plus an independent extension search) and the literature update of the 4 November revision round. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
  "contributionMap": [
   {
    "claim": "Theorem 1: universal variance ordering in |mu| for every L2 position observable iff gamma >= sqrt2 (endpoint included), with equality classification.",
@@ -150,7 +150,7 @@
   {
    "citation": "Franke, Hwang, Ouled Said and Pai, A note on the asymptotic variance of drift accelerated diffusions, Statist. Probab. Lett. 175 (2021) 109128",
    "usedFor": "Overdamped uniform variance convergence and monotonicity in the drift amplitude, compared with Theorems 1 and 8",
-   "readWhat": "Authors' version, HAL hal-02266338v1, whole paper, line by line",
+   "readWhat": "Published text, Statist. Probab. Lett. 175 (2021) 109128, whole paper, line by line",
    "date": "2026-11-04",
    "evidenceLocator": "manuscript Section 1.4; research_sampling/novelty_report.md Section 7.1"
   }

@@ -2,7 +2,7 @@
 
 Version 1.3 research materials, 4 November 2026. Author: Anonymous. Text CC0-1.0; code MIT.
 
-Published as release 0.2.0-candidate, a citation correction of 0.1.0-candidate ([10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497)): version DOI [10.5281/zenodo.23946160](https://doi.org/10.5281/zenodo.23946160) (concept DOI [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496), all versions).
+Published as release 0.3.0-candidate, a citation correction of 0.2.0-candidate ([10.5281/zenodo.23946160](https://doi.org/10.5281/zenodo.23946160)): version DOI [10.5281/zenodo.23953250](https://doi.org/10.5281/zenodo.23953250) (concept DOI [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496), all versions).
 
 ## Main outcome
 

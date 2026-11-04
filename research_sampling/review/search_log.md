@@ -107,7 +107,7 @@ Primary record inspected:
 | "asymptotic variance" "small divisor" | Public web | Adjacent variance/arithmetic literature. |
 | "asymptotic variance" "Diophantine" "Gaussian" | Public web; arXiv | Located Lachièze-Rey's Gaussian-excursion results. |
 | Exact title *Diophantine Gaussian excursions and random walks* | arXiv primary PDF | Full source retrieved; setting and main statements inspected. Arithmetic Gaussian variance effects are established prior context. |
-| Exact title *A note on the asymptotic variance of drift accelerated diffusions* | Public web; HAL authors' version | Uniform-over-observable convergence criterion (their Theorems 2.4 and 2.9). Authors' version read in full on 4 November 2026 (HAL hal-02266338v1). |
+| Exact title *A note on the asymptotic variance of drift accelerated diffusions* | Public web; published text | Uniform-over-observable convergence criterion (their Theorem 2.4 and Corollaries 3.1 and 4.3). Published text read in full on 4 November 2026. |
 | "Langevin" "asymptotic variance" "monotonicity" rotation | Public web, with recent-years filter | Located established overdamped theory; no direct full kinetic-ordering collision. |
 | "underdamped" "variance" "monotonicity" | Public web | Repeated sampling-specific monotonicity check. |
 
@@ -124,7 +124,7 @@ Primary records:
 | Source or corpus | What was done | Effect on conclusion |
 |---|---|---|
 | Maini, arXiv:2610.37113, *Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields* | Whole paper read on 4 November 2026 (arXiv PDF). | Same convolution-power variance credited; no monotonicity, rotated family or sampler. No pre-emption (novelty report, Section 7.1). |
-| Franke–Hwang–Ouled Said–Pai (2021) | Authors' version (HAL hal-02266338v1) read in full on 4 November 2026. | Overdamped uniform convergence and monotonicity with a self-adjoint base generator; no kinetic, threshold or rate content. No pre-emption (novelty report, Section 7.1). |
+| Franke–Hwang–Ouled Said–Pai (2021) | Published text (Statist. Probab. Lett. 175 (2021) 109128) read in full on 4 November 2026. | Overdamped uniform convergence and monotonicity with a self-adjoint base generator; no kinetic, threshold or rate content. No pre-emption (novelty report, Section 7.1). |
 | Nüsken (2018) large thesis PDF | Complete PDF inspected. | The conjecture passage and surrounding thesis results were checked beyond the abstract. |
 | Authenticated MathSciNet, zbMATH, Scopus and Web of Science | No comprehensive search performed. | Public indexing coverage is incomplete. |
 | Non-English historical literature and unpublished notes | Not systematically searched. | Historical priority remains uncertain. |

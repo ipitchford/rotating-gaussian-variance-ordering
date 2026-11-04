@@ -2,11 +2,11 @@
 
 *Rotation helps every observable exactly when friction is at least √2 — and what happens below it.*
 
-Release 0.2.0-candidate, 4 November 2026 (citation correction of 0.1.0-candidate, [10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497); see [CORRECTIONS.md](CORRECTIONS.md)). Author: Anonymous. Unrefereed, AI-assisted research candidate.
+Release 0.3.0-candidate, 4 November 2026 (citation correction of 0.2.0-candidate, [10.5281/zenodo.23946160](https://doi.org/10.5281/zenodo.23946160); see [CORRECTIONS.md](CORRECTIONS.md)). Author: Anonymous. Unrefereed, AI-assisted research candidate.
 
-- Version DOI: [10.5281/zenodo.23946160](https://doi.org/10.5281/zenodo.23946160); concept DOI (all versions): [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496)
+- Version DOI: [10.5281/zenodo.23953250](https://doi.org/10.5281/zenodo.23953250); concept DOI (all versions): [10.5281/zenodo.23941496](https://doi.org/10.5281/zenodo.23941496)
 - Release page: https://evidencepress.org/releases/rotating-gaussian-variance-ordering/
-- Paper: [research_sampling/output/pdf/rotating_gaussian_variance.pdf](research_sampling/output/pdf/rotating_gaussian_variance.pdf) (29 pages; Markdown source [research_sampling/manuscript.md](research_sampling/manuscript.md))
+- Paper: [research_sampling/output/pdf/rotating_gaussian_variance.pdf](research_sampling/output/pdf/rotating_gaussian_variance.pdf) (30 pages; Markdown source [research_sampling/manuscript.md](research_sampling/manuscript.md))
 
 ## What this is about
 
