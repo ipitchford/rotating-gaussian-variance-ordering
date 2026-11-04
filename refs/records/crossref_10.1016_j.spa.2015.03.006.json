@@ -1,0 +1,480 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 27,
+  "publisher": "Elsevier BV",
+  "issue": "9",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2015,
+       9,
+       1
+      ]
+     ],
+     "date-time": "2015-09-01T00:00:00Z",
+     "timestamp": 1441065600000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2019,
+       9,
+       1
+      ]
+     ],
+     "date-time": "2019-09-01T00:00:00Z",
+     "timestamp": 1567296000000
+    },
+    "content-version": "vor",
+    "delay-in-days": 1461,
+    "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "elsevier.com",
+    "sciencedirect.com"
+   ],
+   "crossmark-restriction": true
+  },
+  "short-container-title": [
+   "Stochastic Processes and their Applications"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2015,
+     9
+    ]
+   ]
+  },
+  "DOI": "10.1016/j.spa.2015.03.006",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2015,
+     4,
+     6
+    ]
+   ],
+   "date-time": "2015-04-06T11:23:28Z",
+   "timestamp": 1428319408000
+  },
+  "page": "3522-3540",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 24,
+  "title": [
+   "Variance reduction for diffusions"
+  ],
+  "prefix": "10.1016",
+  "volume": "125",
+  "author": [
+   {
+    "given": "Chii-Ruey",
+    "family": "Hwang",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Raoul",
+    "family": "Normand",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Sheng-Jhih",
+    "family": "Wu",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "78",
+  "reference": [
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000005",
+    "series-title": "Theory of Linear Operators in Hilbert Space",
+    "author": "Akhiezer",
+    "year": "1993"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000010",
+    "doi-asserted-by": "crossref",
+    "first-page": "185",
+    "DOI": "10.1007/BF00531822",
+    "article-title": "On the functional central limit theorem and the law of the iterated logarithm for Markov processes",
+    "volume": "60",
+    "author": "Bhattacharya",
+    "year": "1982",
+    "journal-title": "Z. Wahrscheinlichkeitstheor. Verwandte Geb."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000015",
+    "doi-asserted-by": "crossref",
+    "first-page": "69",
+    "DOI": "10.1111/1467-9884.00117",
+    "article-title": "Markov chain Monte Carlo method and its application",
+    "volume": "47",
+    "author": "Brooks",
+    "year": "1998",
+    "journal-title": "J. R. Stat. Soc.: Ser. D (Statist.)"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000020",
+    "doi-asserted-by": "crossref",
+    "first-page": "2743",
+    "DOI": "10.1137/110832288",
+    "article-title": "On the optimal transition matrix for Markov chain Monte Carlo sampling",
+    "volume": "50",
+    "author": "Chen",
+    "year": "2012",
+    "journal-title": "SIAM J. Control Optim."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000025",
+    "doi-asserted-by": "crossref",
+    "first-page": "1956",
+    "DOI": "10.1016/j.spl.2013.05.002",
+    "article-title": "Accelerating reversible Markov chains",
+    "volume": "83",
+    "author": "Chen",
+    "year": "2013",
+    "journal-title": "Statist. Probab. Lett."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000030",
+    "doi-asserted-by": "crossref",
+    "first-page": "1325",
+    "DOI": "10.1090/S0002-9947-09-04939-3",
+    "article-title": "The behavior of the spectral gap under growing drift",
+    "volume": "362",
+    "author": "Franke",
+    "year": "2010",
+    "journal-title": "Trans. Amer. Math. Soc."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000035",
+    "doi-asserted-by": "crossref",
+    "first-page": "610",
+    "DOI": "10.1214/aoap/1177005652",
+    "article-title": "Optimal spectral structure of reversible stochastic matrices, Monte Carlo methods and the simulation of Markov random fields",
+    "volume": "2",
+    "author": "Frigessi",
+    "year": "1992",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000040",
+    "series-title": "Heat Kernel and Analysis on Manifolds",
+    "volume": "vol. 47",
+    "author": "Grigor’yan",
+    "year": "2009"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000045",
+    "doi-asserted-by": "crossref",
+    "first-page": "97",
+    "DOI": "10.1093/biomet/57.1.97",
+    "article-title": "Monte Carlo sampling methods using Markov chains and their applications",
+    "volume": "57",
+    "author": "Hastings",
+    "year": "1970",
+    "journal-title": "Biometrika"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000050",
+    "doi-asserted-by": "crossref",
+    "first-page": "897",
+    "DOI": "10.1214/aoap/1177005371",
+    "article-title": "Accelerating Gaussian diffusions",
+    "volume": "3",
+    "author": "Hwang",
+    "year": "1993",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000055",
+    "doi-asserted-by": "crossref",
+    "first-page": "1433",
+    "DOI": "10.1214/105051605000000025",
+    "article-title": "Accelerating diffusions",
+    "volume": "15",
+    "author": "Hwang",
+    "year": "2005",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000060",
+    "series-title": "Stochastic Differential Equations and Diffusion Processes",
+    "volume": "vol. 24",
+    "author": "Ikeda",
+    "year": "1989"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000065",
+    "series-title": "Fluctuations in Markov Processes",
+    "volume": "vol. 345",
+    "author": "Komorowski",
+    "year": "2012"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000070",
+    "doi-asserted-by": "crossref",
+    "first-page": "155",
+    "DOI": "10.1090/S0002-9947-97-01802-3",
+    "article-title": "On the Ornstein–Uhlenbeck operator in L2 spaces with respect to invariant measures",
+    "volume": "349",
+    "author": "Lunardi",
+    "year": "1997",
+    "journal-title": "Trans. Amer. Math. Soc."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000075",
+    "doi-asserted-by": "crossref",
+    "first-page": "1131",
+    "DOI": "10.57262/ade/1355867807",
+    "article-title": "Lp-regularity for elliptic operators with unbounded coefficients",
+    "volume": "10",
+    "author": "Metafune",
+    "year": "2005",
+    "journal-title": "Adv. Differential Equations"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000080",
+    "doi-asserted-by": "crossref",
+    "first-page": "405",
+    "DOI": "10.1016/S0167-7152(01)00115-8",
+    "article-title": "Efficiency of finite state space Monte Carlo Markov chains",
+    "volume": "54",
+    "author": "Mira",
+    "year": "2001",
+    "journal-title": "Statist. Probab. Lett."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000085",
+    "doi-asserted-by": "crossref",
+    "first-page": "340",
+    "DOI": "10.1214/ss/1015346319",
+    "article-title": "Ordering and improving the performance of Monte Carlo Markov chains",
+    "volume": "16",
+    "author": "Mira",
+    "year": "2001",
+    "journal-title": "Statist. Sci."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000090",
+    "series-title": "Monte Carlo Methods (Toronto, ON, 1998)",
+    "first-page": "95",
+    "article-title": "On non-reversible Markov chains",
+    "volume": "vol. 26",
+    "author": "Mira",
+    "year": "2000"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000095",
+    "doi-asserted-by": "crossref",
+    "first-page": "1443",
+    "DOI": "10.1016/j.spl.2013.02.009",
+    "article-title": "Accelerating Brownian motion on n-torus",
+    "volume": "83",
+    "author": "Pai",
+    "year": "2013",
+    "journal-title": "Statist. Probab. Lett."
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000100",
+    "doi-asserted-by": "crossref",
+    "first-page": "607",
+    "DOI": "10.1093/biomet/60.3.607",
+    "article-title": "Optimum Monte-Carlo sampling using Markov chains",
+    "volume": "60",
+    "author": "Peskun",
+    "year": "1973",
+    "journal-title": "Biometrika"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000105",
+    "series-title": "Methods of Modern Mathematical Physics. II. Fourier Analysis, Self-Adjointness",
+    "author": "Reed",
+    "year": "1975"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000110",
+    "series-title": "Methods of Modern Mathematical Physics. IV. Analysis of Operators",
+    "author": "Reed",
+    "year": "1978"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000115",
+    "series-title": "Methods of Modern Mathematical Physics. I. Functional Analysis",
+    "author": "Reed",
+    "year": "1980"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000120",
+    "doi-asserted-by": "crossref",
+    "unstructured": "L. Rey-Bellet, K. Spiliopoulos, Irreversible langevin samplers and variance reduction: a large deviation approach, 2014. ArXiv Preprint arXiv:1404.0105.",
+    "DOI": "10.1088/0951-7715/28/7/2081"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000125",
+    "series-title": "Diffusions, Markov Processes, and Martingales. Vol. 1, Foundations",
+    "author": "Rogers",
+    "year": "2000"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000130",
+    "series-title": "Diffusions, Markov Processes, and Martingales. Vol. 2, Itô Calculus",
+    "author": "Rogers",
+    "year": "2000"
+   },
+   {
+    "key": "10.1016/j.spa.2015.03.006_br000135",
+    "series-title": "Functional Analysis",
+    "author": "Yosida",
+    "year": "1995"
+   }
+  ],
+  "container-title": [
+   "Stochastic Processes and their Applications"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S030441491500085X?httpAccept=text/xml",
+    "content-type": "text/xml",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S030441491500085X?httpAccept=text/plain",
+    "content-type": "text/plain",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2023,
+     8,
+     9
+    ]
+   ],
+   "date-time": "2023-08-09T06:59:43Z",
+   "timestamp": 1691564383000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://linkinghub.elsevier.com/retrieve/pii/S030441491500085X"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2015,
+     9
+    ]
+   ]
+  },
+  "references-count": 27,
+  "journal-issue": {
+   "issue": "9",
+   "published-print": {
+    "date-parts": [
+     [
+      2015,
+      9
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "S030441491500085X"
+  ],
+  "URL": "https://doi.org/10.1016/j.spa.2015.03.006",
+  "relation": {},
+  "ISSN": [
+   "0304-4149"
+  ],
+  "issn-type": [
+   {
+    "value": "0304-4149",
+    "type": "print"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2015,
+     9
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "Elsevier",
+    "name": "publisher",
+    "label": "This article is maintained by"
+   },
+   {
+    "value": "Variance reduction for diffusions",
+    "name": "articletitle",
+    "label": "Article Title"
+   },
+   {
+    "value": "Stochastic Processes and their Applications",
+    "name": "journaltitle",
+    "label": "Journal Title"
+   },
+   {
+    "value": "https://doi.org/10.1016/j.spa.2015.03.006",
+    "name": "articlelink",
+    "label": "CrossRef DOI link to publisher maintained version"
+   },
+   {
+    "value": "article",
+    "name": "content_type",
+    "label": "Content Type"
+   },
+   {
+    "value": "Copyright © 2015 Elsevier B.V. All rights reserved.",
+    "name": "copyright",
+    "label": "Copyright"
+   }
+  ]
+ }
+}

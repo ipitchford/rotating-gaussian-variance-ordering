@@ -1,0 +1,83 @@
+target_id: kinetic-matrix-universal-rotation-ordering
+search_date: 2026-11-01
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    Let K and Gamma be real symmetric positive definite d by d matrices,
+    and J a real skew-symmetric matrix commuting with each. Do not assume
+    K Gamma = Gamma K. For the stationary unit-mass process
+    dq=(p-mu Jq)dt, dp=(-Kq-Gamma p-mu Jp)dt+sqrt(2Gamma)dW,
+    and every real L2 position observable f, put
+    V_f(mu)=lim_{T to infinity} T Var[T^{-1} integral_0^T f(q_t)dt].
+    The matrix inequality Gamma^3-Gamma K-K Gamma >= 0 implies that
+    V_f(mu) is nonincreasing in |mu|, with strict decrease between any
+    distinct nonnegative amplitudes exactly when f is not invariant under
+    exp(tJ). If J is invertible, this condition is also necessary, even for
+    the weaker claim V_f(mu)<=V_f(0) for all linear f and all mu near zero.
+    Among all Gamma satisfying this inequality, sqrt(2K) is the unique
+    least matrix in Loewner order. Replication makes an invertible commuting
+    J available for arbitrary base K and Gamma.
+  exclusions:
+    - No claim that the standard transfer-function spectrum is new.
+    - No priority claim for scalar unimodal convolution or elementary tensor layer-cake.
+    - No necessity claim for arbitrary singular J.
+    - No novelty claim for the construction of nonreversible replica coupling.
+    - No guarantee for non-Gaussian targets, discrete observation, or numerical integration.
+    - Least admissible friction refers to universal ordering, not computing-time optimality.
+source:
+  originating_reference: "Duncan, Nuesken and Pavliotis (2017), Using perturbed underdamped Langevin dynamics to efficiently sample from probability distributions, conjecture following Eq. (27)"
+  url: "https://doi.org/10.1007/s10955-017-1906-8"
+normalisation:
+  indices: "K is position precision; Gamma is friction; mass and temperature are one."
+  scaling: "Full CLT variance V; DNP sigma^2=V/2. Fourier transform integral exp(-i xi t) dt."
+  basis_order: "(q,p); for replica examples (q_replica1,q_replica2)."
+  symmetries:
+    - "mu -> -mu"
+    - "simultaneous orthogonal changes of basis"
+    - "whiten position by K^(1/2), preserving J because [J,K]=0"
+generating_functions:
+  - name: physical-position matrix spectral density
+    expression: "2 [K Gamma^(-1) K + xi^2 (Gamma-K Gamma^(-1)-Gamma^(-1) K) + xi^4 Gamma^(-1)]^(-1)"
+    variables: [xi]
+  - name: noncommuting example denominator
+    expression: "x^4+15x^3+61x^2+119x+25, x=xi^2"
+    variables: [x]
+  - name: replica surviving chaos fraction
+    expression: "b_(2m)=binomial(2m,m)/4^m; b_(2m+1)=0"
+    variables: [m]
+matrices:
+  - name: K_base
+    entries: [["2", "1"], ["1", "3"]]
+  - name: Gamma_base_admissible
+    entries: [["3", "0"], ["0", "4"]]
+  - name: B_base_admissible
+    entries: [["5/3", "-7/12"], ["-7/12", "5/2"]]
+  - name: Gamma_base_failure
+    entries: [["2", "0"], ["0", "3"]]
+  - name: B_base_failure
+    entries: [["0", "-5/6"], ["-5/6", "1"]]
+sequences:
+  - name: scalar fingerprints
+    exact_values:
+      - "K=1,Gamma=2: B=1; S_q=4/(1+xi^2)^2"
+      - "K=4,Gamma=3: B=1/3; S_q=6/(xi^4+xi^2+16)"
+    natural_scalings: ["S_x=K S_q for one-dimensional position whitening"]
+  - name: noncommuting spectrum fingerprints
+    exact_values:
+      - "S_q(0)=[[62,-34],[-34,38]]/25"
+      - "S_q(1)=[[128,-20],[-20,86]]/221"
+      - "S_q(2)=[[398,22],[22,326]]/2693"
+    natural_scalings: ["duplicate both matrices and use J=[[0,-I],[I,0]]"]
+aliases:
+  analysis: ["Loewner unimodality", "matrix-valued tensor convolution", "Gaussian second quantisation", "operator-valued spectral density"]
+  probability: ["kinetic Langevin", "nonreversible variance reduction", "Gaussian Hermite chaos", "replicated Langevin"]
+  mathematical_physics: ["non-proportional damping", "damped harmonic oscillator", "mechanical transfer spectrum"]
+  statistics_optimisation_ml: ["universal asymptotic variance ordering", "friction matrix tuning", "replica average"]
+known_invariants:
+  invariant_law: "N(0,K^(-1)) tensor N(0,I)"
+  criterion_alias: "B=Gamma-K Gamma^(-1)-Gamma^(-1)K >=0, congruent to Gamma^3-Gamma K-K Gamma>=0"
+  shape_threshold: "Gamma=gamma G: gamma^2 >= lambda_max[G^(-3/2)(GK+KG)G^(-3/2)]"
+  least_friction: "Gamma_* = sqrt(2K)"
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: ["web search", "arXiv", "Springer primary article", "APS primary article", "M2AN/Imperial primary paper"]

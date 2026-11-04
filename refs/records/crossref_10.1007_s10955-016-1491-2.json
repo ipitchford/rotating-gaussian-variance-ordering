@@ -1,0 +1,1025 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 72,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "3",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2016,
+       3,
+       22
+      ]
+     ],
+     "date-time": "2016-03-22T00:00:00Z",
+     "timestamp": 1458604800000
+    },
+    "content-version": "unspecified",
+    "delay-in-days": 0,
+    "URL": "http://creativecommons.org/licenses/by/4.0"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/J009636/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/J009636/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/L024926/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/L024926/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/L020564/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/L020564/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/L025159/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/L025159/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100004963",
+    "name": "Seventh Framework Programme",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "614492"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "614492"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100004963",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "link.springer.com"
+   ],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "J Stat Phys"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2016,
+     5
+    ]
+   ]
+  },
+  "DOI": "10.1007/s10955-016-1491-2",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2016,
+     3,
+     22
+    ]
+   ],
+   "date-time": "2016-03-22T04:51:00Z",
+   "timestamp": 1458622260000
+  },
+  "page": "457-491",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 94,
+  "title": [
+   "Variance Reduction Using Nonreversible Langevin Samplers"
+  ],
+  "prefix": "10.1007",
+  "volume": "163",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-5762-164X",
+    "authenticated-orcid": false,
+    "given": "A. B.",
+    "family": "Duncan",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "T.",
+    "family": "Lelièvre",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "G. A.",
+    "family": "Pavliotis",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "297",
+  "published-online": {
+   "date-parts": [
+    [
+     2016,
+     3,
+     22
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "key": "1491_CR1",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-0-387-69033-9",
+    "volume-title": "Stochastic Simulation: Algorithms and Analysis",
+    "author": "S Asmussen",
+    "year": "2007",
+    "unstructured": "Asmussen, S., Glynn, P.W.: Stochastic Simulation: Algorithms and Analysis, vol. 57. Springer, New York (2007)"
+   },
+   {
+    "key": "1491_CR2",
+    "doi-asserted-by": "crossref",
+    "first-page": "753",
+    "DOI": "10.1103/PhysRevLett.62.753",
+    "volume": "62",
+    "author": "M Avellanada",
+    "year": "1989",
+    "unstructured": "Avellanada, M., Majda, A.J.: Stieltjes integral representation and effective diffusivity bounds for turbulent transport. Phys. Rev. Lett. 62, 753–755 (1989)",
+    "journal-title": "Phys. Rev. Lett."
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR3",
+    "doi-asserted-by": "crossref",
+    "first-page": "339",
+    "DOI": "10.1007/BF02099496",
+    "volume": "138",
+    "author": "M Avellaneda",
+    "year": "1991",
+    "unstructured": "Avellaneda, M., Majda, A.J.: An integral representation and bounds on the effective diffusivity in passive advection by laminar and turbulent flows. Commun. Math. Phys. 138(2), 339–391 (1991)",
+    "journal-title": "Commun. Math. Phys."
+   },
+   {
+    "key": "1491_CR4",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-1-4612-0653-8",
+    "volume-title": "Matrix Analysis",
+    "author": "R Bhatia",
+    "year": "1997",
+    "unstructured": "Bhatia, R.: Matrix Analysis, vol. 169. Springer, New York (1997)"
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR5",
+    "doi-asserted-by": "crossref",
+    "first-page": "385",
+    "DOI": "10.1214/aop/1176992998",
+    "volume": "13",
+    "author": "R Bhattacharya",
+    "year": "1985",
+    "unstructured": "Bhattacharya, R.: A central limit theorem for diffusions with periodic coefficients. Ann. Probab. 13(2), 385–396 (1985)",
+    "journal-title": "Ann. Probab."
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR6",
+    "doi-asserted-by": "crossref",
+    "first-page": "185",
+    "DOI": "10.1007/BF00531822",
+    "volume": "60",
+    "author": "RN Bhattacharya",
+    "year": "1982",
+    "unstructured": "Bhattacharya, R.N.: On the functional central limit theorem and the law of the iterated logarithm for Markov processes. Zeitschrift für Wahrscheinlichkeitstheorie und verwandte Gebiete 60(2), 185–201 (1982)",
+    "journal-title": "Zeitschrift für Wahrscheinlichkeitstheorie und verwandte Gebiete"
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR7",
+    "doi-asserted-by": "crossref",
+    "first-page": "951",
+    "DOI": "10.1214/aoap/1029962863",
+    "volume": "9",
+    "author": "RN Bhattacharya",
+    "year": "1999",
+    "unstructured": "Bhattacharya, R.N.: Multiscale diffusion processes with periodic coefficients and an application to solute transport in porous media. Ann. Appl. Probab. 9(4), 951–1020 (1999)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "issue": "1",
+    "key": "1491_CR8",
+    "doi-asserted-by": "crossref",
+    "first-page": "86",
+    "DOI": "10.1137/0149005",
+    "volume": "49",
+    "author": "RN Bhattacharya",
+    "year": "1989",
+    "unstructured": "Bhattacharya, R.N., Gupta, V.K., Walker, H.F.: Asymptotics of solute dispersion in periodic porous media. SIAM J. Appl. Math. 49(1), 86–98 (1989)",
+    "journal-title": "SIAM J. Appl. Math."
+   },
+   {
+    "key": "1491_CR9",
+    "unstructured": "Bierkens, J.: Nonreversible Metropolis-Hastings. arXiv:1401.8087 (2014)"
+   },
+   {
+    "key": "1491_CR10",
+    "unstructured": "Bovier, A., Eckhoff, M., Gayrard, V., Klein, M.: Metastability in reversible diffusion processes: sharp asymptotics for capacities and exit times. Technical report, WIAS, Berlin (2002)"
+   },
+   {
+    "issue": "1",
+    "key": "1491_CR11",
+    "doi-asserted-by": "crossref",
+    "first-page": "69",
+    "DOI": "10.4171/JEMS/22",
+    "volume": "7",
+    "author": "A Bovier",
+    "year": "2005",
+    "unstructured": "Bovier, A., Gayrard, V., Klein, M.: Metastability in reversible diffusion processes. II. Precise asymptotics for small eigenvalues. J. Eur. Math. Soc. 7(1), 69–99 (2005)",
+    "journal-title": "J. Eur. Math. Soc."
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR12",
+    "first-page": "337",
+    "volume": "9",
+    "author": "P Cattiaux",
+    "year": "2012",
+    "unstructured": "Cattiaux, P., Chafaı, D., Guillin, A.: Central limit theorems for additive functionals of ergodic Markov diffusions processes. ALEA 9(2), 337–382 (2012)",
+    "journal-title": "ALEA"
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR13",
+    "doi-asserted-by": "crossref",
+    "first-page": "643",
+    "DOI": "10.4007/annals.2008.168.643",
+    "volume": "168",
+    "author": "P Constantin",
+    "year": "2008",
+    "unstructured": "Constantin, P., Kiselev, A., Ryzhik, L., Zlato, A.: Diffusion and mixing in fluid flow. Ann. Math. 168(2), 643–674 (2008)",
+    "journal-title": "Ann. Math."
+   },
+   {
+    "issue": "1",
+    "key": "1491_CR14",
+    "doi-asserted-by": "crossref",
+    "first-page": "133",
+    "DOI": "10.1111/j.1467-9868.2011.01000.x",
+    "volume": "74",
+    "author": "P Dellaportas",
+    "year": "2012",
+    "unstructured": "Dellaportas, P., Kontoyiannis, I.: Control variates for estimation based on reversible Markov chain Monte Carlo samplers. J. R. Stat. Soc. B 74(1), 133–161 (2012)",
+    "journal-title": "J. R. Stat. Soc. B"
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR15",
+    "doi-asserted-by": "crossref",
+    "first-page": "726",
+    "DOI": "10.1214/aoap/1019487508",
+    "volume": "10",
+    "author": "P Diaconis",
+    "year": "2000",
+    "unstructured": "Diaconis, P., Holmes, S., Neal, R.M.: Analysis of a nonreversible Markov chain sampler. Ann. Appl. Probab. 10(3), 726–752 (2000)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR16",
+    "doi-asserted-by": "crossref",
+    "first-page": "897",
+    "DOI": "10.1016/j.spa.2008.03.007",
+    "volume": "119",
+    "author": "R Douc",
+    "year": "2009",
+    "unstructured": "Douc, R., Fort, G., Guillin, A.: Subgeometric rates of convergence of f-ergodic strong Markov processes. Stoch. Processes Appl. 119(3), 897–923 (2009)",
+    "journal-title": "Stoch. Processes Appl."
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR17",
+    "doi-asserted-by": "crossref",
+    "first-page": "1671",
+    "DOI": "10.1214/aop/1176987798",
+    "volume": "23",
+    "author": "D Down",
+    "year": "1995",
+    "unstructured": "Down, D., Meyn, S.P., Tweedie, R.L.: Exponential and uniform ergodicity of Markov processes. Ann. Probab. 23(4), 1671–1691 (1995)",
+    "journal-title": "Ann. Probab."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR18",
+    "doi-asserted-by": "crossref",
+    "first-page": "1325",
+    "DOI": "10.1090/S0002-9947-09-04939-3",
+    "volume": "362",
+    "author": "B Franke",
+    "year": "2010",
+    "unstructured": "Franke, B., Hwang, C.R., Pai, H.M., Sheu, S.J.: The behavior of the spectral gap under growing drift. Trans. Am. Math. Soc. 362(3), 1325–1350 (2010)",
+    "journal-title": "Trans. Am. Math. Soc."
+   },
+   {
+    "key": "1491_CR19",
+    "volume-title": "Bayesian Data Analysis",
+    "author": "A Gelman",
+    "year": "2014",
+    "unstructured": "Gelman, A., Carlin, J.B., Stern, H.S., Rubin, D.B.: Bayesian Data Analysis, vol. 2. Taylor & Francis, Boca Raton (2014)"
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR20",
+    "doi-asserted-by": "crossref",
+    "first-page": "123",
+    "DOI": "10.1111/j.1467-9868.2010.00765.x",
+    "volume": "73",
+    "author": "M Girolami",
+    "year": "2011",
+    "unstructured": "Girolami, M., Calderhead, B.: Riemann manifold Langevin and Hamiltonian Monte Carlo methods. J. R. Stat. Soc. B 73(2), 123–214 (2011)",
+    "journal-title": "J. R. Stat. Soc. B"
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR21",
+    "doi-asserted-by": "crossref",
+    "first-page": "916",
+    "DOI": "10.1214/aop/1039639370",
+    "volume": "24",
+    "author": "PW Glynn",
+    "year": "1996",
+    "unstructured": "Glynn, P.W., Meyn, S.P.: A Liapounov bound for solutions of the Poisson equation. Ann. Probab. 24(2), 916–931 (1996)",
+    "journal-title": "Ann. Probab."
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR22",
+    "doi-asserted-by": "crossref",
+    "first-page": "473",
+    "DOI": "10.1007/BF01216179",
+    "volume": "90",
+    "author": "K Golden",
+    "year": "1983",
+    "unstructured": "Golden, K., Papanicolaou, G.: Bounds for effective parameters of heterogeneous media by analytic continuation. Commun. Math. Phys. 90(4), 473–491 (1983)",
+    "journal-title": "Commun. Math. Phys."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR23",
+    "doi-asserted-by": "crossref",
+    "first-page": "375",
+    "DOI": "10.1007/s001800050022",
+    "volume": "14",
+    "author": "H Haario",
+    "year": "1999",
+    "unstructured": "Haario, H., Saksman, E., Tamminen, J.: Adaptive proposal distribution for random walk Metropolis algorithm. Comput. Stat. 14(3), 375–396 (1999)",
+    "journal-title": "Comput. Stat."
+   },
+   {
+    "key": "1491_CR24",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1017/CBO9781139505727",
+    "volume-title": "Spectral Theory and Its Applications",
+    "author": "B Helffer",
+    "year": "2013",
+    "unstructured": "Helffer, B.: Spectral Theory and Its Applications, vol. 139. Cambridge University Press, Cambridge (2013)"
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR25",
+    "first-page": "79",
+    "volume": "9",
+    "author": "IS Helland",
+    "year": "1982",
+    "unstructured": "Helland, I.S.: Central limit theorems for martingales with discrete or continuous time. Scand. J. Stat. 9(2), 79–94 (1982)",
+    "journal-title": "Scand. J. Stat."
+   },
+   {
+    "key": "1491_CR26",
+    "first-page": "2240",
+    "volume-title": "Advances in Neural Information Processing Systems 27",
+    "author": "G Hennequin",
+    "year": "2014",
+    "unstructured": "Hennequin, G., Aitchison, L., Lengyel, M.: Fast sampling-based inference in balanced neuronal networks. In: Ghahramani, Z., Welling, M., Cortes, C., Lawrence, N.D., Weinberger, K.Q. (eds.) Advances in Neural Information Processing Systems 27, pp. 2240–2248. Curran Associates, Inc., New York (2014)"
+   },
+   {
+    "key": "1491_CR27",
+    "first-page": "012012",
+    "volume": "473",
+    "author": "K Hukushima",
+    "year": "2013",
+    "unstructured": "Hukushima, K., Sakai, Y.: An irreversible Markov-chain Monte Carlo method with skew detailed balance conditions. J. Phys. 473, 012012 (2013)",
+    "journal-title": "J. Phys."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR28",
+    "doi-asserted-by": "crossref",
+    "first-page": "897",
+    "DOI": "10.1214/aoap/1177005371",
+    "volume": "3",
+    "author": "CR Hwang",
+    "year": "1993",
+    "unstructured": "Hwang, C.R., Hwang-Ma, S.Y., Sheu, S.J.: Accelerating Gaussian diffusions. Ann. Appl. Probab. 3(3), 897–913 (1993)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR29",
+    "doi-asserted-by": "crossref",
+    "first-page": "1433",
+    "DOI": "10.1214/105051605000000025",
+    "volume": "15",
+    "author": "CR Hwang",
+    "year": "2005",
+    "unstructured": "Hwang, C.R., Hwang-Ma, S.Y., Sheu, S.J., et al.: Accelerating diffusions. Ann. Appl. Probab. 15(2), 1433–1444 (2005)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "1491_CR30",
+    "unstructured": "Hwang, C.-R., Normand, R., Wu, S.-J.: Variance reduction for diffusions. arXiv:1406.4657 (2014)"
+   },
+   {
+    "key": "1491_CR31",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-3-662-02514-7",
+    "volume-title": "Limit Theorems for Stochastic Processes",
+    "author": "J Jacod",
+    "year": "1987",
+    "unstructured": "Jacod, J., Shiryaev, A.N.: Limit Theorems for Stochastic Processes, vol. 1943877. Springer, Berlin (1987)"
+   },
+   {
+    "issue": "1",
+    "key": "1491_CR32",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1007/BF01210789",
+    "volume": "104",
+    "author": "C Kipnis",
+    "year": "1986",
+    "unstructured": "Kipnis, C., Varadhan, S.R.S.: Central limit theorem for additive functionals of reversible Markov processes and applications to simple exclusions. Commun. Math. Phys. 104(1), 1–19 (1986)",
+    "journal-title": "Commun. Math. Phys."
+   },
+   {
+    "key": "1491_CR33",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-3-642-29880-6",
+    "volume-title": "Fluctuations in Markov Processes: Time Symmetry and Martingale Approximation",
+    "author": "T Komorowski",
+    "year": "2012",
+    "unstructured": "Komorowski, T., Landim, C., Olla, S.: Fluctuations in Markov Processes: Time Symmetry and Martingale Approximation. Springer, Heidelberg (2012)"
+   },
+   {
+    "key": "1491_CR34",
+    "series-title": "de Gruyter Studies in Mmathematics",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1515/9783110844641",
+    "volume-title": "Ergodic Theorems",
+    "author": "U Krengel",
+    "year": "1985",
+    "unstructured": "Krengel, U.: Ergodic Theorems. de Gruyter Studies in Mmathematics, vol. 6. Walter de Gruyter & Co., Berlin (1985)"
+   },
+   {
+    "key": "1491_CR35",
+    "volume-title": "Simulating Hamiltonian Dynamics",
+    "author": "B Leimkuhler",
+    "year": "2004",
+    "unstructured": "Leimkuhler, B., Reich, S.: Simulating Hamiltonian Dynamics, vol. 14. Cambridge University Press, Cambridge (2004)"
+   },
+   {
+    "key": "1491_CR36",
+    "doi-asserted-by": "crossref",
+    "first-page": "791",
+    "DOI": "10.1007/978-3-642-33134-3_83",
+    "volume-title": "Numerical Mathematics and Advanced Applications 2011",
+    "author": "T Lelievre",
+    "year": "2013",
+    "unstructured": "Lelievre, T.: Two mathematical tools to analyze metastable stochastic processes. In: Cangiani, A., Davidchack, R.L., Georgoulis, E., Gorban, A.N., Levesley, J., Tretyakov, M.V. (eds.) Numerical Mathematics and Advanced Applications 2011, pp. 791–810. Springer, New York (2013)"
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR37",
+    "doi-asserted-by": "crossref",
+    "first-page": "237",
+    "DOI": "10.1007/s10955-013-0769-x",
+    "volume": "152",
+    "author": "T Lelièvre",
+    "year": "2013",
+    "unstructured": "Lelièvre, T., Nier, F., Pavliotis, G.A.: Optimal non-reversible linear drift for the convergence to equilibrium of a diffusion. J. Stat. Phys. 152(2), 237–274 (2013)",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "1491_CR38",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1142/p579",
+    "volume-title": "Free Energy Computations: A Mathematical Perspective",
+    "author": "T Lelièvre",
+    "year": "2010",
+    "unstructured": "Lelièvre, T., Stoltz, G., Rousset, M.: Free Energy Computations: A Mathematical Perspective. World Scientific, Singapore (2010)"
+   },
+   {
+    "key": "1491_CR39",
+    "volume-title": "Monte Carlo Strategies in Scientific Computing",
+    "author": "JS Liu",
+    "year": "2008",
+    "unstructured": "Liu, J.S.: Monte Carlo Strategies in Scientific Computing. Springer, New York (2008)"
+   },
+   {
+    "key": "1491_CR40",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1201/9781420011586",
+    "volume-title": "Analytical Methods for Markov Semigroups",
+    "author": "L Lorenzi",
+    "year": "2006",
+    "unstructured": "Lorenzi, L., Bertoldi, M.: Analytical Methods for Markov Semigroups. CRC Press, New York (2006)"
+   },
+   {
+    "key": "1491_CR41",
+    "unstructured": "Ma, Y.-A., Chen, T., Fox, E.: A complete recipe for stochastic gradient mcmc. In: Advances in Neural Information Processing Systems, pp. 2899–2907 (2015)"
+   },
+   {
+    "key": "1491_CR42",
+    "volume-title": "Information Theory, Inference and Learning Algorithms",
+    "author": "DJC MacKay",
+    "year": "2003",
+    "unstructured": "MacKay, D.J.C.: Information Theory, Inference and Learning Algorithms. Cambridge University Press, Cambridge (2003)"
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR43",
+    "doi-asserted-by": "crossref",
+    "first-page": "237",
+    "DOI": "10.1016/S0370-1573(98)00083-0",
+    "volume": "314",
+    "author": "AJ Majda",
+    "year": "1999",
+    "unstructured": "Majda, A.J., Kramer, P.R.: Simplified models for turbulent diffusion: theory, numerical modelling, and physical phenomena. Phys. Rep. 314(4), 237–574 (1999)",
+    "journal-title": "Phys. Rep."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR44",
+    "doi-asserted-by": "crossref",
+    "first-page": "245",
+    "DOI": "10.1002/sapm1993893245",
+    "volume": "89",
+    "author": "AJ Majda",
+    "year": "1993",
+    "unstructured": "Majda, A.J., McLaughlin, R.M.: The effect of mean flows on enhanced diffusivity in transport by incompressible periodic velocity fields. Stud. Appl. Math. 89(3), 245–279 (1993)",
+    "journal-title": "Stud. Appl. Math."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR45",
+    "doi-asserted-by": "crossref",
+    "first-page": "A1460",
+    "DOI": "10.1137/110845598",
+    "volume": "34",
+    "author": "J Martin",
+    "year": "2012",
+    "unstructured": "Martin, J., Wilcox, L.C., Burstedde, C., Ghattas, O.: A stochastic newton MCMC method for large-scale statistical inverse problems with application to seismic inversion. SIAM J. Sci. Comput. 34(3), A1460–A1487 (2012)",
+    "journal-title": "SIAM J. Sci. Comput."
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR46",
+    "doi-asserted-by": "crossref",
+    "first-page": "185",
+    "DOI": "10.1016/S0304-4149(02)00150-3",
+    "volume": "101",
+    "author": "JC Mattingly",
+    "year": "2002",
+    "unstructured": "Mattingly, J.C., Stuart, A.M., Higham, D.J.: Ergodicity for SDEs and approximations: locally Lipschitz vector fields and degenerate noise. Stoch. Processes Appl. 101(2), 185–232 (2002)",
+    "journal-title": "Stoch. Processes Appl."
+   },
+   {
+    "issue": "2",
+    "key": "1491_CR47",
+    "doi-asserted-by": "crossref",
+    "first-page": "552",
+    "DOI": "10.1137/090770527",
+    "volume": "48",
+    "author": "JC Mattingly",
+    "year": "2010",
+    "unstructured": "Mattingly, J.C., Stuart, A.M., Tretyakov, M.V.: Convergence of numerical time-averaging and stationary measures via Poisson equations. SIAM J. Numer. Anal. 48(2), 552–577 (2010)",
+    "journal-title": "SIAM J. Numer. Anal."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR48",
+    "doi-asserted-by": "crossref",
+    "first-page": "518",
+    "DOI": "10.2307/1427522",
+    "volume": "25",
+    "author": "SP Meyn",
+    "year": "1993",
+    "unstructured": "Meyn, S.P., Tweedie, R.L.: Stability of Markovian processes III: Foster-Lyapunov criteria for continuous-time processes. Adv. Appl. Probab. 25(3), 518–548 (1993)",
+    "journal-title": "Adv. Appl. Probab."
+   },
+   {
+    "key": "1491_CR49",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Meyn, S. P., Tweedie, R. L.: A survey of Foster-Lyapunov techniques for general state space Markov processes. In: Proceedings of the Workshop on Stochastic Stability and Stochastic Stabilization, Metz, France. Citeseer (1993)",
+    "DOI": "10.1007/978-1-4471-3267-7"
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR50",
+    "doi-asserted-by": "crossref",
+    "first-page": "340",
+    "DOI": "10.1214/ss/1015346319",
+    "volume": "16",
+    "author": "A Mira",
+    "year": "2001",
+    "unstructured": "Mira, A.: Ordering and improving the performance of Monte Carlo Markov chains. Stat. Sci. 16(4), 340–350 (2001)",
+    "journal-title": "Stat. Sci."
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR51",
+    "doi-asserted-by": "crossref",
+    "first-page": "353",
+    "DOI": "10.1007/BF00143556",
+    "volume": "6",
+    "author": "RM Neal",
+    "year": "1996",
+    "unstructured": "Neal, R.M.: Sampling from multimodal distributions using tempered transitions. Stat. Comput. 6(4), 353–366 (1996)",
+    "journal-title": "Stat. Comput."
+   },
+   {
+    "key": "1491_CR52",
+    "unstructured": "Neal, R. M.: Improving asymptotic variance of MCMC estimators: nonreversible chains are better. arXiv:math/0407281 (2004)"
+   },
+   {
+    "key": "1491_CR53",
+    "volume-title": "MCMC Using Hamiltonian Dynamics. Handbook of Markov Chain Monte Carlo",
+    "author": "RM Neal",
+    "year": "2010",
+    "unstructured": "Neal, R.M.: MCMC Using Hamiltonian Dynamics. Handbook of Markov Chain Monte Carlo, vol. 54. CRC Press, Boca Raton (2010)"
+   },
+   {
+    "key": "1491_CR54",
+    "unstructured": "Ohzeki, M., Ichiki, A.: Simple implementation of Langevin dynamics without detailed balance condition. arXiv:1307.0434 (2013)"
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR55",
+    "doi-asserted-by": "crossref",
+    "first-page": "1061",
+    "DOI": "10.1214/aop/1015345596",
+    "volume": "29",
+    "author": "E Pardoux",
+    "year": "2001",
+    "unstructured": "Pardoux, E., Veretennikov, A.Y.: On the Poisson equation and diffusion approximation I. Ann. Probab. 29(3), 1061–1085 (2001)",
+    "journal-title": "Ann. Probab."
+   },
+   {
+    "key": "1491_CR56",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-1-4939-1323-7",
+    "volume-title": "Stochastic Processes and Applications: Diffusion Processes, the Fokker-Planck and Langevin Equations",
+    "author": "G Pavliotis",
+    "year": "2014",
+    "unstructured": "Pavliotis, G.: Stochastic Processes and Applications: Diffusion Processes, the Fokker-Planck and Langevin Equations, vol. 60. Springer, New York (2014)"
+   },
+   {
+    "key": "1491_CR57",
+    "unstructured": "Pavliotis, G. A.: Homogenization Theory for Advection—Diffusion Equations with Mean Flow, Ph.D Thesis. Rensselaer Polytechnic Institute, Troy, NY (2002)"
+   },
+   {
+    "key": "1491_CR58",
+    "doi-asserted-by": "crossref",
+    "first-page": "951",
+    "DOI": "10.1093/imamat/hxq039",
+    "volume": "75",
+    "author": "GA Pavliotis",
+    "year": "2010",
+    "unstructured": "Pavliotis, G.A.: Asymptotic analysis of the Green-Kubo formula. IMA J. Appl. Math. 75, 951–967 (2010)",
+    "journal-title": "IMA J. Appl. Math."
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR59",
+    "doi-asserted-by": "crossref",
+    "first-page": "607",
+    "DOI": "10.1093/biomet/60.3.607",
+    "volume": "60",
+    "author": "PH Peskun",
+    "year": "1973",
+    "unstructured": "Peskun, P.H.: Optimum Monte-Carlo sampling using Markov chains. Biometrika 60(3), 607–612 (1973)",
+    "journal-title": "Biometrika"
+   },
+   {
+    "key": "1491_CR60",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-3-662-06400-9",
+    "volume-title": "Continuous Martingales and Brownian Motion",
+    "author": "D Revuz",
+    "year": "1999",
+    "unstructured": "Revuz, D., Yor, M.: Continuous Martingales and Brownian Motion, vol. 293. Springer, New York (1999)"
+   },
+   {
+    "key": "1491_CR61",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Rey-Bellet, L., Spiliopoulos, K.: Irreversible Langevin samplers and variance reduction: a large deviation approach. arXiv:1404.0105 (2014)",
+    "DOI": "10.1088/0951-7715/28/7/2081"
+   },
+   {
+    "key": "1491_CR62",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Rey-Bellet, L., Spiliopoulos, K.: Variance reduction for irreversible Langevin samplers and diffusion on graphs. arXiv:1410.0255 (2014)",
+    "DOI": "10.1214/ECP.v20-3855"
+   },
+   {
+    "key": "1491_CR63",
+    "volume-title": "Monte Carlo Statistical Methods",
+    "author": "C Robert",
+    "year": "2013",
+    "unstructured": "Robert, C., Casella, G.: Monte Carlo Statistical Methods. Springer, New York (2013)"
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR64",
+    "doi-asserted-by": "crossref",
+    "first-page": "337",
+    "DOI": "10.1023/A:1023562417138",
+    "volume": "4",
+    "author": "GO Roberts",
+    "year": "2002",
+    "unstructured": "Roberts, G.O., Stramer, O.: Langevin diffusions and Metropolis-Hastings algorithms. Methodol. Comput. Appl. Probab. 4(4), 337–357 (2002)",
+    "journal-title": "Methodol. Comput. Appl. Probab."
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR65",
+    "doi-asserted-by": "crossref",
+    "first-page": "341",
+    "DOI": "10.2307/3318418",
+    "volume": "2",
+    "author": "GO Roberts",
+    "year": "1996",
+    "unstructured": "Roberts, G.O., Tweedie, R.L.: Exponential convergence of langevin distributions and their discrete approximations. Bernoulli 2(4), 341–363 (1996)",
+    "journal-title": "Bernoulli"
+   },
+   {
+    "key": "1491_CR66",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1090/cln/024",
+    "volume-title": "Metastability and Markov State Models in molecular Dynamics: Modeling, Analysis, Algorithmic Approaches",
+    "author": "C Schütte",
+    "year": "2013",
+    "unstructured": "Schütte, C., Sarich, M.: Metastability and Markov State Models in molecular Dynamics: Modeling, Analysis, Algorithmic Approaches. American Mathematical Society, Providence (2013)"
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR67",
+    "doi-asserted-by": "crossref",
+    "first-page": "506",
+    "DOI": "10.1137/0705041",
+    "volume": "5",
+    "author": "G Strang",
+    "year": "1968",
+    "unstructured": "Strang, G.: On the construction and comparison of difference schemes. SIAM J. Numer. Anal. 5(3), 506–517 (1968)",
+    "journal-title": "SIAM J. Numer. Anal."
+   },
+   {
+    "key": "1491_CR68",
+    "first-page": "2235",
+    "volume-title": "Advances in Neural Information Processing Systems 23",
+    "author": "Y Sun",
+    "year": "2010",
+    "unstructured": "Sun, Y., Schmidhuber, J., Faustino, J.G.: Improving the asymptotic performance of Markov chain Monte-Carlo by inserting vortices. In: Lafferty, J.D., Williams, C.K.I., Shawe-Taylor, J., Zemel, R.S., Culotta, A. (eds.) Advances in Neural Information Processing Systems 23, pp. 2235–2243. Curran Associates, Inc., New York (2010)"
+   },
+   {
+    "key": "1491_CR69",
+    "unstructured": "Suwa, H., Todo, S.: General construction of irreversible kernel in Markov Chain Monte Carlo. arXiv:1207.0258 (2012)"
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR70",
+    "doi-asserted-by": "crossref",
+    "first-page": "483",
+    "DOI": "10.1080/07362999008809220",
+    "volume": "8",
+    "author": "D Talay",
+    "year": "1990",
+    "unstructured": "Talay, D., Tubaro, L.: Expansion of the global error for numerical schemes solving stochastic differential equations. Stoch. Anal. Appl. 8(4), 483–509 (1990)",
+    "journal-title": "Stoch. Anal. Appl."
+   },
+   {
+    "issue": "4",
+    "key": "1491_CR71",
+    "doi-asserted-by": "crossref",
+    "first-page": "410",
+    "DOI": "10.1016/j.physd.2010.10.003",
+    "volume": "240",
+    "author": "KS Turitsyn",
+    "year": "2011",
+    "unstructured": "Turitsyn, K.S., Chertkov, M., Vucelja, M.: Irreversible Monte Carlo algorithms for efficient sampling. Phys. D 240(4), 410–414 (2011)",
+    "journal-title": "Phys. D"
+   },
+   {
+    "issue": "3",
+    "key": "1491_CR72",
+    "doi-asserted-by": "crossref",
+    "first-page": "571",
+    "DOI": "10.1007/s10955-014-0963-5",
+    "volume": "155",
+    "author": "SJ Wu",
+    "year": "2014",
+    "unstructured": "Wu, S.J., Hwang, C.R., Chu, M.T.: Attaining the optimal Gaussian diffusion acceleration. J. Stat. Phys. 155(3), 571–590 (2014)",
+    "journal-title": "J. Stat. Phys."
+   }
+  ],
+  "container-title": [
+   "Journal of Statistical Physics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "http://link.springer.com/content/pdf/10.1007/s10955-016-1491-2.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://link.springer.com/article/10.1007/s10955-016-1491-2/fulltext.html",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://link.springer.com/content/pdf/10.1007/s10955-016-1491-2",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2022,
+     6,
+     15
+    ]
+   ],
+   "date-time": "2022-06-15T17:50:10Z",
+   "timestamp": 1655315410000
+  },
+  "resource": {
+   "primary": {
+    "URL": "http://link.springer.com/10.1007/s10955-016-1491-2"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2016,
+     3,
+     22
+    ]
+   ]
+  },
+  "references-count": 72,
+  "journal-issue": {
+   "issue": "3",
+   "published-print": {
+    "date-parts": [
+     [
+      2016,
+      5
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "1491"
+  ],
+  "URL": "https://doi.org/10.1007/s10955-016-1491-2",
+  "relation": {},
+  "ISSN": [
+   "0022-4715",
+   "1572-9613"
+  ],
+  "issn-type": [
+   {
+    "value": "0022-4715",
+    "type": "print"
+   },
+   {
+    "value": "1572-9613",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2016,
+     3,
+     22
+    ]
+   ]
+  }
+ }
+}

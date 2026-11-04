@@ -1,0 +1,55 @@
+target_id: kinetic_rotation_matrix_ordering_v1_1
+search_date: 2026-11-01
+role: independent_ai_review
+intended_contribution_unit: theorem_and_bridge
+claim:
+  exact_statement: >-
+    For real symmetric positive definite K and Gamma and invertible real
+    skew-symmetric J commuting with each, stationary position asymptotic
+    variance in the unit-mass kinetic system with simultaneous -mu*J
+    rotations of q and p is nonincreasing in abs(mu) for every L2 observable
+    if and only if Gamma^3-Gamma*K-K*Gamma is positive semidefinite.
+    Under this condition equality at two distinct nonnegative amplitudes
+    holds exactly for rotation-invariant observables. Two identical replicas
+    give such an invertible J for every base K and Gamma.
+  exclusions:
+    - no claim for arbitrary non-Gaussian targets
+    - no discretization or wall-clock efficiency theorem
+    - no identification with observable-specific optimal friction
+    - no novelty claim for replica duplication or Gaussian chaos alone
+source:
+  task: parent-supplied exact claim checked against written notes and integrated v1.1
+  manuscript: research_sampling/manuscript.md
+  manuscript_v1_1_sha256: 0821f17c9d2e1f66435eafc000e14d74c0af2e98f23d8bc9fea22d3d5c9af2d5
+  extension_notes: research_sampling/extensions/anisotropic_notes.md
+  rate_appendix: research_sampling/extensions/matrix_rates_appendix.md
+  base_manuscript_sha256: e9ef8b54effabe1e0796966c3a618c3ed171c6ecdaf937369e70c47a8905d91e
+normalisation:
+  indices: finite-dimensional real position space; positive integer chaos degree
+  scaling: unit mass, temperature one, Fourier transform integral exp(-i*xi*t)
+  basis: whiten positions by K^(1/2); retain matrix covariance
+  symmetries: simultaneous orthogonal conjugacy; replica permutation; mu sign
+matrices:
+  spectral_inverse: K*Gamma^(-1)*K + xi^2*(Gamma-K*Gamma^(-1)-Gamma^(-1)*K) + xi^4*Gamma^(-1)
+  congruence: Gamma*(Gamma-K*Gamma^(-1)-Gamma^(-1)*K)*Gamma = Gamma^3-Gamma*K-K*Gamma
+  lyapunov: H=Gamma^2/2-K; Gamma*H+H*Gamma=C
+  shape_threshold: gamma^2 >= lambda_max(G^(-3/2)*(G*K+K*G)*G^(-3/2))
+sequences:
+  replica_limit: b_(2m)=binomial(2m,m)/4^m; b_odd=0
+  baseline_relative_even: 2*b_(2m), beginning 1, 3/4, 5/8
+aliases:
+  analysis: matrix-valued symmetric unimodality; tensor convolution; Loewner order
+  probability: Gaussian chaos; Hermite covariance; nonreversible asymptotic variance
+  combinatorics: central binomial coefficients; circle average of cosine powers
+  mathematical_physics: fluctuation-dissipation spectrum; coupled harmonic oscillators; replica rotation
+  statistics: kinetic Langevin; underdamped Langevin; friction selection; coupled estimators
+  control: dynamic stiffness; nonproportional damping; absence of resonance; quadratic matrix pencil
+known_invariants:
+  - kinetic stationary covariance diag(K^(-1),I)
+  - quadratic mean across two identical replicas is rotation invariant
+  - base replica covariance matrix is scalar rotation in replica index tensored with matrix covariance
+search_constraints:
+  primary_sources_only_for_substantive_claims: true
+  exact_collision_requires: hypothesis_and_conclusion_match
+  search_failure_is_not_priority_evidence: true
+  intended_outcome: bounded_uncertainty_with_bridge_identification

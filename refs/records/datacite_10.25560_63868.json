@@ -1,0 +1,140 @@
+{
+ "data": {
+  "id": "10.25560/63868",
+  "type": "dois",
+  "attributes": {
+   "doi": "10.25560/63868",
+   "prefix": "10.25560",
+   "suffix": "63868",
+   "identifiers": [
+    {
+     "identifier": "http://hdl.handle.net/10044/1/63868",
+     "identifierType": "URL"
+    }
+   ],
+   "alternateIdentifiers": [
+    {
+     "alternateIdentifierType": "URL",
+     "alternateIdentifier": "http://hdl.handle.net/10044/1/63868"
+    }
+   ],
+   "creators": [
+    {
+     "name": "Nüsken, Nikolas",
+     "nameType": "Personal",
+     "givenName": "Nikolas",
+     "familyName": "Nüsken",
+     "affiliation": [
+      "Imperial College London"
+     ],
+     "nameIdentifiers": []
+    }
+   ],
+   "titles": [
+    {
+     "title": "Topics in sampling schemes based on Markov processes"
+    }
+   ],
+   "publisher": "Imperial College London",
+   "container": {},
+   "publicationYear": 2018,
+   "subjects": [],
+   "contributors": [],
+   "dates": [
+    {
+     "date": "2018-05",
+     "dateType": "Issued"
+    },
+    {
+     "date": "2018-10-30T10:02:27Z",
+     "dateType": "Available"
+    }
+   ],
+   "language": null,
+   "types": {
+    "ris": "RPRT",
+    "bibtex": "article",
+    "citeproc": "article-journal",
+    "schemaOrg": "ScholarlyArticle",
+    "resourceType": "Text",
+    "resourceTypeGeneral": "Text"
+   },
+   "relatedIdentifiers": [],
+   "relatedItems": [],
+   "sizes": [],
+   "formats": [],
+   "version": "Open Access",
+   "rightsList": [],
+   "descriptions": [
+    {
+     "description": "In this thesis we consider several topics related to the construction of optimal Markovian dynamics in the context of sampling from high-dimensional probability distributions. Firstly, we introduce and analyse Langevin samplers that consist of perturbations of the standard overdamped and underdamped Langevin dynamics. The perturbed dynamics is such that its invariant measure is the same as that of the unperturbed dynamics. We show that appropriate choices of the perturbations can lead to samplers that have improved properties, at least in terms of reducing the asymptotic variance. We present a detailed analysis of the new Langevin samplers for Gaussian target distributions. Our theoretical results are supported by numerical experiments with non-Gaussian target measures. Secondly, we present a general framework for the analysis and development of ensemble based methods, encompassing both diﬀusion and piecewise deterministic Markov processes. For many performance criteria of interest, including the asymptotic variance, the task of ﬁnding efficient couplings can be phrased in terms of problems related to the theory of optimal transportation. We investigate general structural properties, proving a singularity theorem that has both geometric and probabilistic interpretations. Moreover, we show that those problems can often be solved approximately and support our findings with numerical experiments. Addressing the convergence to equilibrium of coupled processes we furthermore derive a modiﬁed Poincaré inequality. Finally, under some conditions, we prove exponential ergodicity for the zigzag process using hypocoercivity techniques.",
+     "descriptionType": "Abstract"
+    }
+   ],
+   "geoLocations": [],
+   "fundingReferences": [],
+   "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMjU1NjAvNjM4Njg8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5Ow7xza2VuLCBOaWtvbGFzPC9jcmVhdG9yTmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzA0MWttd2UxMCIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiIFNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnIj5JbXBlcmlhbCBDb2xsZWdlIExvbmRvbjwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlRvcGljcyBpbiBzYW1wbGluZyBzY2hlbWVzIGJhc2VkIG9uIE1hcmtvdiBwcm9jZXNzZXM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+SW1wZXJpYWwgQ29sbGVnZSBMb25kb248L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTg8L3B1YmxpY2F0aW9uWWVhcj4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDE4LTA1PC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSI+MjAxOC0xMC0zMFQxMDowMjoyN1o8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPlRleHQ8L3Jlc291cmNlVHlwZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0idXJsIj5odHRwOi8vaGRsLmhhbmRsZS5uZXQvMTAwNDQvMS82Mzg2ODwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDx2ZXJzaW9uPk9wZW4gQWNjZXNzPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0Lz4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkluIHRoaXMgdGhlc2lzIHdlIGNvbnNpZGVyIHNldmVyYWwgdG9waWNzIHJlbGF0ZWQgdG8gdGhlIGNvbnN0cnVjdGlvbiBvZiBvcHRpbWFsIE1hcmtvdmlhbiBkeW5hbWljcyBpbiB0aGUgY29udGV4dCBvZiBzYW1wbGluZyBmcm9tIGhpZ2gtZGltZW5zaW9uYWwgcHJvYmFiaWxpdHkgZGlzdHJpYnV0aW9ucy4gRmlyc3RseSwgd2UgaW50cm9kdWNlIGFuZCBhbmFseXNlIExhbmdldmluIHNhbXBsZXJzIHRoYXQgY29uc2lzdCBvZiBwZXJ0dXJiYXRpb25zIG9mIHRoZSBzdGFuZGFyZCBvdmVyZGFtcGVkIGFuZCB1bmRlcmRhbXBlZCBMYW5nZXZpbiBkeW5hbWljcy4gVGhlIHBlcnR1cmJlZCBkeW5hbWljcyBpcyBzdWNoIHRoYXQgaXRzIGludmFyaWFudCBtZWFzdXJlIGlzIHRoZSBzYW1lIGFzIHRoYXQgb2YgdGhlIHVucGVydHVyYmVkIGR5bmFtaWNzLiBXZSBzaG93IHRoYXQgYXBwcm9wcmlhdGUgY2hvaWNlcyBvZiB0aGUgcGVydHVyYmF0aW9ucyBjYW4gbGVhZCB0byBzYW1wbGVycyB0aGF0IGhhdmUgaW1wcm92ZWQgcHJvcGVydGllcywgYXQgbGVhc3QgaW4gdGVybXMgb2YgcmVkdWNpbmcgdGhlIGFzeW1wdG90aWMgdmFyaWFuY2UuIFdlIHByZXNlbnQgYSBkZXRhaWxlZCBhbmFseXNpcyBvZiB0aGUgbmV3IExhbmdldmluIHNhbXBsZXJzIGZvciBHYXVzc2lhbiB0YXJnZXQgZGlzdHJpYnV0aW9ucy4gT3VyIHRoZW9yZXRpY2FsIHJlc3VsdHMgYXJlIHN1cHBvcnRlZCBieSBudW1lcmljYWwgZXhwZXJpbWVudHMgd2l0aCBub24tR2F1c3NpYW4gdGFyZ2V0IG1lYXN1cmVzLiBTZWNvbmRseSwgd2UgcHJlc2VudCBhIGdlbmVyYWwgZnJhbWV3b3JrIGZvciB0aGUgYW5hbHlzaXMgYW5kIGRldmVsb3BtZW50IG9mIGVuc2VtYmxlIGJhc2VkIG1ldGhvZHMsIGVuY29tcGFzc2luZyBib3RoIGRp76yAdXNpb24gYW5kIHBpZWNld2lzZSBkZXRlcm1pbmlzdGljIE1hcmtvdiBwcm9jZXNzZXMuIEZvciBtYW55IHBlcmZvcm1hbmNlIGNyaXRlcmlhIG9mIGludGVyZXN0LCBpbmNsdWRpbmcgdGhlIGFzeW1wdG90aWMgdmFyaWFuY2UsIHRoZSB0YXNrIG9mIO+sgW5kaW5nIGVmZmljaWVudCBjb3VwbGluZ3MgY2FuIGJlIHBocmFzZWQgaW4gdGVybXMgb2YgcHJvYmxlbXMgcmVsYXRlZCB0byB0aGUgdGhlb3J5IG9mIG9wdGltYWwgdHJhbnNwb3J0YXRpb24uIFdlIGludmVzdGlnYXRlIGdlbmVyYWwgc3RydWN0dXJhbCBwcm9wZXJ0aWVzLCBwcm92aW5nIGEgc2luZ3VsYXJpdHkgdGhlb3JlbSB0aGF0IGhhcyBib3RoIGdlb21ldHJpYyBhbmQgcHJvYmFiaWxpc3RpYyBpbnRlcnByZXRhdGlvbnMuIE1vcmVvdmVyLCB3ZSBzaG93IHRoYXQgdGhvc2UgcHJvYmxlbXMgY2FuIG9mdGVuIGJlIHNvbHZlZCBhcHByb3hpbWF0ZWx5IGFuZCBzdXBwb3J0IG91ciBmaW5kaW5ncyB3aXRoIG51bWVyaWNhbCBleHBlcmltZW50cy4gQWRkcmVzc2luZyB0aGUgY29udmVyZ2VuY2UgdG8gZXF1aWxpYnJpdW0gb2YgY291cGxlZCBwcm9jZXNzZXMgd2UgZnVydGhlcm1vcmUgZGVyaXZlIGEgbW9kae+sgWVkIFBvaW5jYXLDqSBpbmVxdWFsaXR5LiBGaW5hbGx5LCB1bmRlciBzb21lIGNvbmRpdGlvbnMsIHdlIHByb3ZlIGV4cG9uZW50aWFsIGVyZ29kaWNpdHkgZm9yIHRoZSB6aWd6YWcgcHJvY2VzcyB1c2luZyBoeXBvY29lcmNpdml0eSB0ZWNobmlxdWVzLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+   "url": "http://spiral.imperial.ac.uk/handle/10044/1/63868",
+   "contentUrl": null,
+   "metadataVersion": 2,
+   "schemaVersion": "http://datacite.org/schema/kernel-4",
+   "source": "mds",
+   "isActive": true,
+   "state": "findable",
+   "reason": null,
+   "viewCount": 0,
+   "viewsOverTime": [],
+   "downloadCount": 0,
+   "downloadsOverTime": [],
+   "referenceCount": 0,
+   "citationCount": 0,
+   "citationsOverTime": [],
+   "partCount": 0,
+   "partOfCount": 0,
+   "versionCount": 0,
+   "versionOfCount": 0,
+   "created": "2019-11-08T03:51:31.000Z",
+   "registered": "2019-11-08T16:48:18.000Z",
+   "published": "2018",
+   "updated": "2026-05-05T15:32:26.000Z"
+  },
+  "relationships": {
+   "client": {
+    "data": {
+     "id": "bl.imperial",
+     "type": "clients"
+    }
+   },
+   "provider": {
+    "data": {
+     "id": "urks",
+     "type": "providers"
+    }
+   },
+   "media": {
+    "data": {
+     "id": "10.25560/63868",
+     "type": "media"
+    }
+   },
+   "references": {
+    "data": []
+   },
+   "citations": {
+    "data": []
+   },
+   "parts": {
+    "data": []
+   },
+   "partOf": {
+    "data": []
+   },
+   "versions": {
+    "data": []
+   },
+   "versionOf": {
+    "data": []
+   }
+  }
+ }
+}

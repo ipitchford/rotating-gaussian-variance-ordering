@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Roa1zuWIujoQGAucs6xHcHLz/Hk</id>
+  <title>arXiv Query: search_query=&amp;id_list=2104.07290&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-04T08:34:22Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2104.07290" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2104.07290v4</id>
+    <title>Diophantine Gaussian excursions and random walks</title>
+    <updated>2022-09-21T11:29:35Z</updated>
+    <link href="https://arxiv.org/abs/2104.07290v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2104.07290v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the asymptotic variance of Gaussian nodal excursions in the Euclidean space, focusing on the case where the spectral measure has incommensurable atoms. This study requires to establish fine recurrence properties in 0 for the associated irrational random walk on the torus. We show in particular that the recurrence magnitude depends strongly on the diophantine properties of the atoms, and the same goes for the variance asymptotics of nodal excursions. More specifically, if the spectral measures contains atoms which ratios are well approximable by rationals, the variance is likely to have large fluctuations as the observation window grows, whereas the variance is bounded by the (d -- 1)-dimensional measure of the window boundary if these ratio are badly approximable. We also show that, given any reasonable function, there are uncountably many sets of parameters for which the variance is asymptotically equivalent to this function.</summary>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-04-15T08:05:10Z</published>
+    <arxiv:comment>Added a proof of the variance cancellation phenomenon for planar Gaussian waves nodal excursions</arxiv:comment>
+    <arxiv:primary_category term="math.PR"/>
+    <author>
+      <name>Raphaël Lachièze-Rey</name>
+      <arxiv:affiliation>MAP5 - UMR 8145</arxiv:affiliation>
+    </author>
+  </entry>
+</feed>

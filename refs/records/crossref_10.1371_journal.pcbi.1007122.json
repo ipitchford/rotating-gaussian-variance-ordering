@@ -1,0 +1,1089 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "update-to": [
+   {
+    "DOI": "10.1371/journal.pcbi.1007122",
+    "type": "new_version",
+    "label": "New version",
+    "source": "publisher",
+    "updated": {
+     "date-parts": [
+      [
+       2019,
+       6,
+       20
+      ]
+     ],
+     "date-time": "2019-06-20T00:00:00Z",
+     "timestamp": 1560988800000
+    }
+   }
+  ],
+  "reference-count": 78,
+  "publisher": "Public Library of Science (PLoS)",
+  "issue": "6",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2019,
+       6,
+       10
+      ]
+     ],
+     "date-time": "2019-06-10T00:00:00Z",
+     "timestamp": 1560124800000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "http://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/501100001711",
+    "name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "200020_165538"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "200020_165538"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001711",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "www.ploscompbiol.org"
+   ],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "PLoS Comput Biol"
+  ],
+  "DOI": "10.1371/journal.pcbi.1007122",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2019,
+     6,
+     10
+    ]
+   ],
+   "date-time": "2019-06-10T17:25:40Z",
+   "timestamp": 1560187540000
+  },
+  "page": "e1007122",
+  "update-policy": "https://doi.org/10.1371/journal.pcbi.corrections_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 50,
+  "title": [
+   "How single neuron properties shape chaotic dynamics and signal transmission in random neural networks"
+  ],
+  "prefix": "10.1371",
+  "volume": "15",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-5256-2289",
+    "authenticated-orcid": true,
+    "given": "Samuel P.",
+    "family": "Muscinelli",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-4344-2189",
+    "authenticated-orcid": true,
+    "given": "Wulfram",
+    "family": "Gerstner",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Tilo",
+    "family": "Schwalger",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "340",
+  "published-online": {
+   "date-parts": [
+    [
+     2019,
+     6,
+     10
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "issue": "3",
+    "key": "ref1",
+    "doi-asserted-by": "crossref",
+    "first-page": "259",
+    "DOI": "10.1103/PhysRevLett.61.259",
+    "article-title": "Chaos in Random Neural Networks",
+    "volume": "61",
+    "author": "H Sompolinsky",
+    "year": "1988",
+    "journal-title": "Physical Review Letters"
+   },
+   {
+    "key": "ref2",
+    "first-page": "041030",
+    "article-title": "Transition to Chaos in Random Neuronal Networks",
+    "volume": "5",
+    "author": "J Kadmon",
+    "year": "2015",
+    "journal-title": "Phys Rev X"
+   },
+   {
+    "key": "ref3",
+    "doi-asserted-by": "crossref",
+    "first-page": "1724",
+    "DOI": "10.1126/science.274.5293.1724",
+    "article-title": "Chaos in neuronal networks with balanced excitatory and inhibitory activity",
+    "volume": "274",
+    "author": "C van Vreeswijk",
+    "year": "1996",
+    "journal-title": "Science"
+   },
+   {
+    "key": "ref4",
+    "doi-asserted-by": "crossref",
+    "first-page": "011903",
+    "DOI": "10.1103/PhysRevE.82.011903",
+    "article-title": "Stimulus-dependent suppression of chaos in recurrent neural networks",
+    "volume": "82",
+    "author": "K Rajan",
+    "year": "2010",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "key": "ref5",
+    "doi-asserted-by": "crossref",
+    "first-page": "31",
+    "DOI": "10.1016/j.conb.2017.07.003",
+    "article-title": "Once upon a (slow) time in the land of recurrent neuronal networks…",
+    "volume": "46",
+    "author": "C Huang",
+    "year": "2017",
+    "journal-title": "Current Opinion in Neurobiology"
+   },
+   {
+    "key": "ref6",
+    "doi-asserted-by": "crossref",
+    "first-page": "2531",
+    "DOI": "10.1162/089976602760407955",
+    "article-title": "Real-time computing without stable states: a new framework for neural computation based on perturbations",
+    "author": "W Maass",
+    "year": "2002",
+    "journal-title": "Neural Computation"
+   },
+   {
+    "key": "ref7",
+    "doi-asserted-by": "crossref",
+    "first-page": "78",
+    "DOI": "10.1126/science.1091277",
+    "article-title": "Harnessing Nonlinearity: Predicting Chaotic Systems and Saving Energy in Wireless Communication",
+    "volume": "304",
+    "author": "H Jaeger",
+    "year": "2004",
+    "journal-title": "Science"
+   },
+   {
+    "issue": "4",
+    "key": "ref8",
+    "doi-asserted-by": "crossref",
+    "first-page": "544",
+    "DOI": "10.1016/j.neuron.2009.07.018",
+    "article-title": "Generating coherent patterns of activity from chaotic neural networks",
+    "volume": "63",
+    "author": "D Sussillo",
+    "year": "2009",
+    "journal-title": "Neuron"
+   },
+   {
+    "key": "ref9",
+    "doi-asserted-by": "crossref",
+    "first-page": "925",
+    "DOI": "10.1038/nn.3405",
+    "article-title": "Robust timing and motor patterns by taming chaos in recurrent neural networks",
+    "volume": "16",
+    "author": "R Laje",
+    "year": "2013",
+    "journal-title": "Nat Neurosci"
+   },
+   {
+    "issue": "1",
+    "key": "ref10",
+    "doi-asserted-by": "crossref",
+    "first-page": "2208",
+    "DOI": "10.1038/s41467-017-01827-3",
+    "article-title": "Supervised learning in spiking neural networks with FORCE training",
+    "volume": "8",
+    "author": "W Nicola",
+    "year": "2017",
+    "journal-title": "Nat Commun"
+   },
+   {
+    "issue": "2",
+    "key": "ref11",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1371/journal.pone.0191527",
+    "article-title": "full-FORCE: A target-based method for training recurrent networks",
+    "volume": "13",
+    "author": "B DePasquale",
+    "year": "2018",
+    "journal-title": "PLOS ONE"
+   },
+   {
+    "issue": "3",
+    "key": "ref12",
+    "doi-asserted-by": "crossref",
+    "first-page": "609",
+    "DOI": "10.1016/j.neuron.2018.07.003",
+    "article-title": "Linking Connectivity, Dynamics, and Computations in Low-Rank Recurrent Neural Networks",
+    "volume": "99",
+    "author": "F Mastrogiuseppe",
+    "year": "2018",
+    "journal-title": "Neuron"
+   },
+   {
+    "key": "ref13",
+    "doi-asserted-by": "crossref",
+    "first-page": "188104",
+    "DOI": "10.1103/PhysRevLett.97.188104",
+    "article-title": "Eigenvalue Spectra of Random Matrices for Neural Networks",
+    "volume": "97",
+    "author": "K Rajan",
+    "year": "2006",
+    "journal-title": "Phys Rev Lett"
+   },
+   {
+    "issue": "4",
+    "key": "ref14",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1371/journal.pcbi.1005498",
+    "article-title": "Intrinsically-generated fluctuating activity in excitatory-inhibitory networks",
+    "volume": "13",
+    "author": "F Mastrogiuseppe",
+    "year": "2017",
+    "journal-title": "PLoS Comput Biol"
+   },
+   {
+    "issue": "11",
+    "key": "ref15",
+    "doi-asserted-by": "crossref",
+    "first-page": "2523",
+    "DOI": "10.1162/089976603322385063",
+    "article-title": "A Universal Model for Spike-Frequency Adaptation",
+    "volume": "15",
+    "author": "J Benda",
+    "year": "2003",
+    "journal-title": "Neural Computation"
+   },
+   {
+    "key": "ref16",
+    "doi-asserted-by": "crossref",
+    "first-page": "1335",
+    "DOI": "10.1038/nn.2212",
+    "article-title": "Fractional differentiation by neocortical pyramidal neurons",
+    "volume": "11",
+    "author": "BN Lundstrom",
+    "year": "2008",
+    "journal-title": "Nature Neuroscience"
+   },
+   {
+    "key": "ref17",
+    "doi-asserted-by": "crossref",
+    "first-page": "3448",
+    "DOI": "10.1152/jn.00453.2006",
+    "article-title": "Multiple Time Scales of Temporal Response in Pyramidal and Fast SpikingCortical Neurons",
+    "volume": "96",
+    "author": "G La Camera",
+    "year": "2006",
+    "journal-title": "J Neurophysiology"
+   },
+   {
+    "key": "ref18",
+    "doi-asserted-by": "crossref",
+    "first-page": "942",
+    "DOI": "10.1038/nn.3431",
+    "article-title": "Temporal whitening by power-law adaptation in neocortical neurons",
+    "volume": "16",
+    "author": "C Pozzorini",
+    "year": "2013",
+    "journal-title": "Nat Neurosci"
+   },
+   {
+    "key": "ref19",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1016/S0006-3495(72)86068-5",
+    "article-title": "Excitatory and inhibitory interactions in localized populations of model neurons",
+    "volume": "12",
+    "author": "HR Wilson",
+    "year": "1972",
+    "journal-title": "Biophys J"
+   },
+   {
+    "issue": "1",
+    "key": "ref20",
+    "doi-asserted-by": "crossref",
+    "first-page": "43",
+    "DOI": "10.1038/nrn2961",
+    "article-title": "Emerging concepts for the dynamical organization of resting-state activity in the brain",
+    "volume": "12",
+    "author": "G Deco",
+    "year": "2011",
+    "journal-title": "Nat Rev Neurosci"
+   },
+   {
+    "key": "ref21",
+    "doi-asserted-by": "crossref",
+    "first-page": "1503",
+    "DOI": "10.1126/science.7770778",
+    "article-title": "Reliability of Spike Timing in Neocortical Neurons",
+    "volume": "268",
+    "author": "ZF Mainen",
+    "year": "1995",
+    "journal-title": "Science"
+   },
+   {
+    "key": "ref22",
+    "doi-asserted-by": "crossref",
+    "first-page": "1185",
+    "DOI": "10.1162/neco.1996.8.6.1185",
+    "article-title": "Temporal precision of spike trains in extrastriate cortex of the behaving macaque monekey",
+    "volume": "8",
+    "author": "W Bair",
+    "year": "1996",
+    "journal-title": "Neural Computation"
+   },
+   {
+    "issue": "12",
+    "key": "ref23",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1371/journal.pcbi.1005881",
+    "article-title": "Firing rate equations require a spike synchrony mechanism to correctly describe fast oscillations in inhibitory networks",
+    "volume": "13",
+    "author": "F Devalle",
+    "year": "2017",
+    "journal-title": "PLOS Comput Biol"
+   },
+   {
+    "key": "ref24",
+    "doi-asserted-by": "crossref",
+    "first-page": "734",
+    "DOI": "10.1085/jgp.59.6.734",
+    "article-title": "Dynamics of encoding in a population of neurons",
+    "volume": "59",
+    "author": "BW Knight",
+    "year": "1972",
+    "journal-title": "J Gen Physiology"
+   },
+   {
+    "issue": "4",
+    "key": "ref25",
+    "doi-asserted-by": "crossref",
+    "first-page": "130",
+    "DOI": "10.1016/S0166-2236(96)80019-1",
+    "article-title": "Integrator or coincidence detector? The role of the cortical neuron revisited",
+    "volume": "19",
+    "author": "P Konig",
+    "year": "1996",
+    "journal-title": "Trends Neurosci"
+   },
+   {
+    "key": "ref26",
+    "doi-asserted-by": "crossref",
+    "first-page": "43",
+    "DOI": "10.1162/089976600300015899",
+    "article-title": "Population dynamics for spiking neurons: fast transients, asynchronous states and locking",
+    "volume": "12",
+    "author": "W Gerstner",
+    "year": "2000",
+    "journal-title": "Neural Computation"
+   },
+   {
+    "key": "ref27",
+    "doi-asserted-by": "crossref",
+    "first-page": "279",
+    "DOI": "10.1162/089976603762552924",
+    "article-title": "Reliability of spike timing is a general property of spiking neurons",
+    "volume": "12",
+    "author": "R Brette",
+    "year": "2003",
+    "journal-title": "Neural Computation"
+   },
+   {
+    "issue": "4",
+    "key": "ref28",
+    "doi-asserted-by": "crossref",
+    "first-page": "e1005507",
+    "DOI": "10.1371/journal.pcbi.1005507",
+    "article-title": "Towards a theory of cortical columns: From spiking neurons to interacting neural populations of finite size",
+    "volume": "13",
+    "author": "T Schwalger",
+    "year": "2017",
+    "journal-title": "PLoS Comput Biol"
+   },
+   {
+    "key": "ref29",
+    "first-page": "xx",
+    "article-title": "On the population dynamics of interacting spiking neurons",
+    "volume": "xx",
+    "author": "M Mattia",
+    "year": "2002",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "issue": "10",
+    "key": "ref30",
+    "doi-asserted-by": "crossref",
+    "first-page": "e1003301",
+    "DOI": "10.1371/journal.pcbi.1003301",
+    "article-title": "A complex-valued firing-rate model that approximates the dynamics of spiking networks",
+    "volume": "9",
+    "author": "ES Schaffer",
+    "year": "2013",
+    "journal-title": "PLoS Comput Biol"
+   },
+   {
+    "issue": "2",
+    "key": "ref31",
+    "first-page": "021028",
+    "article-title": "Macroscopic description for networks of spiking neurons",
+    "volume": "5",
+    "author": "E Montbrió",
+    "year": "2015",
+    "journal-title": "Phys Rev X"
+   },
+   {
+    "issue": "6",
+    "key": "ref32",
+    "doi-asserted-by": "crossref",
+    "first-page": "2200",
+    "DOI": "10.1523/JNEUROSCI.18-06-02200.1998",
+    "article-title": "Refractoriness and neural precision",
+    "volume": "18",
+    "author": "MJ Berry",
+    "year": "1998",
+    "journal-title": "J Neurosci"
+   },
+   {
+    "key": "ref33",
+    "doi-asserted-by": "crossref",
+    "first-page": "e1002711",
+    "DOI": "10.1371/journal.pcbi.1002711",
+    "article-title": "Coding and Decoding with Adapting Neurons: A Population Approach to the Peri-Stimulus Time Histogram",
+    "volume": "8",
+    "author": "R Naud",
+    "year": "2012",
+    "journal-title": "PLOS Comput Biol"
+   },
+   {
+    "issue": "164",
+    "key": "ref34",
+    "first-page": "164",
+    "article-title": "Patterns of interval correlations in neural oscillators with adaptation",
+    "volume": "7",
+    "author": "T Schwalger",
+    "year": "2013",
+    "journal-title": "Front Comput Neurosci"
+   },
+   {
+    "issue": "6-1",
+    "key": "ref35",
+    "doi-asserted-by": "crossref",
+    "first-page": "062704",
+    "DOI": "10.1103/PhysRevE.90.062704",
+    "article-title": "Fluctuations and information filtering in coupled populations of spiking neurons with adaptation",
+    "volume": "90",
+    "author": "M Deger",
+    "year": "2014",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "key": "ref36",
+    "doi-asserted-by": "crossref",
+    "first-page": "2057",
+    "DOI": "10.1162/089976602320264015",
+    "article-title": "Dynamics of the firing probability of noisy integrate-and-fire neurons",
+    "volume": "14",
+    "author": "N Fourcaud",
+    "year": "2002",
+    "journal-title": "Neural Computation"
+   },
+   {
+    "key": "ref37",
+    "doi-asserted-by": "crossref",
+    "first-page": "031914",
+    "DOI": "10.1103/PhysRevE.77.031914",
+    "article-title": "Interspike interval statistics of a leaky integrate-and-fire neuron driven by Gaussian noise with large correlation times",
+    "volume": "77",
+    "author": "T Schwalger",
+    "year": "2008",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "key": "ref38",
+    "doi-asserted-by": "crossref",
+    "first-page": "2538",
+    "DOI": "10.1152/jn.00955.2002",
+    "article-title": "from Subthreshold to Firing-Rate Resonance",
+    "volume": "89",
+    "author": "M Richardson",
+    "year": "2003",
+    "journal-title": "J Neurophysiology"
+   },
+   {
+    "issue": "18",
+    "key": "ref39",
+    "doi-asserted-by": "crossref",
+    "first-page": "7056",
+    "DOI": "10.1523/JNEUROSCI.3924-14.2015",
+    "article-title": "Neuronal morphology generates high-frequency firing resonance",
+    "volume": "35",
+    "author": "S Ostojic",
+    "year": "2015",
+    "journal-title": "J Neurosci"
+   },
+   {
+    "issue": "43",
+    "key": "ref40",
+    "doi-asserted-by": "crossref",
+    "first-page": "11120",
+    "DOI": "10.1523/JNEUROSCI.0787-16.2016",
+    "article-title": "Noisy Juxtacellular Stimulation In Vivo Leads to Reliable Spiking and Reveals High-Frequency Coding in Single Neurons",
+    "volume": "36",
+    "author": "J Doose",
+    "year": "2016",
+    "journal-title": "Journal of Neuroscience"
+   },
+   {
+    "key": "ref41",
+    "doi-asserted-by": "crossref",
+    "first-page": "787",
+    "DOI": "10.1038/35090500",
+    "article-title": "Efficiency and ambiguity in an adaptive neural code",
+    "volume": "412",
+    "author": "AL Fairhall",
+    "year": "2001",
+    "journal-title": "Nature"
+   },
+   {
+    "key": "ref42",
+    "doi-asserted-by": "crossref",
+    "first-page": "10450",
+    "DOI": "10.1073/pnas.96.18.10450",
+    "article-title": "Noise-shaping in populations of coupled model neurons",
+    "volume": "96",
+    "author": "EJ Mar",
+    "year": "1999",
+    "journal-title": "Proc Natl Acad Sci USA"
+   },
+   {
+    "key": "ref43",
+    "doi-asserted-by": "crossref",
+    "first-page": "011914",
+    "DOI": "10.1103/PhysRevE.79.011914",
+    "article-title": "Noise shaping in neural populations",
+    "volume": "79",
+    "author": "O Ávila Åkerberg",
+    "year": "2009",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "issue": "1",
+    "key": "ref44",
+    "doi-asserted-by": "crossref",
+    "first-page": "5",
+    "DOI": "10.1109/TMBMC.2016.2618863",
+    "article-title": "Mechanisms of Information Filtering in Neural Systems",
+    "volume": "2",
+    "author": "B Lindner",
+    "year": "2016",
+    "journal-title": "IEEE Transactions on Molecular, Biological and Multi-Scale Communications"
+   },
+   {
+    "key": "ref45",
+    "unstructured": "Schücker J, Goedeke S, Dahmen D, Helias M. Functional methods for disordered neural networks. arXiv. 2016;."
+   },
+   {
+    "key": "ref46",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Crisanti A, Sompolinsky H. Path Integral Approach to Random Neural Networks. arXiv e-prints. 2018;.",
+    "DOI": "10.1103/PhysRevE.98.062120"
+   },
+   {
+    "key": "ref47",
+    "first-page": "041029",
+    "article-title": "Optimal Sequence Memory in Driven Random Networks",
+    "volume": "8",
+    "author": "J Schuecker",
+    "year": "2018",
+    "journal-title": "Phys Rev X"
+   },
+   {
+    "key": "ref48",
+    "article-title": "Handbook of Biological Physics. Volume 4: Neuro-Informatics and Neural Modeling",
+    "author": "D Golomb",
+    "year": "2001"
+   },
+   {
+    "key": "ref49",
+    "first-page": "110",
+    "article-title": "First passage time problems for non-Markovian processes",
+    "volume": "vol. 1",
+    "author": "K Lindenberg",
+    "year": "1989"
+   },
+   {
+    "key": "ref50",
+    "unstructured": "Schwalger T. The interspike-interval statistics of non-renewal neuron models. Humboldt-Universität zu Berlin, Mathematisch-Naturwissenschaftliche Fakultät I; 2013."
+   },
+   {
+    "key": "ref51",
+    "doi-asserted-by": "crossref",
+    "first-page": "295",
+    "DOI": "10.1152/jn.01095.2004",
+    "article-title": "Neurodynamics of Biased Competition and Cooperation for Attention:A Model With Spiking Neurons",
+    "volume": "94",
+    "author": "G Deco",
+    "year": "2005",
+    "journal-title": "J Neurophysiol"
+   },
+   {
+    "issue": "7",
+    "key": "ref52",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1371/journal.pcbi.1006216",
+    "article-title": "Excitable neuronal assemblies with adaptation as a building block of brain circuits for velocity-controlled signal propagation",
+    "volume": "14",
+    "author": "H Setareh",
+    "year": "2018",
+    "journal-title": "PLoS Comput Biol"
+   },
+   {
+    "issue": "1",
+    "key": "ref53",
+    "doi-asserted-by": "crossref",
+    "first-page": "37",
+    "DOI": "10.1007/s10827-008-0125-3",
+    "article-title": "Balance between noise and adaptation in competition models of perceptual bistability",
+    "volume": "27",
+    "author": "A Shpiro",
+    "year": "2009",
+    "journal-title": "J Comput Neurosci"
+   },
+   {
+    "issue": "1",
+    "key": "ref54",
+    "doi-asserted-by": "crossref",
+    "first-page": "234",
+    "DOI": "10.1523/JNEUROSCI.2757-10.2011",
+    "article-title": "Neuronal adaptation effects in decision making",
+    "volume": "31",
+    "author": "P Theodoni",
+    "year": "2011",
+    "journal-title": "J Neurosci"
+   },
+   {
+    "key": "ref55",
+    "unstructured": "Bellec G, Salaj D, Subramoney A, Legenstein R, Maass W. Long short-term memory and Learning-to-learn in networks of spiking neurons. arXiv. 2018;."
+   },
+   {
+    "key": "ref56",
+    "doi-asserted-by": "crossref",
+    "first-page": "11",
+    "DOI": "10.1016/j.tins.2003.10.014",
+    "article-title": "Coding and Learning of behavioral sequences",
+    "volume": "27",
+    "author": "O Melamed",
+    "year": "2004",
+    "journal-title": "Trends in Neurosciences"
+   },
+   {
+    "issue": "20",
+    "key": "ref57",
+    "doi-asserted-by": "crossref",
+    "first-page": "8098",
+    "DOI": "10.1073/pnas.86.20.8098",
+    "article-title": "Convergence and divergence of neurotransmitter action in human cerebral cortex",
+    "volume": "86",
+    "author": "DA McCormick",
+    "year": "1989",
+    "journal-title": "Proceedings of the National Academy of Sciences"
+   },
+   {
+    "issue": "2",
+    "key": "ref58",
+    "doi-asserted-by": "crossref",
+    "first-page": "289",
+    "DOI": "10.1007/s10827-008-0111-9",
+    "article-title": "The effects of cholinergic neuromodulation on neuronal phase-response curves of modeled cortical neurons",
+    "volume": "26",
+    "author": "KM Stiefel",
+    "year": "2009",
+    "journal-title": "Journal of Computational Neuroscience"
+   },
+   {
+    "key": "ref59",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Beiran M, Ostojic S. Contrasting the effects of adaptation and synaptic filtering on the timescales of dynamics in recurrent networks. ArXiv e-prints. 2018; p. arXiv:1812.06919.",
+    "DOI": "10.1371/journal.pcbi.1006893"
+   },
+   {
+    "key": "ref60",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Muscinelli SP, Gerstner W, Schwalger T. Single neuron properties shape chaotic dynamics in random neural networks. ArXiv e-prints. 2018; p. arXiv:1812.06925v1.",
+    "DOI": "10.1371/journal.pcbi.1007122"
+   },
+   {
+    "key": "ref61",
+    "doi-asserted-by": "crossref",
+    "first-page": "183",
+    "DOI": "10.1023/A:1008925309027",
+    "article-title": "Sparsely Connected Networks of Spiking Neurons",
+    "volume": "8",
+    "author": "N Brunel",
+    "year": "2000",
+    "journal-title": "J Comput Neurosci"
+   },
+   {
+    "issue": "4",
+    "key": "ref62",
+    "doi-asserted-by": "crossref",
+    "first-page": "040901",
+    "DOI": "10.1103/PhysRevE.92.040901",
+    "article-title": "Slow fluctuations in recurrent networks of spiking neurons",
+    "volume": "92",
+    "author": "S Wieland",
+    "year": "2015",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "issue": "3",
+    "key": "ref63",
+    "doi-asserted-by": "crossref",
+    "first-page": "634",
+    "DOI": "10.1162/neco.2006.18.3.634",
+    "article-title": "Response variability in balanced cortical networks",
+    "volume": "18",
+    "author": "A Lerchner",
+    "year": "2006",
+    "journal-title": "Neural Comput"
+   },
+   {
+    "key": "ref64",
+    "first-page": "104",
+    "article-title": "Self-consistent determination of the spike-train power spectrum in a neural network with sparse connectivity",
+    "volume": "8",
+    "author": "B Dummer",
+    "year": "2014",
+    "journal-title": "Front Comp Neurosci"
+   },
+   {
+    "issue": "6636",
+    "key": "ref65",
+    "doi-asserted-by": "crossref",
+    "first-page": "913",
+    "DOI": "10.1038/43199",
+    "article-title": "Robustness in simple biochemical networks",
+    "volume": "387",
+    "author": "N Barkai",
+    "year": "1997",
+    "journal-title": "Nature"
+   },
+   {
+    "key": "ref66",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1093/oso/9780195079517.001.0001",
+    "article-title": "The origins of order: Self-organization and selection in evolution",
+    "author": "SA Kauffman",
+    "year": "1993"
+   },
+   {
+    "issue": "6833",
+    "key": "ref67",
+    "doi-asserted-by": "crossref",
+    "first-page": "41",
+    "DOI": "10.1038/35075138",
+    "article-title": "Lethality and centrality in protein networks",
+    "volume": "411",
+    "author": "H Jeong",
+    "year": "2001",
+    "journal-title": "Nature"
+   },
+   {
+    "issue": "20",
+    "key": "ref68",
+    "doi-asserted-by": "crossref",
+    "first-page": "8209",
+    "DOI": "10.1073/pnas.0900142106",
+    "article-title": "The effect of network topology on the stability of discrete state models of genetic control",
+    "volume": "106",
+    "author": "A Pomerance",
+    "year": "2009",
+    "journal-title": "Proceedings of the National Academy of Sciences"
+   },
+   {
+    "key": "ref69",
+    "doi-asserted-by": "crossref",
+    "first-page": "3200",
+    "DOI": "10.1103/PhysRevLett.86.3200",
+    "article-title": "Epidemic Spreading in Scale-Free Networks",
+    "volume": "86",
+    "author": "R Pastor-Satorras",
+    "year": "2001",
+    "journal-title": "Phys Rev Lett"
+   },
+   {
+    "key": "ref70",
+    "article-title": "Spikes—Exploring the neural code",
+    "author": "F Rieke",
+    "year": "1996"
+   },
+   {
+    "issue": "1",
+    "key": "ref71",
+    "doi-asserted-by": "crossref",
+    "first-page": "227",
+    "DOI": "10.1016/j.neuron.2018.05.038",
+    "article-title": "Attractor Dynamics in Networks with Learning Rules Inferred from InÂ Vivo Data",
+    "volume": "99",
+    "author": "U Pereira",
+    "year": "2018",
+    "journal-title": "Neuron"
+   },
+   {
+    "issue": "4",
+    "key": "ref72",
+    "doi-asserted-by": "crossref",
+    "first-page": "1079",
+    "DOI": "10.1080/00018730110112519",
+    "article-title": "Evolution of networks",
+    "volume": "51",
+    "author": "SN Dorogovtsev",
+    "year": "2002",
+    "journal-title": "Advances in Physics"
+   },
+   {
+    "issue": "501",
+    "key": "ref73",
+    "doi-asserted-by": "crossref",
+    "first-page": "460",
+    "DOI": "10.2307/3620776",
+    "article-title": "Determinants of block matrices",
+    "volume": "84",
+    "author": "JR Silvester",
+    "year": "2000",
+    "journal-title": "The Mathematical Gazette"
+   },
+   {
+    "issue": "4",
+    "key": "ref74",
+    "doi-asserted-by": "crossref",
+    "first-page": "694",
+    "DOI": "10.1137/1129095",
+    "article-title": "Circular Law",
+    "volume": "29",
+    "author": "V Girko",
+    "year": "1985",
+    "journal-title": "Theory of Probability & Its Applications"
+   },
+   {
+    "key": "ref75",
+    "doi-asserted-by": "crossref",
+    "first-page": "062710",
+    "DOI": "10.1103/PhysRevE.90.062710",
+    "article-title": "Dynamics of random neural networks with bistable units",
+    "volume": "90",
+    "author": "M Stern",
+    "year": "2014",
+    "journal-title": "Phys Rev E"
+   },
+   {
+    "key": "ref76",
+    "first-page": "253",
+    "article-title": "Cumulant Analysis of Stochastic Non-Gaussian Processes and Their Transformations",
+    "author": "AN Malakhov",
+    "year": "1978"
+   },
+   {
+    "key": "ref77",
+    "article-title": "Topics in the Theory of Random Noise",
+    "volume": "vol. 1",
+    "author": "RL Stratonovich",
+    "year": "1967"
+   },
+   {
+    "key": "ref78",
+    "doi-asserted-by": "crossref",
+    "first-page": "022422",
+    "DOI": "10.1103/PhysRevE.94.022422",
+    "article-title": "Partial synchronous output of a neuronal population under weak common noise: Analytical approaches to the correlation statistics",
+    "volume": "94",
+    "author": "A Kruscha",
+    "year": "2016",
+    "journal-title": "Phys Rev E"
+   }
+  ],
+  "updated-by": [
+   {
+    "DOI": "10.1371/journal.pcbi.1007122",
+    "type": "new_version",
+    "label": "New version",
+    "source": "publisher",
+    "updated": {
+     "date-parts": [
+      [
+       2019,
+       6,
+       20
+      ]
+     ],
+     "date-time": "2019-06-20T00:00:00Z",
+     "timestamp": 1560988800000
+    }
+   }
+  ],
+  "container-title": [
+   "PLOS Computational Biology"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "http://dx.plos.org/10.1371/journal.pcbi.1007122",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2024,
+     7,
+     19
+    ]
+   ],
+   "date-time": "2024-07-19T13:31:59Z",
+   "timestamp": 1721395919000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://dx.plos.org/10.1371/journal.pcbi.1007122"
+   }
+  },
+  "subtitle": [],
+  "editor": [
+   {
+    "given": "Peter E.",
+    "family": "Latham",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "editor"
+     }
+    ]
+   }
+  ],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2019,
+     6,
+     10
+    ]
+   ]
+  },
+  "references-count": 78,
+  "journal-issue": {
+   "issue": "6",
+   "published-online": {
+    "date-parts": [
+     [
+      2019,
+      6,
+      10
+     ]
+    ]
+   }
+  },
+  "URL": "https://doi.org/10.1371/journal.pcbi.1007122",
+  "relation": {
+   "new_version": [
+    {
+     "id-type": "doi",
+     "id": "10.1371/journal.pcbi.1007122",
+     "asserted-by": "object"
+    }
+   ]
+  },
+  "ISSN": [
+   "1553-7358"
+  ],
+  "issn-type": [
+   {
+    "value": "1553-7358",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2019,
+     6,
+     10
+    ]
+   ]
+  }
+ }
+}

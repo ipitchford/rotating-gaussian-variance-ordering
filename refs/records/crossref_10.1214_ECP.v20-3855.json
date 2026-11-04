@@ -1,0 +1,237 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 13,
+  "publisher": "Institute of Mathematical Statistics",
+  "issue": "none",
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "Electron. Commun. Probab."
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2015,
+     1,
+     1
+    ]
+   ]
+  },
+  "abstract": "<jats:p>In recent papers it has been demonstrated that sampling a Gibbs distribution from an appropriate time-irreversible Langevin process is,from several points of view, advantageous when compared to sampling from a time-reversible one. Adding an appropriate irreversible drift to the overdamped Langevin equation results in a larger large deviations rate function for the empirical measure of the process, a smaller variance for the long time average of observables of the process, as well as a larger spectral gap. In this work, we concentrate on irreversible Langevin samplers with a drift of increasing intensity. The asymptotic variance is monotonically decreasing with respect to the growth of the drift and we characterize its limiting behavior. For a Gibbs measure whose potential has one or more critical points, adding a large irreversible drift results in a decomposition of the process in a slow and fast component with fast motion along the level sets of the potential and slow motion in the orthogonal direction. This result helps understanding the variance reduction, which can be explained at the process level by the induced fast motion of the process along the level sets of the potential. Correspondingly the limit of the asymptotic variance is the asymptotic variance of the limiting slow motion which is a diffusion process on a graph.</jats:p>",
+  "DOI": "10.1214/ecp.v20-3855",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2015,
+     2,
+     14
+    ]
+   ],
+   "date-time": "2015-02-14T16:51:20Z",
+   "timestamp": 1423932680000
+  },
+  "page": "1-16",
+  "source": "Crossref",
+  "is-referenced-by-count": 16,
+  "title": [
+   "Variance reduction for irreversible Langevin samplers and diffusion on graphs"
+  ],
+  "prefix": "10.1214",
+  "volume": "20",
+  "author": [
+   {
+    "given": "Luc",
+    "family": "Rey-Bellet",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "University of Massachusetts Amherst"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Konstantinos",
+    "family": "Spiliopoulos",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Boston University"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "108",
+  "reference": [
+   {
+    "key": "1",
+    "unstructured": "Asmussen, Soren; Glynn, Peter W. Stochastic simulation: algorithms and analysis. Stochastic Modelling and Applied Probability, 57. Springer, New York, 2007. xiv+476 pp. ISBN: 978-0-387-30679-7"
+   },
+   {
+    "key": "2",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Brin, Michael; Freidlin, Mark. On stochastic behavior of perturbed Hamiltonian systems. Ergodic Theory Dynam. Systems 20 (2000), no. 1, 55–76.",
+    "DOI": "10.1017/S0143385700000043"
+   },
+   {
+    "key": "3",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Constantin, P.; Kiselev, A.; Ryzhik, L.; ZlatoÅ¡, A. Diffusion and mixing in fluid flow. Ann. of Math. (2) 168 (2008), no. 2, 643–674.",
+    "DOI": "10.4007/annals.2008.168.643"
+   },
+   {
+    "key": "5",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Dupuis, Paul; Liu, Yufei; Plattner, Nuria; Doll, J. D. On the infinite swapping limit for parallel tempering. Multiscale Model. Simul. 10 (2012), no. 3, 986–1022.",
+    "DOI": "10.1137/110853145"
+   },
+   {
+    "key": "6",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Franke, B.; Hwang, C.-R.; Pai, H.-M.; Sheu, S.-J. The behavior of the spectral gap under growing drift. Trans. Amer. Math. Soc. 362 (2010), no. 3, 1325–1350.",
+    "DOI": "10.1090/S0002-9947-09-04939-3"
+   },
+   {
+    "key": "7",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Freidlin, Mark; Weber, Matthias. Random perturbations of dynamical systems and diffusion processes with conservation laws. Probab. Theory Related Fields 128 (2004), no. 3, 441–466.",
+    "DOI": "10.1007/s00440-003-0312-0"
+   },
+   {
+    "key": "11",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Hwang, Chii-Ruey; Hwang-Ma, Shu-Yin; Sheu, Shuenn-Jyi. Accelerating diffusions. Ann. Appl. Probab. 15 (2005), no. 2, 1433–1444.",
+    "DOI": "10.1214/105051605000000025"
+   },
+   {
+    "key": "4",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Donsker, M.D., and Varadhan S.R.S.: Asymptotic evaluation of certain Markov process expectations for large times, I, Communications Pure in Applied Mathematics, 28, (1975), 1–47, II, Communications on Pure in Applied Mathematics, 28, (1975), 279–301, and III, Communications on Pure in Applied Mathematics, 29, (1976), 389–461.",
+    "DOI": "10.1002/cpa.3160280206"
+   },
+   {
+    "key": "8",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Freidlin, Mark I.; Wentzell, Alexander D. Diffusion processes on graphs and the averaging principle. Ann. Probab. 21 (1993), no. 4, 2215–2245.",
+    "DOI": "10.1214/aop/1176989018"
+   },
+   {
+    "key": "9",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Freidlin, Mark I.; Wentzell, Alexander D. Random perturbations of Hamiltonian systems. Mem. Amer. Math. Soc. 109 (1994), no. 523, viii+82 pp.",
+    "DOI": "10.1090/memo/0523"
+   },
+   {
+    "key": "10",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Gärtner, J.: On large deviations from the invariant measure, Theory of probability and its applications, XXII(1), (1977), 24–39.",
+    "DOI": "10.1137/1122003"
+   },
+   {
+    "key": "12",
+    "unstructured": "Hwang, C.-R., Normand, R. and Wu, S.-J.: Variance reduction for diffusions, ARXIV1406.4657, (2014)."
+   },
+   {
+    "key": "13",
+    "doi-asserted-by": "publisher",
+    "unstructured": "Rey-Bellet, L. and Spiliopoulos, K.: Irreversible Langevin samplers and variance reduction: a large deviations approach, ARXIV1404.0105, (2014), submitted.",
+    "DOI": "10.1088/0951-7715/28/7/2081"
+   }
+  ],
+  "container-title": [
+   "Electronic Communications in Probability"
+  ],
+  "original-title": [],
+  "link": [
+   {
+    "URL": "http://projecteuclid.org/download/pdf_1/euclid.ecp/1465320942",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     10,
+     9
+    ]
+   ],
+   "date-time": "2026-10-09T16:34:57Z",
+   "timestamp": 1791563697000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://projecteuclid.org/journals/electronic-communications-in-probability/volume-20/issue-none/Variance-reduction-for-irreversible-Langevin-samplers-and-diffusion-on-graphs/10.1214/ECP.v20-3855.full"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2015,
+     1,
+     1
+    ]
+   ]
+  },
+  "references-count": 13,
+  "journal-issue": {
+   "issue": "none",
+   "published-online": {
+    "date-parts": [
+     [
+      2015,
+      1,
+      1
+     ]
+    ]
+   }
+  },
+  "URL": "https://doi.org/10.1214/ecp.v20-3855",
+  "relation": {},
+  "ISSN": [
+   "1083-589X",
+   "1083-589X"
+  ],
+  "issn-type": [
+   {
+    "value": "1083-589X",
+    "type": "print"
+   },
+   {
+    "value": "1083-589X",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2015,
+     1,
+     1
+    ]
+   ]
+  }
+ }
+}

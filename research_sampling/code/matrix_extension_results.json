@@ -1,0 +1,191 @@
+{
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "noncommuting_example": {
+    "K_block": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "friction_block": [
+      [
+        4.0,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ]
+    ],
+    "certificate_block": [
+      [
+        68.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0
+      ]
+    ],
+    "certificate_eigenvalues": [
+      10.392982996034482,
+      10.392982996034482,
+      101.60701700396552,
+      101.60701700396552
+    ],
+    "commutator_norm": 6.0,
+    "transfer_max_abs_error": 4.440892098500626e-16,
+    "linear_max_abs_error": 8.881784197001252e-16,
+    "loewner_grid_min_eigenvalues": [
+      0.00035145699869734405,
+      0.00841598347990999,
+      0.05793227265097234,
+      0.060794834787625464,
+      0.1807204442903083,
+      0.08489234074750232,
+      0.007507766764241648
+    ],
+    "quadratic_tensor_checks": [
+      {
+        "mu": 0.0,
+        "tensor_convolution": 3.552724005554194,
+        "lyapunov": 3.5527240055541967,
+        "absolute_difference": 2.6645352591003757e-15,
+        "quadrature_error_bound": 2.8590773124291243e-11
+      },
+      {
+        "mu": 0.4,
+        "tensor_convolution": 1.2137161400128726,
+        "lyapunov": 1.2137161400128669,
+        "absolute_difference": 5.773159728050814e-15,
+        "quadrature_error_bound": 1.168631974030177e-10
+      },
+      {
+        "mu": 1.3,
+        "tensor_convolution": 0.2047258578543747,
+        "lyapunov": 0.2047258578543745,
+        "absolute_difference": 1.942890293094024e-16,
+        "quadrature_error_bound": 9.997905883456693e-11
+      }
+    ]
+  },
+  "insufficient_squared_criterion": {
+    "squared_difference_eigenvalues": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "exact_certificate_eigenvalues": [
+      -0.040569415042094825,
+      -0.040569415042094825,
+      1.540569415042095,
+      1.540569415042095
+    ],
+    "linear_observable": [
+      -0.25414611453089625,
+      0.0,
+      1.3088776039693655,
+      0.0
+    ],
+    "variance_at_zero": 2.1741809214139227,
+    "variance_at_0.001": 2.174180954136284,
+    "increase": 3.272236126505845e-08
+  },
+  "least_friction_residual": 3.552713678800501e-15,
+  "mismatch_checks": [
+    {
+      "precision": 0.9,
+      "mu": 0.0,
+      "lyapunov": 10.888888888888888,
+      "formula": 10.88888888888889,
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "precision": 0.9,
+      "mu": 1.0,
+      "lyapunov": 10.911111111111119,
+      "formula": 10.911111111111111,
+      "absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "precision": 0.9,
+      "mu": 10.0,
+      "lyapunov": 13.111111111111072,
+      "formula": 13.11111111111111,
+      "absolute_difference": 3.907985046680551e-14
+    },
+    {
+      "precision": 0.9,
+      "mu": 100.0,
+      "lyapunov": 233.1111111111224,
+      "formula": 233.11111111111097,
+      "absolute_difference": 1.1425527191022411e-11
+    },
+    {
+      "precision": 1.0,
+      "mu": 0.0,
+      "lyapunov": 10.0,
+      "formula": 10.0,
+      "absolute_difference": 0.0
+    },
+    {
+      "precision": 1.0,
+      "mu": 1.0,
+      "lyapunov": 10.000000000000007,
+      "formula": 10.0,
+      "absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "precision": 1.0,
+      "mu": 10.0,
+      "lyapunov": 9.99999999999999,
+      "formula": 10.0,
+      "absolute_difference": 1.0658141036401503e-14
+    },
+    {
+      "precision": 1.0,
+      "mu": 100.0,
+      "lyapunov": 9.999999999999796,
+      "formula": 10.0,
+      "absolute_difference": 2.042810365310288e-13
+    },
+    {
+      "precision": 1.1,
+      "mu": 0.0,
+      "lyapunov": 9.272727272727273,
+      "formula": 9.272727272727273,
+      "absolute_difference": 0.0
+    },
+    {
+      "precision": 1.1,
+      "mu": 1.0,
+      "lyapunov": 9.29090909090909,
+      "formula": 9.290909090909091,
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "precision": 1.1,
+      "mu": 10.0,
+      "lyapunov": 11.090909090909122,
+      "formula": 11.090909090909095,
+      "absolute_difference": 2.6645352591003757e-14
+    },
+    {
+      "precision": 1.1,
+      "mu": 100.0,
+      "lyapunov": 191.09090909082994,
+      "formula": 191.0909090909094,
+      "absolute_difference": 7.94670995674096e-11
+    }
+  ],
+  "status": "All deterministic checks passed; finite checks do not replace the analytic proof."
+}

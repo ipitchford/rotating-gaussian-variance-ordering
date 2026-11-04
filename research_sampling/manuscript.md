@@ -1,0 +1,1249 @@
+---
+title: 'Sharp variance ordering for rotating Gaussian samplers'
+subtitle: 'A matrix criterion, exact regularity and arithmetic convergence rates'
+date: '4 November 2026 — research manuscript, version 1.2 — DOI [10.5281/zenodo.23941497](https://doi.org/10.5281/zenodo.23941497)'
+author: 'Anonymous'
+lang: en-GB
+fontsize: 11pt
+papersize: a4
+geometry: margin=24mm
+colorlinks: true
+linkcolor: black
+urlcolor: teal
+toc: false
+header-includes:
+  - '\usepackage{amsmath,amssymb,mathtools,microtype,booktabs}'
+  - '\providecommand{\mathscr}{\mathcal}'
+  - '\DeclareMathOperator{\Var}{Var}'
+  - '\DeclareMathOperator{\Cov}{Cov}'
+  - '\DeclareMathOperator{\Rea}{Re}'
+  - '\DeclareMathOperator{\Ran}{Ran}'
+  - '\DeclareMathOperator{\diag}{diag}'
+  - '\allowdisplaybreaks'
+---
+
+## Abstract
+
+Adding a target-preserving rotation to a kinetic Langevin sampler can lower the long-run variance of time averages, but not always. Duncan, Nüsken and Pavliotis (2017) proved a local improvement for linear and quadratic observables of a Gaussian target when the friction exceeds $\sqrt2$, and conjectured the same second-derivative statement for every square-integrable observable. We prove a global form of that conjecture. With matched position and momentum rotations, every square-integrable position observable has a long-run variance that never increases with rotation strength if and only if the friction is at least $\sqrt2$. The literal second-derivative statement holds exactly on an explicit weighted Hermite class, which contains every polynomial; outside it we give observables whose variance has a sharper-than-quadratic peak. For noncommuting stiffness $K$ and friction $\Gamma$, the exact condition is $\Gamma^3-\Gamma K-K\Gamma\succeq0$, and the least friction at which rotation is safe for every observable is $(2K)^{1/2}$, a safety boundary rather than an optimum. Below the threshold, even observables still improve at every rotation strength, and one finite rotation strength improves every observable at once. We also give sharp large-rotation rates and show which observation schedules preserve the ordering. All results concern exact stationary Gaussian dynamics.
+
+**Keywords:** kinetic Langevin dynamics; nonreversible sampling; asymptotic variance; Gaussian chaos; symmetric unimodality; small divisors.
+
+## 1. The question and the contribution
+
+### 1.1. What is being compared
+
+A Markov chain Monte Carlo sampler estimates an expectation by a time average along one simulated trajectory. Its accuracy is measured by the *long-run* (asymptotic) variance of that average: the variance after a long run of length $T$, multiplied by $T$. Two samplers with the same target distribution can have very different long-run variances, because successive states are correlated in different ways.
+
+One way to alter those correlations without changing the target is to add a deterministic rotation that preserves the target distribution. For overdamped (first-order) Langevin samplers this is known to help every observable: Hwang, Normand and Wu (2015) and Rey-Bellet and Spiliopoulos (2015a, 2015b, 2016) show that such nonreversible perturbations never increase the asymptotic variance, and that the variance decreases monotonically with the perturbation strength. Duncan, Nüsken and Pavliotis (2017), hereafter DNP, studied the analogous question for *kinetic* (second-order, underdamped) Langevin samplers, where the position is driven by a momentum with friction $\gamma$. They found the kinetic case different: rotations can increase the variance.
+
+### 1.2. The question DNP left open
+
+DNP's Theorem 3 proves, for a Gaussian target with matched position and momentum rotations of amplitude $\mu$, that for linear and quadratic observables, under nondegeneracy conditions, the variance has zero first derivative and a negative second derivative at $\mu=0$ when $\gamma>\sqrt2$. Immediately after the parameter conditions they recommend (numbered (27) in the journal version and (35a)–(35c) in arXiv:1705.00170v1), they conjecture that this derivative statement holds for arbitrary square-integrable observables, and say they have not been able to prove it. Nüsken's thesis (2018, p. 62) repeats the conjecture. DNP's Theorem 5 identifies the large-amplitude limit as the variance of the rotation-invariant part of the observable, and their numerical experiments (Section 6) already show the variance rising for small friction.
+
+### 1.3. What this paper proves
+
+> **In plain terms.** Picture the position of the sampler as a damped oscillator. Its *power spectrum* says how much of its fluctuation sits at each frequency. Rotating the sampler at speed $\mu$ shifts that spectrum, so the long-run variance becomes the spectrum evaluated away from zero. If the spectrum is highest at zero frequency and falls off on both sides, any shift lowers the variance. A damped oscillator has such a single-peaked spectrum exactly when it shows no resonance peak, and for the unit oscillator that is the familiar condition $\gamma\ge\sqrt2$ (quality factor at most $1/\sqrt2$). Nonlinear observables see sums of convolution powers of the same spectrum, and convolution keeps single-peaked shapes single-peaked. That is the whole mechanism; the rest of the paper makes it exact, extends it to matrices, and measures what happens at the edges.
+
+The main results are as follows.
+
+| Result | Statement | Where |
+|---|---|---|
+| Sharp ordering | Every $L^2$ position observable has nonincreasing variance in $\lvert\mu\rvert$ **iff** $\gamma\ge\sqrt2$; strict unless rotation-invariant. The endpoint $\gamma=\sqrt2$ is included. | Theorem 1 |
+| Spectral criterion | For any rotated stationary Gaussian process, universal ordering holds iff the spectral density decreases on $[0,\infty)$. | Theorem 2 |
+| Below the threshold | For every $\gamma>0$: even observables improve at every $\mu\ne0$; one finite amplitude improves all observables at once. | Theorem 4A |
+| Exact curvature domain | Every variance curve is $C^1$; it is $C^2$ iff a weighted Hermite sum is finite. Explicit cusps outside. | Theorem 5, Prop. 6 |
+| Large-rotation rates | $O(\mu^{-4})$ for each polynomial; uniform worst case $\sim\sqrt{2\pi/e}/(\lvert\mu\rvert\omega_*)$; slower or no algebraic rate for incommensurate speeds. | Prop. 7, Thm 8, §7 |
+| Matrix criterion | For noncommuting $K,\Gamma$: ordering iff $\Gamma^3-\Gamma K-K\Gamma\succeq0$; least friction $(2K)^{1/2}$; two replicas make it apply to any Gaussian target. | Thm 10, Cors 11–12 |
+| Observation schedules | Fixed horizons and regular sampling can reverse the ordering; independent Poisson sampling preserves it. | Section 9 |
+
+Relative to DNP's conjecture, the precise outcome is this. The intended content, that rotation reduces variance whenever the friction is large enough, holds globally in $\mu$ for every $L^2$ position observable, and also at the endpoint $\gamma=\sqrt2$. The literal second-derivative formulation needs two qualifications: rotation-invariant observables have zero curvature (DNP's nondegeneracy conditions exclude these), and some rough $L^2$ observables have a cusp, so that the second difference quotient tends to $-\infty$. The derivative statement holds exactly on an explicit class containing every polynomial (Theorem 5).
+
+### 1.4. What is classical and what is new
+
+Our method uses classical ingredients: Gaussian Hermite expansions, Fourier transforms of covariance powers, and closure of symmetric unimodality under convolution. Breuer and Major (1983, pp. 428, 430) give the Hermite covariance and spectral-convolution identities; they underlie the Breuer–Major central limit theorem. Maini (2026, Lemma 3.1) states the same convolution-power variance for Fourier functionals of stationary Gaussian fields, which is formula (6) below at a fixed frequency; that paper does not consider monotonicity in the frequency or samplers. Lefèvre and Utev (2013) discuss and extend the convolution closure property. Gaussian spectral expansions also appear in other applications, for example Muscinelli, Gerstner and Schwalger (2019, equations (37), (42)–(43)). At critical damping, the scalar spectral density belongs to the scaled Student family whose convolution formulas are studied by Berg and Vignat (2008). We do not claim these ingredients, or DNP's invariant-projection limit, as new.
+
+The proposed contributions are the exact ordering criterion and kinetic threshold, the below-threshold comparison, the regularity and rate results, and the matrix criterion with its least friction. A related but different line of work optimises nonreversible linear drifts and friction for the *rate of convergence* to equilibrium rather than for variance ordering (Hwang, Hwang-Ma & Sheu, 1993; Lelièvre, Nier & Pavliotis, 2013; Guillin & Monmarché, 2016), or optimises friction for a given observable (Chak et al., 2023); in discrete state spaces, breaking detailed balance can also fail to help (Kaiser, Jack & Zimmer, 2017). Uniform variance convergence has earlier theory for drift-accelerated overdamped diffusions (Franke et al., 2021), and arithmetic effects on variance appear in a different Gaussian-field setting (Lachièze-Rey, 2022). Replica coupling and replica averaging are established sampling devices (Section 8.4).
+
+### 1.5. How the paper is organised
+
+Section 2 states the model and the main theorem. Section 3 proves the spectral criterion for general rotated Gaussian processes, and Section 4 applies it to the kinetic sampler, including the below-threshold comparison (Section 4.1). Sections 5–7 concern regularity at small rotations and rates at large rotations; readers interested only in the ordering can skip them. Section 8 treats matrix stiffness and friction and the replica construction. Section 9 explains which observation schedules preserve the ordering. Section 10 describes the verification scripts and the limits of the results. Appendix A collects explicit checks and Appendix B the matrix versions of Sections 5–7.
+
+**Notation.** $V_f$ is the long-run variance (2); it is twice DNP's $\sigma_f^2$. $S$, $S_\gamma$ and $S_n$ denote spectral densities; the Gaussian target precision in Section 4 is written $P$. In Section 8, $K$ and $\Gamma$ are stiffness and friction matrices; the Euler gamma function appears only in Proposition 6, written $\Gamma(\cdot)$ with a scalar argument.
+
+## 2. Model and main theorem
+
+Let $d\ge2$, let $J\in\mathbb R^{d\times d}$ satisfy $J^\top=-J$, and let $\gamma>0$. We consider
+
+$$
+\begin{aligned}
+\mathrm dq_t&=(p_t-\mu Jq_t)\,\mathrm dt,\\
+\mathrm dp_t&=(-q_t-\gamma p_t-\mu Jp_t)\,\mathrm dt
+                 +\sqrt{2\gamma}\,\mathrm dW_t .
+\end{aligned} \tag{1}
+$$
+
+Time and coordinates are normalised so that the harmonic frequency and the position and momentum variances are one. The stationary law is $\widehat\pi=\mathcal N(0,I_{2d})$, and the position marginal is $\pi=\mathcal N(0,I_d)$. We start the process in stationarity. An observable is a real function $f\in L^2(\pi)$ of position alone. Subtracting its mean changes none of the results, so we take $\pi(f)=0$.
+
+Define its long-run variance by
+
+$$
+V_f(\mu)=\lim_{T\to\infty}T\Var\left(
+\frac1T\int_0^T f(q_t)\,\mathrm dt\right). \tag{2}
+$$
+
+We prove existence of this limit directly. This convention is twice DNP's $\sigma_f^2$. We use the variance limit as the definition; no central limit theorem is needed in our proofs.
+
+Write $U_\theta f(q)=f(e^{-\theta J}q)$. Let $\Pi_J$ denote the orthogonal projection in $L^2(\pi)$ onto the functions invariant under every $U_\theta$. It preserves centred functions and fixes constants.
+
+**Theorem 1 (sharp global ordering).** Suppose $J\ne0$. The following are equivalent:
+
+1. $\gamma\ge\sqrt2$.
+2. For every real $f\in L^2(\pi)$ and every $0\le a<b$, $V_f(b)\le V_f(a)$.
+
+When these conditions hold, equality at any one such pair occurs if and only if $f=\Pi_Jf$. Thus each non-invariant observable has strictly decreasing variance on $[0,\infty)$. The variance is even in $\mu$. If $0<\gamma<\sqrt2$, a linear observable has $V_f(\mu)>V_f(0)$ for all sufficiently small nonzero $\mu$.
+
+The threshold includes $\gamma=\sqrt2$, although a linear observable then has zero second curvature at the origin. If $J=0$, all variances are constant for every $\gamma$, so the nonzero assumption is necessary for the equivalence.
+
+Theorem 1 concerns the Gaussian model with exactly matched rotations. It does not assert the same ordering for general target distributions, arbitrary phase-space observables, or unmatched perturbations. Section 9 gives explicit observation-related boundaries.
+
+## 3. A spectral characterisation for Gaussian processes
+
+We first prove a statement that does not require a Markov process.
+
+**Theorem 2 (spectral criterion).** Let $(X_t)_{t\in\mathbb R}$ be a centred, mean-square continuous, stationary Gaussian process in $\mathbb R^d$ satisfying
+
+$$
+\Cov(X_t,X_s)=r(t-s)I_d,\qquad r(0)=1,\qquad r\in L^1(\mathbb R).
+$$
+
+Fix a nonzero real skew matrix $J$, and put $Q_t^\mu=e^{-\mu tJ}X_t$. Use the Fourier convention
+
+$$
+S(\xi)=\widehat r(\xi)=\int_{\mathbb R}e^{-i\xi t}r(t)\,\mathrm dt .
+$$
+
+Every real centred $f\in L^2(\pi)$ has a finite variance limit (2), with $q$ replaced by $Q$. These limits are nonincreasing in $|\mu|$ for every such $f$ if and only if $S$ is nonincreasing on $[0,\infty)$. If $S$ is strictly decreasing there, the ordering is strict precisely for non-invariant observables.
+
+### 3.1. Hermite and rotation decomposition
+
+The process $Q^\mu$ is stationary because it is Gaussian with constant mean and covariance
+
+$$
+\Cov(Q_t^\mu,Q_s^\mu)=r(t-s)e^{-\mu(t-s)J}.
+$$
+
+Write $L^2_0(\pi)=\bigoplus_{n\ge1}\mathcal H_n$ for the orthogonal decomposition into position Hermite chaoses. Here $\mathcal H_n$ is the span of multivariate Hermite polynomials of total degree $n$. Each space is finite dimensional. The Mehler operator
+
+$$
+T_\rho f(x)=\mathbb E\big[f(\rho x+\sqrt{1-\rho^2}Z)\big],
+\qquad Z\sim\pi,
+$$
+
+acts as multiplication by $\rho^n$ on $\mathcal H_n$, also for negative $\rho$. Orthogonal rotations preserve each chaos and commute with $T_\rho$.
+
+Complexify each chaos and diagonalise the unitary group $U_\theta$. Let $E_{n,\omega}$ be its spectral projection with
+
+$$
+U_\theta E_{n,\omega}=e^{i\omega\theta}E_{n,\omega},
+\qquad
+a_{n,\omega}=\|E_{n,\omega}f_n\|_2^2.
+$$
+
+The index $\omega$ ranges over the finite set of rotation frequencies in degree $n$. These weights satisfy
+
+$$
+a_{n,\omega}\ge0,\quad a_{n,-\omega}=a_{n,\omega},\quad
+\sum_{n,\omega}a_{n,\omega}=\|f\|_2^2,
+\quad |\omega|\le n\|J\|. \tag{3}
+$$
+
+Both signs of a nonzero frequency are included in this convention; their weights are not counted twice elsewhere.
+
+Joint Gaussian conditioning gives
+
+$$
+\mathbb E[f(Q_t^\mu)\mid Q_0^\mu=x]
+=T_{r(t)}U_{\mu t}f(x).
+$$
+
+Orthogonality and (3) therefore give the covariance expansion
+
+$$
+C_f(t;\mu)=\sum_{n,\omega}a_{n,\omega}r(t)^n\cos(\mu\omega t). \tag{4}
+$$
+
+As a covariance normalised at zero, $|r(t)|\le1$. Consequently,
+
+$$
+|C_f(t;\mu)|\le\|f\|_2^2|r(t)|,
+\qquad
+\sum_{n,\omega}a_{n,\omega}\int_{\mathbb R}|r(t)|^n\,\mathrm dt
+\le\|f\|_2^2\|r\|_1. \tag{5}
+$$
+
+These bounds justify all subsequent exchanges of sums and integrals. The stationary variance identity
+
+$$
+T\Var(\overline f_T)=2\int_0^T(1-t/T)C_f(t;\mu)\,\mathrm dt
+$$
+
+and dominated convergence prove existence of (2).
+
+Since $r$ is continuous, positive definite and integrable, $S$ is a continuous nonnegative integrable spectral density and $\int S=2\pi$. Set $p=S/(2\pi)$ and
+
+$$
+S_n(\xi)=\widehat{r^n}(\xi)
+=(2\pi)^{1-n}S^{*n}(\xi)=2\pi p^{*n}(\xi).
+$$
+
+We obtain the exact nonnegative expansion
+
+$$
+\boxed{\displaystyle V_f(\mu)=\sum_{n\ge1,\omega}
+a_{n,\omega}S_n(\mu\omega).} \tag{6}
+$$
+
+Time-domain covariances can change sign. Their spectral densities in (6) remain nonnegative.
+
+### 3.2. Convolution lemma and proof of the criterion
+
+**Lemma 3.** The convolution of two even, nonnegative, integrable functions that are nonincreasing on $[0,\infty)$ has the same properties. If one is continuous and strictly decreasing on $[0,\infty)$, and the other has strictly positive integral, their convolution is strictly decreasing on $[0,\infty)$.
+
+**Proof.** Represent the second function by its superlevel intervals, using the layer-cake identity. For each interval radius $R>0$, convolution of the first function $a$ with its indicator gives
+
+$$
+H_R(x)=\int_{x-R}^{x+R}a(u)\,\mathrm du .
+$$
+
+If $a$ is continuous and strictly decreasing away from zero, then
+
+$$
+H_R'(x)=a(x+R)-a(x-R)<0\qquad(x>0),
+$$
+
+because $a$ is even and $|x-R|<x+R$. The weak version needs no differentiability: for $0\le y<x$,
+
+$$
+H_R(x)-H_R(y)=\int_{y+R}^{x+R}a(u)\,\mathrm du-\int_{y-R}^{x-R}a(u)\,\mathrm du\le0,
+$$
+
+because the two intervals have equal length and, as $a$ is even and nonincreasing in $|u|$, each point $u+2R$ of the first is at least as far from the origin as the corresponding point $u$ of the second. Integrate over the superlevel intervals. When the second function has strictly positive integral, positive radii occur on a set of levels of positive measure, which preserves strictness between any two distinct nonnegative arguments. $\square$
+
+If $S$ is nonincreasing, Lemma 3 applies to every convolution power in (6), proving sufficiency in Theorem 2. Under strict decrease, every summand with $\omega\ne0$ and positive weight decreases strictly. Such a summand exists exactly when $f\ne\Pi_Jf$.
+
+For necessity, choose a two-dimensional rotation plane of $J$ with nonzero speed $\lambda>0$, and a unit linear observable in that plane. Its covariance is $r(t)\cos(\lambda\mu t)$ and its variance is $S(\lambda\mu)$. As $\mu$ traverses $[0,\infty)$, so does $\lambda\mu$. Universal monotonicity therefore forces monotonicity of $S$. $\square$
+
+## 4. Applying the criterion to kinetic Langevin dynamics
+
+The drift matrix of (1) is
+
+$$
+B_\mu=\begin{pmatrix}\mu J&-I\\I&\gamma I+\mu J\end{pmatrix}
+=B_0+\mu\diag(J,J).
+$$
+
+The two summands commute. Also $B_\mu+B_\mu^\top=2\diag(0,\gamma I)$, and all drift eigenvalues have positive real parts. Thus $I_{2d}$ is the stationary covariance, and
+
+$$
+\Cov(q_t,q_0)=r_\gamma(t)e^{-\mu tJ},
+\quad r_\gamma''+\gamma r_\gamma'+r_\gamma=0,
+\quad r_\gamma(0)=1,\quad r_\gamma'(0)=0. \tag{7}
+$$
+
+The scalar covariance decays exponentially, allowing a polynomial prefactor at $\gamma=2$. Its Laplace transform is
+
+$$
+R_\gamma(s)=\frac{s+\gamma}{s^2+\gamma s+1}.
+$$
+
+Extending $r_\gamma$ evenly, we find
+
+$$
+S_\gamma(\xi)=2\Rea R_\gamma(i\xi)
+=\frac{2\gamma}{\xi^4+(\gamma^2-2)\xi^2+1}, \tag{8}
+$$
+
+and
+
+$$
+S_\gamma'(\xi)=
+\frac{-4\gamma\xi(2\xi^2+\gamma^2-2)}
+{[\xi^4+(\gamma^2-2)\xi^2+1]^2}. \tag{9}
+$$
+
+For $\gamma\ge\sqrt2$, (9) is strictly negative for every $\xi>0$. Theorem 2 proves the positive direction of Theorem 1, including its equality statement.
+
+Conversely, the unit linear observable used in the necessity argument has
+
+$$
+V_f(\mu)=\frac{2\gamma}
+{1+(\gamma^2-2)(\lambda\mu)^2+(\lambda\mu)^4}. \tag{10}
+$$
+
+For $\gamma<\sqrt2$, this exceeds $V_f(0)=2\gamma$ whenever
+$0<(\lambda\mu)^2<2-\gamma^2$. This proves the converse, and is the mechanism behind the increase that DNP observed numerically at small friction. At $\gamma=\sqrt2$, its leading decrease is fourth order, which explains why global strictness and negative second curvature have different endpoint conditions. $\square$
+
+**General Gaussian targets.** Let the target have precision matrix $P>0$. In DNP's notation, take mass $M=P$, friction $\Gamma=\gamma P$, $J_2=PJ_1P$, and equal perturbation amplitudes; this is exactly DNP's recommended choice (their conditions (27) in the journal version). The change of variables
+
+$$
+\widetilde q=P^{1/2}q,\quad
+\widetilde p=P^{-1/2}p,\quad
+\widetilde J=P^{1/2}J_1P^{1/2}
+$$
+
+reduces the dynamics to (1). Apply Theorem 1 to $f(P^{-1/2}\widetilde q)$. This statement requires the specified preconditioning; it gives no uniform tolerance to covariance misspecification.
+
+### 4.1. Below the threshold: comparison with the unrotated sampler
+
+Theorem 1 says that for $\gamma<\sqrt2$ some observable gets worse at some small rotation. Practitioners often use small friction, so the useful question is weaker: which observables, and which amplitudes, still improve on the *unrotated* sampler? Here we compare $V_f(\mu)$ with $V_f(0)$ rather than asking for monotonicity in $|\mu|$. For each $n\ge1$ define the crossing point
+
+$$
+\Xi_n(\gamma)=\sup\{\xi>0:\ S_n(\xi)\ge S_n(0)\},\qquad\sup\varnothing=0 .
+$$
+
+By (8), $\Xi_1(\gamma)=\sqrt{2-\gamma^2}$ for $\gamma<\sqrt2$ and $\Xi_1=0$ otherwise.
+
+**Theorem 4A (below-threshold comparison).** Let $\gamma>0$ and $J\ne0$.
+
+1. *Even observables.* If $f$ has no component in odd Hermite chaoses (for instance, if $f(-q)=f(q)$), then $V_f(\mu)<V_f(0)$ for every $\mu\ne0$ unless $f=\Pi_Jf$.
+2. *Only finitely many degrees can be hurt.* There is an integer $N(\gamma)\ge1$ such that $S_n(\xi)<S_n(0)$ for every $\xi\ne0$ and every $n>N(\gamma)$. Every $\Xi_n(\gamma)$ is finite.
+3. *One amplitude for all observables.* Let $\omega_{\min}>0$ be the smallest nonzero rotation frequency occurring in Hermite degrees at most $N(\gamma)$, and set
+$$
+\mu_0(\gamma,J)=\max_{1\le n\le N(\gamma)}\frac{\Xi_n(\gamma)}{\omega_{\min}} .
+$$
+Then $V_f(\mu)<V_f(0)$ for every real $f\in L^2(\pi)$ with $f\ne\Pi_Jf$ and every $|\mu|>\mu_0(\gamma,J)$.
+4. *The amplitude cannot be small.* If $\gamma<\sqrt2$ and $\lambda_{\min}$ is the smallest positive rotation speed of $J$, a linear observable in that rotation plane has $V_f(\mu)>V_f(0)$ for $0<|\mu|<\sqrt{2-\gamma^2}/\lambda_{\min}$.
+
+Part 1 does not assert monotonicity: for $\gamma<\sqrt2$ even chaoses can have non-monotone spectra. When the rotation speeds are commensurate with gap $\omega_*$, part 3 holds with $\omega_{\min}$ replaced by $\omega_*$.
+
+**Proof.** By (6), $V_f(0)-V_f(\mu)=\sum_{n,\omega}a_{n,\omega}[S_n(0)-S_n(\mu\omega)]$, and
+
+$$
+S_n(0)-S_n(\xi)=2\int_0^\infty r_\gamma(t)^n\,(1-\cos\xi t)\,\mathrm dt. \tag{10a}
+$$
+
+*Part 1.* For even $n$, $r_\gamma^n\ge0$ and is positive near $t=0$, so (10a) is strictly positive for every $\xi\ne0$. Every term with $\omega\ne0$ and positive weight therefore contributes strictly, and such a term exists exactly when $f\ne\Pi_Jf$.
+
+*Part 2.* Take $\delta>0$, $C>0$ and $\rho<1$ with $r_\gamma(t)\ge e^{-Ct^2}$ on $[0,\delta]$ and $|r_\gamma(t)|\le\rho$ for $t\ge\delta$; these exist by the expansion and energy argument in the proof of Lemma 4. On $[\delta,\infty)$ bound the integrand of (10a) below by $-|r_\gamma|^n(1-\cos\xi t)$ and use $1-\cos\xi t\le(2+t^2/2)\min(1,\xi^2)$. This gives
+
+$$
+S_n(0)-S_n(\xi)\ge 2\int_0^\delta e^{-Cnt^2}(1-\cos\xi t)\,\mathrm dt-2M_\gamma\rho^{n-1}\min(1,\xi^2),
+\qquad M_\gamma=\int_\delta^\infty|r_\gamma(t)|\bigl(2+\tfrac{t^2}2\bigr)\mathrm dt .
+$$
+
+We bound the first integral below by $c\,n^{-3/2}\min(1,\xi^2)$ for all large $n$. If $|\xi|\le\pi/\delta$, then $1-\cos u\ge2u^2/\pi^2$ on $|u|\le\pi$ gives at least $(2\xi^2/\pi^2)\,n^{-3/2}\int_0^{\delta\sqrt n}u^2e^{-Cu^2}\,\mathrm du$, and the last integral is bounded below for $n\ge1$. If $|\xi|>\pi/\delta$, write the integral as $\int_0^\delta e^{-Cnt^2}\mathrm dt-\int_0^\delta e^{-Cnt^2}\cos\xi t\,\mathrm dt$. Up to errors $O(e^{-Cn\delta^2})$, these are $\tfrac12\sqrt{\pi/(Cn)}$ and $\tfrac12\sqrt{\pi/(Cn)}\,e^{-\xi^2/(4Cn)}$, so the difference is at least $\tfrac12\sqrt{\pi/(Cn)}\min\{\tfrac12,\pi^2/(8C\delta^2n)\}-O(e^{-Cn\delta^2})$, which is at least $c\,n^{-3/2}$ for large $n$. Since $n^{-3/2}$ dominates $\rho^{n-1}$, there is $N(\gamma)$ beyond which (10a) is strictly positive for every $\xi\ne0$.
+
+For $n\le N(\gamma)$, $S_n=2\pi p^{*n}$ is a convolution power of the everywhere-positive density $p=S_\gamma/(2\pi)$, so $S_n(0)>0$, while $S_n(\xi)\to0$ as $|\xi|\to\infty$ by the Riemann–Lebesgue lemma. Hence $\Xi_n(\gamma)<\infty$.
+
+*Part 3.* Each degree contains finitely many frequencies, so $\omega_{\min}>0$. Let $|\mu|>\mu_0$ and $\omega\ne0$ be a frequency in degree $n$. If $n>N(\gamma)$, part 2 gives $S_n(\mu\omega)<S_n(0)$. If $n\le N(\gamma)$, then $|\mu\omega|\ge|\mu|\omega_{\min}>\Xi_n(\gamma)$, and $S_n(\mu\omega)<S_n(0)$ by definition of $\Xi_n$. Summing over (6) proves part 3.
+
+*Part 4* is (10) with $\lambda=\lambda_{\min}$. $\square$
+
+**How large is $N(\gamma)$?** The proof gives existence, not a value. Table 1 reports the crossing points computed by `code/verify_below_threshold.py`, from an exact exponential-sum form of $S_n$ (cross-checked by quadrature), scanning odd degrees up to $201$. These are numerical computations, not part of the proof. Even degrees never exceed $S_n(0)$, as part 1 requires.
+
+Table 1. Crossing points $\Xi_n(\gamma)$ for odd degrees $n$ (computed, odd $n\le121$).
+
+| $\gamma$ | last odd $n$ with a crossing | $\max_n\Xi_n$ | $n$: $\Xi_n$ |
+|---|---|---|---|
+| 0.1 | 41 | 3.358 | 1: 1.411, 3: 3.258, 5: 3.331, 7: 3.358, …, 41: 0.551 |
+| 0.3 | 11 | 1.489 | 1: 1.382, 3: 1.489, 5: 1.427, 7: 1.270, 9: 0.996, 11: 0.426 |
+| 0.5 | 5 | 1.323 | 1: 1.323, 3: 1.257, 5: 0.784 |
+| 0.8 | 3 | 1.166 | 1: 1.166, 3: 0.047 |
+| 1.0 | 1 | 1.000 | 1: 1.000 |
+| 1.2 | 1 | 0.748 | 1: 0.748 |
+
+Two features matter in practice. First, for moderate friction (in this scan, $\gamma=0.8$ and above) only the first one or two odd chaoses can be hurt, and for $\gamma\ge1$ only the linear component: then $\mu_0=\sqrt{2-\gamma^2}/\lambda_{\min}$ is attained by part 4. Second, at small friction the set of harmful amplitudes is not an interval, and $N(\gamma)$ grows roughly like $1/\gamma$. The spectrum $S_\gamma$ then has a sharp resonance peak near the damped frequency $\sqrt{1-\gamma^2/4}$, and odd chaoses carry peaks near its odd multiples. A rotation that moves weight onto such a peak raises the variance.
+
+**Friction versus rotation.** The ordering threshold is a safety boundary, not an optimum. For a unit linear observable, (10) gives $V_f(0)=2\gamma$ without rotation, which tends to zero as $\gamma\to0$; DNP found their best results at small friction. Theorem 1 and Corollary 11 below say when rotation can be added with no risk to any observable, not which friction minimises a particular variance. The threshold $\gamma=\sqrt2$ also lies below critical damping $\gamma=2$, which maximises the spectral gap of the unperturbed scalar oscillator.
+
+
+## 5. The exact regularity boundary
+
+In this section $\gamma>0$ is arbitrary and $S_n=\widehat{r_\gamma^n}$. Thus the regularity statements also apply below the monotonicity threshold.
+
+### 5.1. Moment and Fourier estimates
+
+**Lemma 4.** For every nonnegative integer $k$, there is a finite $C_{\gamma,k}$ such that
+
+$$
+\int_0^\infty t^k|r_\gamma(t)|^n\,\mathrm dt
+\le C_{\gamma,k}n^{-(k+1)/2}. \tag{11}
+$$
+
+Moreover,
+
+$$
+n^{(k+1)/2}\int_0^\infty t^kr_\gamma(t)^n\,\mathrm dt
+\longrightarrow\int_0^\infty u^ke^{-u^2/2}\,\mathrm du. \tag{12}
+$$
+
+In particular,
+
+$$
+-S_n''(0)\sim\sqrt{2\pi}\,n^{-3/2},\qquad
+\sqrt n S_n(\sqrt n x)\longrightarrow\sqrt{2\pi}e^{-x^2/2}, \tag{13}
+$$
+
+the latter uniformly over $x\in\mathbb R$.
+
+**Proof.** The oscillator energy has derivative
+$(r^2+(r')^2)'=-2\gamma(r')^2$. Since $r''(0)=-1$, its energy is strictly below one at every positive time. Hence $|r(t)|<1$ for $t>0$. At zero,
+
+$$
+r(t)=1-\tfrac12t^2+\tfrac\gamma6t^3+O(t^4).
+$$
+
+Choose $\delta>0$ so that $r(t)>0$ and $r(t)\le e^{-ct^2}$ on $[0,\delta]$. On the complement, $\rho=\sup_{t\ge\delta}|r(t)|<1$, and
+
+$$
+\int_\delta^\infty t^k|r(t)|^n\,\mathrm dt
+\le\rho^{n-1}\int_\delta^\infty t^k|r(t)|\,\mathrm dt .
+$$
+
+The small-time Gaussian bound proves (11). Substitution $u=\sqrt n\,t$ and dominated convergence prove (12). The even rescaled functions $r(|u|/\sqrt n)^n$ converge in $L^1(\mathrm du)$ to $e^{-u^2/2}$ by the same split; Fourier transformation proves the uniform assertion in (13). $\square$
+
+### 5.2. First and second derivatives
+
+**Theorem 5 (exact curvature domain).** Every real $f\in L^2(\pi)$ has $V_f\in C^1(\mathbb R)$ and $V_f'(0)=0$. Define
+
+$$
+\mathcal Q_J(f)=\sum_{n,\omega}a_{n,\omega}\omega^2 n^{-3/2}. \tag{14}
+$$
+
+The following are equivalent: $\mathcal Q_J(f)<\infty$; $V_f$ has a finite ordinary second derivative at zero; and $V_f\in C^2(\mathbb R)$. Under these conditions,
+
+$$
+V_f''(\mu)=-2\sum_{n,\omega}a_{n,\omega}\omega^2
+\int_0^\infty t^2r_\gamma(t)^n\cos(\mu\omega t)\,\mathrm dt . \tag{15}
+$$
+
+If $\mathcal Q_J(f)=\infty$, then
+
+$$
+\frac{V_f(\mu)-V_f(0)}{\mu^2}\longrightarrow-\infty
+\quad\text{as }\mu\to0. \tag{16}
+$$
+
+Equation (16) concerns the symmetric difference quotient. It does not, by itself, assert an extended derivative of $V_f'$.
+
+**Proof.** By (3) and (11),
+
+$$
+|\omega S_n'(\mu\omega)|
+\le2|\omega|\int_0^\infty t|r(t)|^n\,\mathrm dt
+\le2\|J\|C_{\gamma,1}.
+$$
+
+The first-derivative series in (6) therefore converges uniformly, because the weights sum to $\|f\|_2^2$. Each term has derivative zero at zero. This proves the $C^1$ assertion. If (14) is finite, the bound $|\omega^2\int_0^\infty t^2r(t)^n\cos(\mu\omega t)\,\mathrm dt|\le C_{\gamma,2}\,\omega^2n^{-3/2}$, which is (11) with $k=2$, gives uniform convergence of the second-derivative series on $\mathbb R$. This proves sufficiency, continuity of $V_f''$ and (15).
+
+For necessity, the possibility that $r(t)$ is negative must be handled. Decompose $r(t)^n=P_n(t)-N_n(t)$ into its nonnegative positive and negative parts. Every negative part lies in $[\delta,\infty)$ for the $\delta$ in Lemma 4, and
+
+$$
+\int_0^\infty t^2N_n(t)\,\mathrm dt\le B_\gamma\rho^{n-1}.
+$$
+
+Using $1-\cos x\le x^2/2$, its total contribution to
+
+$$
+\frac{V_f(0)-V_f(\mu)}{\mu^2}
+=2\sum_{n,\omega}a_{n,\omega}
+\int_0^\infty r(t)^n\frac{1-\cos(\mu\omega t)}{\mu^2}\,\mathrm dt
+$$
+
+is bounded uniformly in $\mu\ne0$ by
+
+$$
+B_\gamma\|J\|^2
+\sup_{n\ge1}(n^2\rho^{n-1})\,\|f\|_2^2<\infty.
+$$
+
+The positive-part second moments are asymptotic to
+$\sqrt{\pi/2}\,n^{-3/2}$ by (12). If (14) diverges, Fatou's lemma applied to the positive-part integrands makes their contribution diverge to $+\infty$. The bounded negative contribution cannot cancel it. This proves (16). A finite ordinary second derivative, together with $V_f'(0)=0$, would give a finite symmetric difference quotient, so (14) is necessary. $\square$
+
+In spectral notation, $\mathcal Q_J(f)=\|N^{-3/4}R_Jf\|_2^2$, where $N$ is the positive Hermite number operator and $R_J=(Jq)\cdot\nabla$ is interpreted spectrally. A sufficient condition is $f\in D(N^{1/4})$, since $|\omega|\le n\|J\|$. It is not necessary: invariant components require no extra regularity.
+
+**Curvature sign above the threshold.** For $\gamma>\sqrt2$, every $S_n''(0)<0$. For $n=1$ this follows from (8). For $n\ge2$, write $p=S_\gamma/(2\pi)$ and $h=p^{*(n-1)}$. Their smooth derivatives are negative on $(0,\infty)$. To verify this statement inductively, if $g$ is an even smooth density with $g'(y)<0$ for $y>0$, then
+
+$$
+(p*g)'(x)=\int_0^\infty g'(y)\,[p(x-y)-p(x+y)]\,\mathrm dy<0
+\qquad(x>0).
+$$
+
+The bracket is positive because $|x-y|<x+y$ and $p$ is even and strictly decreasing. Integration by parts now gives
+
+$$
+(p*h)''(0)=-\int_{\mathbb R}p'(y)h'(y)\,\mathrm dy<0.
+$$
+
+The integrability and boundary conditions follow from the rational decay of $p$ and its derivatives and their convolution representations. The same argument applies for $n\ge2$ when $\gamma=\sqrt2$; only $n=1$ then has zero curvature. Thus, for $\gamma>\sqrt2$, the derivative formulation conjectured by DNP is valid precisely on the finite-curvature domain (14), with strict negativity for non-invariant $f$. Global strict ordering needs only $f\in L^2$.
+
+### 5.3. Explicit fractional and logarithmic cusps
+
+Take $d=2$ and $J=\begin{psmallmatrix}0&-1\\1&0\end{psmallmatrix}$. Set
+
+$$
+\phi_n(q)=\frac{\Rea(q_1+iq_2)^n}{\sqrt{2^{n-1}n!}},\qquad n\ge1.
+$$
+
+These are real orthonormal chaos elements. The polynomial is homogeneous and harmonic, so its Hermite degree is $n$; rotational symmetry and
+$\mathbb E|q_1+iq_2|^{2n}=2^n n!$ give the normalisation. Its angular frequencies are $\pm n$, and its covariance is $r(t)^n\cos(n\mu t)$.
+
+For $1<p\le3/2$, define the $L^2$-convergent series
+
+$$
+f_p=\sum_{m\ge1}m^{-p/2}\phi_{2m},\qquad
+\|f_p\|_2^2=\zeta(p). \tag{17}
+$$
+
+**Proposition 6.** For every $\gamma>0$ and $1<p<3/2$,
+
+$$
+V_{f_p}(0)-V_{f_p}(\mu)
+\sim\frac{\sqrt\pi\,\Gamma(3/2-p)}{p-1/2}|\mu|^{2p-1}, \tag{18}
+$$
+
+and
+
+$$
+V_{f_p}'(\mu)\sim-2\sqrt\pi\,\Gamma(3/2-p)
+\operatorname{sgn}(\mu)|\mu|^{2p-2}. \tag{19}
+$$
+
+At $p=3/2$,
+
+$$
+\begin{aligned}
+V_{f_{3/2}}(0)-V_{f_{3/2}}(\mu)
+&\sim2\sqrt\pi\,\mu^2\log(1/|\mu|),\\
+V_{f_{3/2}}'(\mu)&\sim-4\sqrt\pi\,\mu\log(1/|\mu|).
+\end{aligned} \tag{20}
+$$
+
+**Proof.** Formula (6) gives $V_{f_p}(\mu)=\sum m^{-p}S_{2m}(2m\mu)$. The even powers of $r$ make all time kernels nonnegative. With $h=\mu^2$ and $x=mh$, (13) gives the locally uniform scaled difference
+
+$$
+\frac{S_{2m}(0)-S_{2m}(2m\mu)}{|\mu|}
+\longrightarrow\sqrt{\pi/x}(1-e^{-x}).
+$$
+
+Lemma 4 and the two elementary cosine bounds give
+
+$$
+0\le S_{2m}(0)-S_{2m}(2m\mu)
+\le C\min\{m^{-1/2},\mu^2m^{1/2}\}. \tag{21}
+$$
+
+After rescaling, the summands are dominated by a constant times
+$\min(x^{1/2-p},x^{-p-1/2})$. Its integral is finite at zero and infinity for the stated range. Splitting the Riemann sums into a compact interval and two tails yields
+
+$$
+\lim_{\mu\to0}\frac{V_{f_p}(0)-V_{f_p}(\mu)}{|\mu|^{2p-1}}
+=\sqrt\pi\int_0^\infty x^{-p-1/2}(1-e^{-x})\,\mathrm dx.
+$$
+
+Integration by parts evaluates this integral as the constant in (18). The derivative scaling follows by differentiating the Fourier integral after the $u=\sqrt n t$ substitution. In particular,
+$nS_n'(\sqrt n x)\to-\sqrt{2\pi}x e^{-x^2/2}$ on compact sets. The bound
+
+$$
+|2mS_{2m}'(2m\mu)|\le C\min\{1,|\mu|\sqrt m\}
+$$
+
+supplies the integrable Riemann-sum envelope
+$\min(x^{-p},x^{1/2-p})$, proving (19).
+
+For $p=3/2$, split at $K=\lfloor\mu^{-2}\rfloor$. Replacing $1-\cos(2m\mu t)$ by its quadratic term for $m\le K$ creates total error $O(\mu^4K)=O(\mu^2)$, by (11) with $k=4$. Its main coefficient is asymptotic to $\sqrt\pi/m$, whose sum is $\sqrt\pi\log K$. The tail is $O(\mu^2)$ by (21). This proves the first part of (20). The cubic sine remainder and the first-derivative bound similarly give an $O(|\mu|)$ error for the derivative, proving the second part. $\square$
+
+The asymptotics (18)–(19) are approached slowly: the relative correction is of order $|\mu|^{3-2p}$, so numerical checks need very small amplitudes, and near $p=3/2$ the power law is practically indistinguishable from the logarithmic case (20). For example, $p=4/3$ gives a variance cusp of order $|\mu|^{5/3}$. These examples directly refute finite second differentiability for every $L^2$ observable. Their leading constants are independent of friction because the short-time covariance starts as $1-t^2/2$ for every $\gamma$.
+
+The regularity is also sharp at first order. For (17) with $1<p<3/2$, the derivative is globally Hölder continuous of exponent $2p-2$, by summing
+$m^{-p}\min(1,\sqrt m|\mu-\nu|)$; (19) rules out a larger exponent at zero. At $p=3/2$, this bound gives the small-increment modulus $O(\delta\log(1/\delta))$, where $\delta=|\mu-\nu|$; (20) rules out Lipschitz continuity at zero. For a single example with no positive Hölder exponent, take $\gamma\ge\sqrt2$,
+$n_j=2^{2^j}$, and $f=\sum_{j\ge1}j^{-1}\phi_{n_j}$. At $\mu_j=n_j^{-1/2}$, the derivative local limit gives
+$-V_f'(\mu_j)\ge c j^{-2}$ for large $j$, since every spectral derivative has the same sign. This exceeds every constant multiple of $\mu_j^\alpha$ along the sequence, for every $\alpha>0$, although Theorem 5 still gives $V_f\in C^1$.
+
+## 6. Large amplitudes: polynomial and uniform rates
+
+For any $\gamma>0$, the Riemann–Lebesgue lemma in (6), dominated using (5), gives
+
+$$
+\lim_{|\mu|\to\infty}V_f(\mu)=V_{\Pi_Jf}(0). \tag{22}
+$$
+
+This is DNP's known projection limit. We now quantify it. Define
+
+$$
+D_J(\mu)=\sup_{\substack{f\in L^2_0(\pi)\text{ real}\\\|f\|_2=1}}
+\{V_f(\mu)-V_{\Pi_Jf}(0)\}
+=\sup_{n,\omega\ne0}S_n(\mu\omega). \tag{23}
+$$
+
+The last equality follows by concentrating the spectral mass on a conjugate frequency pair. We define the empty supremum to be zero when $J=0$, so $D_0\equiv0$. The remainder is nonnegative, including when $\gamma<\sqrt2$.
+
+### 6.1. Every fixed polynomial has fourth-order decay
+
+**Proposition 7.** For a polynomial observable,
+
+$$
+V_f(\mu)-V_{\Pi_Jf}(0)
+=\frac{2\gamma}{\mu^4}
+\sum_{n,\omega\ne0}\frac{n a_{n,\omega}}{\omega^4}
++O_{f,J,\gamma}(|\mu|^{-6}). \tag{24}
+$$
+
+The leading coefficient is positive exactly when $f$ is non-invariant.
+
+**Proof.** For fixed $n$, put $g_n(t)=r_\gamma(t)^n$ on $t\ge0$. Every derivative decays exponentially up to a polynomial factor. Also $g_n'(0)=0$ and $g_n'''(0)=n\gamma$. Six integrations by parts in the cosine transform give
+$S_n(\xi)=2n\gamma\xi^{-4}+O_{n,\gamma}(|\xi|^{-6})$. A polynomial has only finitely many chaos components and frequencies, so summing gives (24). $\square$
+
+### 6.2. Exact uniform rate for commensurate rotations
+
+Let $G_J$ be the additive subgroup of $\mathbb R$ generated by the positive rotation speeds of $J$. The union of all chaos frequencies equals $G_J$: positive and negative eigenvectors in symmetric tensor powers realise every integer combination. If $G_J$ is discrete and $J\ne0$, write $G_J=\omega_*\mathbb Z$, where $\omega_*>0$. This is exactly the case of commensurate nonzero rotation speeds.
+
+**Theorem 8.** For every $\gamma>0$ and every fixed finite-dimensional $J$, $D_J(\mu)\to0$ as $|\mu|\to\infty$. If $G_J=\omega_*\mathbb Z$ with $\omega_*>0$, then
+
+$$
+\boxed{\displaystyle
+D_J(\mu)\sim\frac{\sqrt{2\pi/e}}{|\mu|\omega_*}.} \tag{25}
+$$
+
+**Proof.** Lemma 4 gives $S_n(\xi)\le C_\gamma n^{-1/2}$ uniformly in $\xi$. High degrees are therefore uniformly small. Each bounded set of degrees contains finitely many nonzero frequencies, and their transforms vanish at infinity. This proves $D_J\to0$ without any arithmetic assumption.
+
+To obtain the exact constant, strengthen the scaling in (13). Set
+$g_n(u)=r_\gamma(|u|/\sqrt n)^n$. The proof of Lemma 4 also gives
+
+$$
+g_n\longrightarrow e^{-u^2/2}\quad\text{in }W^{1,1}(\mathbb R).
+$$
+
+Indeed, near zero the derivatives converge to $-u e^{-u^2/2}$ and are bounded by $C|u|e^{-cu^2}$. Outside $|u|\le\delta\sqrt n$, their $L^1$ norm is at most
+$2n\rho^{n-2}\int_\delta^\infty|rr'|\,\mathrm dt$, which tends to zero. Fourier transformation of the derivatives yields
+
+$$
+\sup_{x\in\mathbb R}\left|x\left[
+\sqrt n S_n(\sqrt n x)-\sqrt{2\pi}e^{-x^2/2}
+\right]\right|\longrightarrow0. \tag{26}
+$$
+
+For $\omega\ne0$, set $x=|\mu\omega|/\sqrt n$. The expression
+$|\mu|\omega_*S_n(\mu\omega)$ equals
+$(\omega_*/|\omega|)x\sqrt n S_n(\sqrt n x)$.
+For sufficiently large $n$, (26) bounds it by
+$\max_{x\ge0}\sqrt{2\pi}x e^{-x^2/2}+o(1)=\sqrt{2\pi/e}+o(1)$, uniformly in the frequencies. Every finite set of low degrees contributes $o(1)$ after multiplication by $|\mu|$, by the fixed-degree tail used in Proposition 7. This proves the upper bound in (25).
+
+The frequency $\omega_*$ occurs in some degree $n_0$ and in every degree $n_0+2k$: append one positive and one negative eigenvector from any rotation plane to a nonzero symmetric tensor. Choose such a degree nearest to $(\mu\omega_*)^2$. The local limit (13), evaluated at $x\to1$, gives the matching lower bound. $\square$
+
+**Corollary 8A (an elementary bound at every amplitude).** For $\gamma\ge\sqrt2$ there is also a simple bound at every nonzero amplitude; unlike (25), it needs the threshold. Every symmetric decreasing probability density $h$ satisfies $h(x)\le1/(2|x|)$, by integrating over $[-|x|,|x|]$. Applying this to $S_n/(2\pi)$ gives
+
+$$
+0\le V_f(\mu)-V_{\Pi_Jf}(0)
+\le\frac{\pi}{|\mu|}
+\sum_{n,\omega\ne0}\frac{a_{n,\omega}}{|\omega|}. \tag{27}
+$$
+
+When a gap $\omega_*$ holds, the right side is at most
+$\pi\|f-\Pi_Jf\|_2^2/(|\mu|\omega_*)$. Formula (25) sharpens its asymptotic constant.
+
+The observable attaining the lower scale in (25) changes with $\mu$ and has degree of order $\mu^2$. Thus (24) and (25) address different quantifiers: one fixed polynomial versus the worst unit-norm $L^2$ observable at each amplitude.
+
+## 7. Arithmetic rates and small divisors
+
+There need not be a positive angular gap when several rotation speeds are incommensurate. This changes the uniform rate without destroying convergence.
+
+**Proposition 9 (Diophantine bound).** Suppose there exist $c>0$ and $\tau\ge0$ such that every nonzero frequency in degree $n$ satisfies $|\omega|\ge c n^{-\tau}$. Then, for every $\gamma>0$,
+
+$$
+D_J(\mu)=O(|\mu|^{-1/(2\tau+1)}). \tag{28}
+$$
+
+**Proof.** The $W^{1,1}$ estimate used in (26), together with the finitely many remaining degrees, gives $|\xi|S_n(\xi)\le C_\gamma$ uniformly in $n,\xi$. Combining it with Lemma 4 gives
+
+$$
+S_n(\mu\omega)\le C\min\{n^{-1/2},n^\tau/|\mu|\}.
+$$
+
+Split the degrees at $n\asymp|\mu|^{2/(2\tau+1)}$ to obtain (28). $\square$
+
+**A sharp irrational example.** Let $d=4$ and let the two rotation speeds be $1$ and $\sqrt2$. Every degree-$n$ frequency is $a+b\sqrt2$ with integers $|a|+|b|\le n$. If it is nonzero, then
+
+$$
+|a+b\sqrt2|\ge\frac1{|a-b\sqrt2|}\ge\frac1{\sqrt2 n},
+$$
+
+because $a^2-2b^2$ is a nonzero integer. Proposition 9 gives $D_J(\mu)=O(|\mu|^{-1/3})$.
+
+For the lower bound, write $p_k+q_k\sqrt2=(1+\sqrt2)^k$, and put
+$n_k=p_k+q_k$, $\omega_k=|p_k-q_k\sqrt2|=(1+\sqrt2)^{-k}$.
+These frequencies occur in degree $n_k$. With
+$\mu_k=\sqrt{n_k}/\omega_k$, we have $\mu_k\asymp n_k^{3/2}$ and bounded successive ratios $\mu_{k+1}/\mu_k$. For $\mu_k\le|\mu|<\mu_{k+1}$, the argument
+$|\mu|\omega_k/\sqrt{n_k}$ remains in a fixed compact subset of $(0,\infty)$. The uniform local limit (13) then gives
+$S_{n_k}(\mu\omega_k)\ge c n_k^{-1/2}\ge c'|\mu|^{-1/3}$ for large $k$. Hence
+
+$$
+D_J(\mu)=\Theta(|\mu|^{-1/3}) \tag{29}
+$$
+
+for this explicit four-dimensional example.
+
+**No algebraic rate in general.** Let the two speeds instead be $1$ and a positive Liouville number, for example $\alpha=\sum_{j\ge1}10^{-j!}$. It admits positive integer approximants $p_k/q_k$ with increasing denominators and
+
+$$
+0<\omega_k=|q_k\alpha-p_k|<2q_k^{-k},\qquad n_k=p_k+q_k\asymp q_k.
+$$
+
+A unit real chaos element $\psi_k$ of degree $n_k$ has frequency pair $\pm\omega_k$. At $\mu_k=\sqrt{n_k}/\omega_k$, (13) gives
+
+$$
+D_J(\mu_k)\ge S_{n_k}(\sqrt{n_k})
+\sim\sqrt{2\pi/e}\,n_k^{-1/2}.
+$$
+
+For every $\beta>0$, the quantity $\mu_k^\beta D_J(\mu_k)$ diverges. Therefore $D_J$ has no bound $O(|\mu|^{-\beta})$ for any $\beta>0$, despite tending to zero. The same obstruction holds for one fixed observable: after retaining distinct degrees, take
+$f=c\sum_{k\ge1}k^{-1}\psi_k$ with unit $L^2$ norm. Each spectral term is nonnegative, so
+$V_f(\mu_k)\ge c^2k^{-2}S_{n_k}(\sqrt{n_k})$; the same comparison proves failure of every algebraic rate. This example has $\Pi_Jf=0$.
+
+## 8. A sharp matrix criterion and replica application
+
+The scalar covariance in (7) is not essential. We now allow the stiffness and friction matrices to fail to commute. In this section $K$ denotes target precision, rather than the coefficient of a quadratic observable.
+
+Let $K,\Gamma\in\mathbb R^{d\times d}$ be symmetric positive definite, and let $J^\top=-J$ satisfy $[J,K]=[J,\Gamma]=0$. Consider
+
+$$
+\begin{aligned}
+\mathrm dq_t&=(p_t-\mu Jq_t)\,\mathrm dt,\\
+\mathrm dp_t&=(-Kq_t-\Gamma p_t-\mu Jp_t)\,\mathrm dt
+                    +\sqrt{2\Gamma}\,\mathrm dW_t.
+\end{aligned} \tag{M1}
+$$
+
+The stationary law is $\mathcal N(0,K^{-1})\otimes\mathcal N(0,I)$. Define $V_f$ by (2) and $\Pi_J$ using rotations of position as before.
+
+**Theorem 10 (exact matrix boundary).** Set
+
+$$
+\boxed{\displaystyle D=\Gamma^3-\Gamma K-K\Gamma.} \tag{M2}
+$$
+
+If $D\succeq0$, then $V_f$ is nonincreasing in $|\mu|$ for every real square-integrable position observable. Equality between distinct nonnegative amplitudes holds exactly when $f=\Pi_Jf$. If $J$ is invertible, the following are equivalent:
+
+1. $D\succeq0$.
+2. This global ordering holds for every real $L^2$ position observable.
+3. Every real linear position observable satisfies $V_f(\mu)\le V_f(0)$ for all sufficiently small $\mu$.
+
+The matrix assumption $[K,\Gamma]=0$ is absent. Strictness uses $-S'(\xi)\succ0$ for $\xi>0$, which holds even when $B$ is singular (Section 8.1). The two-replica construction of Section 8.4 always produces an invertible $J$, so for replicated targets the three conditions are equivalent. The symmetry assumptions involving $J$ do restrict a single-copy system: an invertible commuting skew matrix requires even-dimensional eigenspaces of $K$. Section 8.4 obtains this symmetry for an arbitrary base Gaussian target by using two replicas. For singular $J$, (M2) remains sufficient; no necessity statement is made for an arbitrary unrotated block.
+
+### 8.1. Matrix spectra and tensor convolution
+
+At $\mu=0$, the deterministic equation is $\ddot q+\Gamma\dot q+Kq=0$. Its drift is stable. Indeed, an eigenpair of the second-order pencil gives
+$\lambda^2\|v\|^2+\lambda v^*\Gamma v+v^*Kv=0$; the positive real coefficients force $\Rea\lambda<0$. The stationary covariance solves the Lyapunov equation, and the commuting rotation preserves it and commutes with the drift. All covariance functions therefore decay exponentially, allowing a polynomial prefactor.
+
+The physical-position transfer spectrum is
+
+$$
+S_q(\xi)=2H_\xi\Gamma H_\xi^*,\qquad
+H_\xi=(K-\xi^2I+i\xi\Gamma)^{-1}.
+$$
+
+The inverse has a useful cancellation. Without assuming that $K$ and $\Gamma$ commute,
+
+$$
+\begin{aligned}
+S_q(\xi)&=2Q(\xi)^{-1},\\
+Q(\xi)&=K\Gamma^{-1}K+\xi^2B+\xi^4\Gamma^{-1},\\
+B&=\Gamma-K\Gamma^{-1}-\Gamma^{-1}K,\qquad D=\Gamma B\Gamma.
+\end{aligned} \tag{M3}
+$$
+
+To check (M3), multiply $(K-\xi^2I-i\xi\Gamma)\Gamma^{-1}(K-\xi^2I+i\xi\Gamma)$: the imaginary cross terms cancel. Whitening position by $x=K^{1/2}q$ gives spectrum $S(\xi)=K^{1/2}S_q(\xi)K^{1/2}$ and covariance $C(t)$. Both are real symmetric and even, and commute with $J$. Also $C(0)=I$, $\|C(t)\|\le1$, and $\int\|C(t)\|\,\mathrm dt<\infty$.
+
+The spectrum $S$ is decreasing in Loewner order on $[0,\infty)$ if and only if $B\succeq0$. Sufficiency follows from
+$Q'(\xi)=2\xi(B+2\xi^2\Gamma^{-1})$ and order reversal under inversion. Conversely, increasing $Q$ implies $(Q(\xi)-Q(0))/\xi^2\succeq0$, whose limit is $B$. When $B\succeq0$, the quartic term makes $-S'(\xi)$ positive definite for every $\xi>0$, including boundary cases where $B$ is singular.
+
+For spectra acting on separate finite-dimensional spaces, define their tensor convolution by
+
+$$
+(A\star_\otimes B)(x)=\int_{\mathbb R}A(x-y)\otimes B(y)\,\mathrm dy. \tag{M4}
+$$
+
+This operation uses tensor products of operators.
+
+**Lemma 10A (tensor convolution keeps Loewner unimodality).** Let $A$ and $B$ be continuous, even, integrable functions from $\mathbb R$ to positive semidefinite matrices on finite-dimensional spaces $E$ and $F$, each nonincreasing in Loewner order on $[0,\infty)$. Suppose $B$ is continuously differentiable on $(0,\infty)$, $B(r)\to0$ as $r\to\infty$, and $\int_0^\infty\|B'(r)\|\,\mathrm dr<\infty$. Then $A\star_\otimes B$ is continuous, even, integrable, positive semidefinite and nonincreasing in Loewner order on $[0,\infty)$. If, in addition, $A(a)-A(b)\succ0$ for $0\le a<b$ and $-B'(r)\succ0$ for $r>0$, then $(A\star_\otimes B)(y)-(A\star_\otimes B)(x)\succ0$ for $0\le y<x$.
+
+**Proof.** Since $B$ is even and vanishes at infinity, $B(y)=\int_{|y|}^\infty[-B'(r)]\,\mathrm dr$ with $-B'(r)\succeq0$. Fubini's theorem, justified by integrability of $\|A\|$ and $\|B'\|$, gives the matrix layer-cake formula
+
+$$
+(A\star_\otimes B)(x)=
+\int_0^\infty H_r(x)\otimes[-B'(r)]\,\mathrm dr,
+\qquad H_r(x)=\int_{x-r}^{x+r}A(u)\,\mathrm du .
+$$
+
+For $0\le y<x$,
+$H_r(x)-H_r(y)=\int_{y-r}^{x-r}[A(u+2r)-A(u)]\,\mathrm du$. On this interval $u\ge-r$, so $|u+2r|\ge|u|$, and Loewner monotonicity of the even function $A$ gives $A(u+2r)-A(u)\preceq0$. The tensor product of a negative semidefinite and a positive semidefinite matrix is negative semidefinite, because its eigenvalues are products of their eigenvalues. Integrating over $r$ proves the weak statement. Under the strict hypotheses, $|u+2r|>|u|$ except at the single endpoint $u=-r$, so $H_r(x)-H_r(y)\prec0$ for every $r>0$; tensoring with $-B'(r)\succ0$ and integrating over $r>0$ gives a negative definite difference. Positivity, evenness, continuity and integrability are immediate from the definition. $\square$
+
+We apply Lemma 10A to the whitened spectrum $S$. When $B\succeq0$, $S$ is smooth and even, $S(\xi)\succ0$, $-S'(\xi)\succ0$ for $\xi>0$, and $S(\xi)=O(\xi^{-4})$; also $\int_0^\infty\|S'(r)\|\,\mathrm dr\le\int_0^\infty\operatorname{tr}[-S'(r)]\,\mathrm dr=\operatorname{tr}S(0)$. Induction on $n$, with $A=S^{\star_\otimes(n-1)}$ and $B=S$, shows that every tensor convolution power $S^{\star_\otimes n}$ is positive definite and strictly decreasing in Loewner order on $[0,\infty)$. No common eigenbasis for spectra at different frequencies is used.
+
+Under the Wick isometry from symmetric tensors to Hermite chaos, the degree-$n$ covariance operator is $C(t)^{\otimes n}$ restricted to the symmetric tensor space. The orthogonal projection $\Pi_{\mathrm{sym}}$ onto that space commutes with $C(t)^{\otimes n}$, so the degree-$n$ spectral operator is
+
+$$
+\mathscr S_n(\xi)=(2\pi)^{1-n}\,\Pi_{\mathrm{sym}}\,S^{\star_\otimes n}(\xi)\,\Pi_{\mathrm{sym}}\big|_{\mathrm{sym}} .
+$$
+
+Compression by a projection preserves Loewner inequalities, and preserves strict ones on the range of the projection, because $\langle v,\Pi X\Pi v\rangle=\langle v,Xv\rangle$ for $v$ in that range. Hence $\mathscr S_n$ is positive definite and strictly decreasing in Loewner order on $[0,\infty)$ when $B\succeq0$.
+
+Decompose each chaos into angular frequency components $f_{n,\omega}$. These projections commute with the covariance and spectral operators. Gaussian conditioning gives
+
+$$
+V_f(\mu)=\sum_{n\ge1,\omega}
+\langle f_{n,\omega},\mathscr S_n(\mu\omega)f_{n,\omega}\rangle. \tag{M5}
+$$
+
+Both conjugate frequency signs are included. The bound
+$|\Cov(f(x_t),f(x_0))|\le\|f\|_2^2\|C(t)\|$ justifies covariance integration, chaos truncation and the variance limit for every $L^2$ observable. Formula (M5) proves sufficiency and strictness in Theorem 10 exactly as (6) did in the scalar setting.
+
+### 8.2. Necessity and a noncommuting witness
+
+If $J$ is invertible, decompose position space into speed subspaces $W_\lambda=\ker(J^2+\lambda^2I)$, $\lambda>0$. The matrices in (M3) preserve them. For $f(q)=a^\top q$ with $a\in W_\lambda$, symmetry kills the sine term in the covariance, giving $V_f(\mu)=a^\top S_q(\lambda\mu)a$.
+
+If $B$ is not positive semidefinite, one such subspace contains $v$ with $v^\top Bv<0$. Set $Q_0=K\Gamma^{-1}K$ and $a=Q_0v$. Expansion of the inverse in (M3) gives
+
+$$
+V_f''(0)=-4\lambda^2v^\top Bv>0.
+$$
+
+Thus even the local linear-observable condition forces $B\succeq0$, proving necessity.
+
+For an explicit noncommuting failure, take base matrices
+
+$$
+K_0=\begin{pmatrix}2&1\\1&3\end{pmatrix},\qquad
+\Gamma_0=\begin{pmatrix}2&0\\0&3\end{pmatrix}.
+$$
+
+The diagonal checks $\gamma_i^2\ge2(K_0)_{ii}$ hold, but $D_0=\begin{psmallmatrix}0&-5\\-5&9\end{psmallmatrix}$ is indefinite. Duplicate the base matrices and rotate the replicas as in Section 8.4. For $f(q)=11q^{(1)}_1+13q^{(1)}_2$,
+
+$$
+V_f(\mu)=
+\frac{1498\mu^4+4312\mu^2+2950}
+{\mu^8+3\mu^6+11\mu^4+34\mu^2+25}
+=118+12\mu^2+O(\mu^4).
+$$
+
+This is an exact witness of increasing variance. For a noncommuting admissible example, use $K=\diag(1,4)\otimes I_2$, $\Gamma=\begin{psmallmatrix}4&1\\1&4\end{psmallmatrix}\otimes I_2$, and $J=I_2\otimes\begin{psmallmatrix}0&-1\\1&0\end{psmallmatrix}$. Its criterion is $D=\begin{psmallmatrix}68&44\\44&44\end{psmallmatrix}\otimes I_2\succ0$; the base determinant is $1056$.
+
+Independent isotropic blocks give the useful special case $K=\bigoplus_jk_jI$, $\Gamma=\bigoplus_j\gamma_jI$. If each block contains a nonzero rotating plane, the exact universal condition is $\gamma_j^2\ge2k_j$ for every block. This follows by applying (M2) and testing a linear observable within each rotating block.
+
+### 8.3. Exact friction design consequences
+
+For a fixed positive definite shape $G$ commuting with $J$, put $\Gamma=\gamma G$. The exact threshold is
+
+$$
+\gamma^2\ge\lambda_{\max}
+\left[G^{-3/2}(GK+KG)G^{-3/2}\right]. \tag{M6}
+$$
+
+It follows by congruence from $D=\gamma(\gamma^2G^3-GK-KG)$. The largest eigenvalue is positive because the matrix inside the brackets has trace $2\operatorname{tr}(KG^{-2})>0$. For scalar friction, (M6) becomes $\gamma^2\ge2\lambda_{\max}(K)$.
+
+**Corollary 11 (least admissible friction).** Among positive definite matrices satisfying (M2),
+
+$$
+\Gamma_*=(2K)^{1/2}
+$$
+
+is the unique least element in Loewner order. In particular, it uniquely minimises $\operatorname{tr}\Gamma$, with minimum $\sqrt2\operatorname{tr}\sqrt K$.
+
+**Proof.** Put $H=\Gamma^2/2-K$. The inequality (M2) is the positive Lyapunov equation $\Gamma H+H\Gamma=D\succeq0$, so
+
+$$
+H=\int_0^\infty e^{-\Gamma t}D e^{-\Gamma t}\,\mathrm dt\succeq0. \tag{M7}
+$$
+
+Therefore $\Gamma^2\succeq2K$. Monotonicity of the positive square root gives $\Gamma\succeq\sqrt{2K}$. This standard operator fact also follows directly from
+$\sqrt A=\pi^{-1}\int_0^\infty t^{-1/2}A(A+tI)^{-1}\,\mathrm dt$ and order reversal under inversion. Substituting $\Gamma_*$ gives $D=0$. Equality of traces under a semidefinite ordering forces equality of matrices. Also $\Gamma_*$ commutes with $J$ whenever $K$ does. $\square$
+
+This minimises friction subject to universal rotation ordering: it is the smallest friction at which rotation is safe for every observable, a safety boundary rather than a recommendation (compare the remark at the end of Section 4.1). It does not minimise variance for a particular observable or numerical computing cost; the observable-specific friction optimisation of Chak et al. (2023) has a different objective.
+
+The weaker condition $\Gamma^2\succeq2K$ is not sufficient. Indeed, $\Gamma=\diag(1,2)$ and $K=\begin{psmallmatrix}1/4&-1/4\\-1/4&7/4\end{psmallmatrix}$ give
+$\Gamma^2-2K=\tfrac12\begin{psmallmatrix}1&1\\1&1\end{psmallmatrix}\succeq0$, but
+$D=\tfrac14\begin{psmallmatrix}2&3\\3&4\end{psmallmatrix}$ has determinant $-1/16$. Duplication again supplies the required rotation. Thus the admissible matrices do not form the entire upper Loewner cone above $\Gamma_*$.
+
+### 8.4. Two replicas for an arbitrary Gaussian target
+
+Let $K_0,\Gamma_0>0$ be arbitrary symmetric base matrices, with no common rotation symmetry or mutual commutation assumption. On two copies put
+
+$$
+K=I_2\otimes K_0,\quad \Gamma=I_2\otimes\Gamma_0,\quad
+J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\otimes I. \tag{M8}
+$$
+
+Then $J$ is invertible and commutes with both matrices. The exact criterion reduces to
+$\Gamma_0^3-\Gamma_0K_0-K_0\Gamma_0\succeq0$. At each stationary time the replicas are independent with the desired marginal law; their trajectories are coupled by rotation.
+
+Replica coupling and the use of both replicas to estimate expectations are established ideas (Ohzeki & Ichiki, 2015; Ichiki & Ohzeki, 2021). Kobayashi, Nakagawa and Sasa (2023, supplementary equations (S.71), (S.75)–(S.76)) explicitly use kinetic duplication and average both copies, with a different coupling through Hamiltonian terms. Related generalised auxiliary-variable and finite-force formulations also appear in Ohzeki (2026). The claims here are the sharp kinetic matrix criterion and the explicit universal variance consequences for (M8).
+
+Let a centred base observable have Hermite decomposition $f=\sum_{n\ge1}f_n$, after whitening. Write $V_n$ for the unperturbed base variance of $f_n$, and $V_f^0=\sum_nV_n$. Define $b_{2m}=\binom{2m}{m}/4^m$ and $b_{2m+1}=0$.
+
+**Corollary 12 (replica averages).** Under the matrix criterion, the variance of the single-copy observable $f(q^{(1)})$ strictly decreases for every nonconstant $f$. For the average of the same two copies,
+
+$$
+F(q^{(1)},q^{(2)})=\tfrac12\bigl(f(q^{(1)})+f(q^{(2)})\bigr),
+$$
+
+the variance strictly decreases unless $f$ belongs to the second Hermite chaos. A centred quadratic form, with no linear component, gives constant variance. The exact limiting formulas are
+
+$$
+V_F(0)=\tfrac12V_f^0,\qquad
+\lim_{|\mu|\to\infty}V_F(\mu)=\sum_{m\ge1}b_{2m}V_{2m}. \tag{M9}
+$$
+
+The single-copy observable has the same limiting variance, with baseline $V_f^0$. The limits hold for all $\Gamma_0>0$; the matrix criterion is needed for monotonicity.
+
+**Proof.** Write $c_n(t)$ for the base covariance of $f_n$. The first-copy covariance on degree $n$ is $c_n(t)\cos^n(\mu t)$. The two cross-copy covariance matrices have opposite sine signs. Consequently the covariance of the two-copy average is
+
+$$
+\begin{cases}
+\tfrac12c_n(t)\cos^n(\mu t),&n\text{ odd},\\
+\tfrac12c_n(t)\bigl[\cos^n(\mu t)+\sin^n(\mu t)\bigr],&n\text{ even}.
+\end{cases} \tag{M10}
+$$
+
+The constant Fourier coefficients of $\cos^{2m}$ and $\sin^{2m}$ are both $b_{2m}$; odd powers of cosine have zero constant coefficient. The Riemann–Lebesgue lemma removes all other frequencies on covariance integration. The integrable chaos bound from (M5) justifies passage to the limit for general $L^2$ observables.
+
+A single-copy observable invariant under a quarter-turn would satisfy $f(q^{(1)})=f(q^{(2)})$ for independent replicas, so it is constant. For the average, the degree-$n$ squared norm is $\|f_n\|_2^2/2$, whereas its invariant projection has squared norm $b_n\|f_n\|_2^2$. These coincide exactly for $n=2$; for all other $n\ge1$, $b_n<1/2$. Orthogonality of chaoses and Theorem 10 give the strictness statement. $\square$
+
+Relative to two independent copies, the limiting residual factors for pure degrees $2,4,6$ are respectively $1,3/4,5/8$. Every odd observable has zero limiting variance. This is an antithetic cancellation: the rotation carries each replica through its own negative, so odd components average out. If $f$ has no second-chaos component, (M9) is at most $3/4$ of its two-copy baseline. These comparisons use continuous-time averages at the same replica count. They do not establish a gain per unit of numerical work.
+
+Appendix B proves that the exact curvature domain and the sharp angular-gap constant also hold for the matrix model, even below its ordering threshold. Thus the extension retains the distinction between individual polynomial rates and uniform rates over $L^2$ observables.
+
+
+## 9. Observation rules and the scope of the theorem
+
+### 9.1. Phase-space observables
+
+The position restriction is essential. For a unit momentum observable in a rotation plane of speed $\lambda$, the spectrum gives
+
+$$
+V_p(\mu)=(\lambda\mu)^2S_\gamma(\lambda\mu).
+$$
+
+This is zero at $\mu=0$ and positive otherwise. At zero rotation, the time integral of momentum is a difference of position endpoints. Thus Theorem 1 cannot be extended to every function of $(q,p)$.
+
+### 9.2. A fixed finite horizon
+
+Take $\gamma=2$, the standard planar rotation, $f(q)=q_1$, and horizon $T=1$. Then $r(t)=(1+t)e^{-t}$ and
+
+$$
+W(\mu)=\Var\left(\int_0^1q_1(t)\,\mathrm dt\right)
+=2\int_0^1(1-t^2)e^{-t}\cos(\mu t)\,\mathrm dt.
+$$
+
+With $z=-1+i\mu$, direct integration gives
+
+$$
+W(\mu)=2\Rea\left[-\frac1z+\frac{2e^z}{z^2}
++\frac{2(1-e^z)}{z^3}\right]. \tag{30}
+$$
+
+It follows that
+$W(2\pi)\simeq0.01932908316$ and $W(3\pi)\simeq0.04028633541$.
+The reversal can also be certified without floating-point reliance. At $u=k\pi$,
+
+$$
+W(k\pi)=
+\frac{2u^4+16u^2-2+(4/e)(-1)^k(2-3u^2-u^4)}{(1+u^2)^3}.
+$$
+
+For $k=3$ the factor $(-1)^k(2-3u^2-u^4)=u^4+3u^2-2$ is positive, and for $k=2$ the factor $2-3u^2-u^4$ is negative. Using $4/e>4/3$ (from $e<3$) in each case gives
+
+$$
+W(3\pi)>\frac{\tfrac{10}3u^4+20u^2-\tfrac{14}3}{(1+u^2)^3}\Big|_{u^2=9\pi^2},
+\qquad
+W(2\pi)<\frac{\tfrac23u^4+12u^2+\tfrac23}{(1+u^2)^3}\Big|_{u^2=4\pi^2}.
+$$
+
+Each numerator increases and each denominator increases with $u^2$. With $9<\pi^2<10$, bound the numerator at $u^2=81$ and the denominator at $u^2=90$ for $W(3\pi)$, and the reverse ($u^2=40$ and $u^2=36$) for $W(2\pi)$; the right-hand fraction rounds the resulting bound $4642/151959$ outward to a simpler one:
+
+$$
+W(3\pi)>\frac{70456}{3\cdot91^3}=\frac{70456}{2260713}
+>\frac{1548}{50653}=\frac{1548}{37^3}>W(2\pi).
+$$
+
+The difference between the middle fractions is
+$69224044/114511895589>0$.
+In contrast, the long-run variance is $4/(1+\mu^2)^2$, strictly decreasing. A long-run ordering therefore does not establish ordering at each observation horizon.
+
+### 9.3. Regular observation and exact aliasing
+
+For the same example, sample at interval $\Delta>0$. The asymptotic variance per recorded sample is
+
+$$
+\tau_\Delta^2(\mu)=1+2\sum_{k\ge1}(1+k\Delta)e^{-k\Delta}
+\cos(k\Delta\mu).
+$$
+
+Putting $z=e^{-\Delta+i\Delta\mu}$ yields
+
+$$
+\tau_\Delta^2(\mu)=1+2\Rea\left[
+\frac z{1-z}+\frac{\Delta z}{(1-z)^2}\right]. \tag{31}
+$$
+
+This is a nonconstant periodic function of $\mu$, of period $2\pi/\Delta$, and cannot be globally nonincreasing. In fact, the entire sampled Gaussian law repeats with this period. This is observation aliasing even under exact simulation, rather than an error caused by a numerical integrator. Multiplication by $\Delta$ converts (31) to variance per physical observation time.
+
+### 9.4. Poisson observation preserves the ordering
+
+Observe at arrival times of an independent Poisson process of rate $\lambda>0$, and average a fixed number $N$ of observations. Let $\tau_{\mathrm P,\lambda}^2(\mu)$ denote the limit of $N$ times the variance of this sample mean, averaging over both the stationary dynamics and the independent observation clock. The gap between observations $k$ positions apart has the Gamma$(k,\lambda)$ density. Since
+
+$$
+\sum_{k\ge1}\frac{\lambda^kt^{k-1}e^{-\lambda t}}{(k-1)!}=\lambda,
+$$
+
+integrable covariance and the covariance-sum identity give
+
+$$
+\boxed{\displaystyle
+\tau_{\mathrm P,\lambda}^2(\mu)=\|f\|_2^2+\lambda V_f(\mu).} \tag{32}
+$$
+
+Thus independent Poisson observation preserves every ordering in Theorem 1 at every observation rate. This is an instance of the classical fact that Poisson sampling is free of aliasing (Shapiro & Silverman, 1960). Per mean elapsed time, the corresponding variance is
+$V_f(\mu)+\|f\|_2^2/\lambda$. This extra term is an observation noise floor, so (32) does not establish superiority over regularly spaced observations at equal cost. The identity is a direct consequence of standard Poisson sampling, presented as an application of the theorem rather than a separate priority claim.
+
+## 10. Reproducibility and interpretation
+
+The archive accompanying this manuscript contains three deterministic verification scripts: `code/verify.py`, `code/verify_matrix_extension.py` and `code/verify_below_threshold.py`. Each writes a JSON report to a path chosen by the user and fails with an explicit error, also under optimised Python, if a check fails. They check the covariance reduction against matrix exponentials, the linear and quadratic variance formulas against independent linear-system calculations, Fourier transforms against quadrature, and the finite-horizon and observation-rule examples. They also record exact polynomial fingerprints and the high-degree scaling in (13). The matrix script checks the inverse spectrum against the complex transfer function, tensor convolution against a quadratic Lyapunov calculation, and both a noncommuting admissible example and an exact criterion failure. The third script computes the crossing points of Table 1 from an exact exponential-sum formula and cross-checks it by quadrature. The checks support the derivation and catch normalisation errors; the proofs above establish the infinite-dimensional and all-parameter assertions.
+
+![Exact model calculations. The friction threshold governs the continuous-time long-run variance; higher chaoses inherit the ordering. Fixed horizons and regular observations can reverse it. Independent Poisson observation retains the ordering with an additional observation variance term. These curves illustrate proved formulas and are not Monte Carlo estimates.](figures/variance_landscape.pdf){width=100%}
+
+The scalar theorem settles a stated question about Gaussian kinetic sampling, including every square-integrable position observable and every perturbation amplitude. The matrix theorem gives an exact extension and a friction design rule, and replication makes its symmetry available for arbitrary base Gaussian targets. The regularity result identifies a failure in the literal unrestricted derivative formulation. The arithmetic results explain why a fast decay for each fixed polynomial does not control the worst observable uniformly.
+
+These conclusions depend on a Gaussian joint law and a symmetry-preserving matched rotation. The matrix results allow covariance operators with no common eigenbasis across frequencies. A non-Gaussian extension would require control of couplings between chaos degrees or another replacement for (M5). A numerical-efficiency result would require a specified discretisation, cost model and error tolerance. The literature search for this work was last updated on 4 November 2026. It inspected the originating paper and thesis, the overdamped variance-reduction literature, work citing DNP, related nonreversible-sampling work, and formula-level aliases across Gaussian spectral analysis and convolution theory. No earlier statement of the main results was found. This is a bounded priority assessment, not proof that no earlier statement exists.
+
+The manuscript has undergone AI-assisted proof checks and computational verification, but has not undergone external human peer review or formal proof-assistant verification. Two natural next steps are left open: an exact discrete-time criterion for a specified splitting integrator with rotation, where Section 9.3 shows that aliasing is the obstacle, and a perturbative statement for near-Gaussian targets.
+
+## References
+
+### Sampling and the originating question
+
+Chak, M., Kantas, N., Lelièvre, T., & Pavliotis, G. A. (2023). Optimal friction matrix for underdamped Langevin sampling. *ESAIM: Mathematical Modelling and Numerical Analysis, 57*(6), 3335–3371. <https://doi.org/10.1051/m2an/2023083>
+
+Duncan, A. B., Lelièvre, T., & Pavliotis, G. A. (2016). Variance reduction using nonreversible Langevin samplers. *Journal of Statistical Physics, 163*, 457–491. <https://doi.org/10.1007/s10955-016-1491-2>
+
+Duncan, A. B., Nüsken, N., & Pavliotis, G. A. (2017). Using perturbed underdamped Langevin dynamics to efficiently sample from probability distributions. *Journal of Statistical Physics, 169*, 1098–1131. <https://doi.org/10.1007/s10955-017-1906-8>
+
+Guillin, A., & Monmarché, P. (2016). Optimal linear drift for the speed of convergence of an hypoelliptic diffusion. *Electronic Communications in Probability, 21*, 1–14. <https://doi.org/10.1214/16-ECP25>
+
+Hwang, C.-R., Hwang-Ma, S.-Y., & Sheu, S.-J. (1993). Accelerating Gaussian diffusions. *The Annals of Applied Probability, 3*(3), 897–913. <https://doi.org/10.1214/aoap/1177005371>
+
+Hwang, C.-R., Normand, R., & Wu, S.-J. (2015). Variance reduction for diffusions. *Stochastic Processes and their Applications, 125*(9), 3522–3540. <https://doi.org/10.1016/j.spa.2015.03.006>
+
+Kaiser, M., Jack, R. L., & Zimmer, J. (2017). Acceleration of convergence to equilibrium in Markov chains by breaking detailed balance. *Journal of Statistical Physics, 168*(2), 259–287. <https://doi.org/10.1007/s10955-017-1805-z>
+
+Lelièvre, T., Nier, F., & Pavliotis, G. A. (2013). Optimal non-reversible linear drift for the convergence to equilibrium of a diffusion. *Journal of Statistical Physics, 152*(2), 237–274. <https://doi.org/10.1007/s10955-013-0769-x>
+
+Rey-Bellet, L., & Spiliopoulos, K. (2015a). Irreversible Langevin samplers and variance reduction: a large deviations approach. *Nonlinearity, 28*(7), 2081–2103. <https://doi.org/10.1088/0951-7715/28/7/2081>
+
+Rey-Bellet, L., & Spiliopoulos, K. (2015b). Variance reduction for irreversible Langevin samplers and diffusion on graphs. *Electronic Communications in Probability, 20*, 1–16. <https://doi.org/10.1214/ECP.v20-3855>
+
+Rey-Bellet, L., & Spiliopoulos, K. (2016). Improving the convergence of reversible samplers. *Journal of Statistical Physics, 164*(3), 472–494. <https://doi.org/10.1007/s10955-016-1565-1>
+
+Franke, B., Hwang, C.-R., Ouled Said, A., & Pai, H.-M. (2021). A note on the asymptotic variance of drift accelerated diffusions. *Statistics & Probability Letters, 175*, 109128. <https://doi.org/10.1016/j.spl.2021.109128>
+
+Nüsken, N. (2018). *Topics in sampling schemes based on Markov processes* [Doctoral thesis, Imperial College London]. Spiral. <https://doi.org/10.25560/63868>
+
+### Replica coupling and related constructions
+
+Ichiki, A., & Ohzeki, M. (2021). *Stochastic dynamics without detailed balance condition connecting simple gradient method and Hamiltonian Monte Carlo*. arXiv. <https://doi.org/10.48550/arXiv.2107.08633>
+
+Kobayashi, M., Nakagawa, N., & Sasa, S.-i. (2023). Control of metastable states by heat flux in the Hamiltonian Potts model. *Physical Review Letters, 130*, 247102. <https://doi.org/10.1103/PhysRevLett.130.247102>. Supplementary material inspected in <https://arxiv.org/pdf/2212.12289>.
+
+Ohzeki, M., & Ichiki, A. (2015). Langevin dynamics neglecting detailed balance condition. *Physical Review E, 92*, 012105. <https://doi.org/10.1103/PhysRevE.92.012105>
+
+Ohzeki, M. (2026). Nonreversible gauge fields in Fokker-Planck dynamics: Supersymmetric Hamiltonians and learned finite forces. *Physical Review Research, 8*, 033170. <https://doi.org/10.1103/tg4c-7cnr>
+
+### Spectral and convolution ingredients
+
+Berg, C., & Vignat, C. (2008). Linearization coefficients of Bessel polynomials and properties of Student t-distributions. *Constructive Approximation, 27*, 15–32. <https://doi.org/10.1007/s00365-006-0643-6>
+
+Breuer, P., & Major, P. (1983). Central limit theorems for non-linear functionals of Gaussian fields. *Journal of Multivariate Analysis, 13*(3), 425–441. <https://doi.org/10.1016/0047-259X(83)90019-2>
+
+Maini, L. (2026). *Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields* (arXiv:2610.37113). arXiv. <https://doi.org/10.48550/arXiv.2610.37113>
+
+Lefèvre, C., & Utev, S. (2013). Convolution property and exponential bounds for symmetric monotone densities. *ESAIM: Probability and Statistics, 17*, 605–613. <https://doi.org/10.1051/ps/2012012>
+
+Muscinelli, S. P., Gerstner, W., & Schwalger, T. (2019). How single neuron properties shape chaotic dynamics and signal transmission in random neural networks. *PLOS Computational Biology, 15*(6), e1007122. <https://doi.org/10.1371/journal.pcbi.1007122>
+
+### Sampling schedules
+
+Shapiro, H. S., & Silverman, R. A. (1960). Alias-free sampling of random noise. *Journal of the Society for Industrial and Applied Mathematics, 8*(2), 225–248. <https://doi.org/10.1137/0108013>
+
+### Related arithmetic variance phenomena
+
+Lachièze-Rey, R. (2022). *Diophantine Gaussian excursions and random walks* (arXiv:2104.07290, version 4). arXiv. <https://doi.org/10.48550/arXiv.2104.07290>
+
+\newpage
+
+## Appendix A. Explicit fingerprints and checks
+
+At $\gamma=2$, the oscillator covariance is $r(t)=(1+t)e^{-t}$ for $t\ge0$. Hence
+
+$$
+S_n(\xi)=2\Rea\sum_{k=0}^n\binom nk\frac{k!}{(n-i\xi)^{k+1}}. \tag{33}
+$$
+
+The first zero-frequency values are $S_1(0)=4$, $S_2(0)=5/2$, and $S_3(0)=52/27$. The first spectral density is $4/(1+\xi^2)^2$; normalised by $2\pi$, it is a scaled Student distribution with three degrees of freedom. Berg and Vignat (2008) study the associated convolution family. These fingerprints locate classical distributional and spectral ingredients. The separate novelty report also records the exact connection between $nS_n(0)/2$ and the integral defining OEIS sequence A090878.
+
+For $f=q_1$ and a unit planar rotation, (10) gives the following exact checks:
+
+$$
+\begin{array}{c|ccc}
+&\mu=0&\mu=1/2&\mu=1\\\hline
+\gamma=1&2&32/13&2\\
+\gamma=\sqrt2&2\sqrt2&32\sqrt2/17&\sqrt2\\
+\gamma=2&4&64/25&1
+\end{array}
+$$
+
+The below-threshold row initially increases. The two other rows decrease, including the threshold itself. At zero perturbation, (10) gives $V_{q_1}(0)=2\gamma$; integrating (7) directly gives $\int_0^\infty r_\gamma(t)\,\mathrm dt=\gamma$, confirming the factor of two in (2).
+
+For a real quadratic observable $f(q)=q^\top Kq-\operatorname{tr}K$, $K=K^\top$, let $A=\diag(K,0)$ and solve
+
+$$
+B_\mu^\top C+CB_\mu=A.
+$$
+
+Then $x^\top Cx-\operatorname{tr}C$ solves the Poisson equation for $f$, and Wick's identity gives $V_f(\mu)=4\operatorname{tr}(AC)$. This is an independent finite-dimensional check on the chaos expansion. It is not used to infer the result for general $L^2$ observables.
+
+
+\newpage
+
+## Appendix B. Regularity and rates for matrix kinetic systems
+
+This appendix extends the regularity and rate arguments to the matrix model of Section 8. Let $K,\Gamma>0$ be real symmetric matrices, let $J$ be real skew with $[J,K]=[J,\Gamma]=0$, and use stationary position law $\mathcal N(0,K^{-1})$. The results here require no friction-threshold inequality. A kernel of $J$ is allowed. Coordinates are whitened by $x=K^{1/2}q$, so the Hermite decomposition and its norm refer to standard Gaussian measure. Subtract the mean of $f$; all chaos sums below start at $n=1$.
+
+Write $C(t)=\Cov(x_t^0,x_0^0)$. It is real symmetric and even. Its short-time expansion on $t\ge0$ is
+
+$$
+C(t)=I-\tfrac12Kt^2+\tfrac16Lt^3+O(t^4),
+\qquad L=K^{1/2}\Gamma K^{1/2}. \tag{B1}
+$$
+
+All its derivatives on the positive half-line decay exponentially. Also $\|C(t)\|<1$ for every $t>0$: the conditional covariance $I-C(t)C(t)^\top$ contains the strictly positive covariance of the noise reaching position over $(0,t)$. The position response to momentum noise is $sI+O(s^2)$ near zero, and $\Gamma>0$, which proves strict positivity in every direction. Consequently, for some $c,C,\delta>0$,
+
+$$
+e^{-Ct^2}I\preceq C(t)\preceq e^{-ct^2}I
+\quad(0\le t\le\delta),\qquad
+\rho=\sup_{|t|\ge\delta}\|C(t)\|<1. \tag{B2}
+$$
+
+Let $\mathscr C_n(t)=C(t)^{\otimes n}$ restricted to the symmetric tensor space, and let $\mathscr S_n=\widehat{\mathscr C_n}$. Use the isometric identification of that space with the $n$th Hermite chaos. These spectral operators are positive semidefinite and commute with the angular projections. If $f_{n,\omega}$ denotes a projected chaos component, then
+
+$$
+V_f(\mu)=\sum_{n,\omega}
+\langle f_{n,\omega},\mathscr S_n(\mu\omega)f_{n,\omega}\rangle. \tag{B3}
+$$
+
+The convention includes both signs of each nonzero frequency. The bound $\|\mathscr C_n(t)\|\le\|C(t)\|^n\le\|C(t)\|$ makes the sum absolutely integrable for every $f\in L^2$.
+
+### B.1. Exact regularity
+
+**Proposition B1.** Every real square-integrable position observable has $V_f\in C^1(\mathbb R)$ and $V_f'(0)=0$. It has a finite ordinary second derivative at zero if and only if
+
+$$
+\sum_{n,\omega}\omega^2n^{-3/2}\|f_{n,\omega}\|_2^2<\infty. \tag{B4}
+$$
+
+This is also equivalent to $V_f\in C^2(\mathbb R)$. If (B4) diverges, $(V_f(\mu)-V_f(0))/\mu^2\to-\infty$ as $\mu\to0$.
+
+**Proof.** The split in (B2) gives
+
+$$
+\int_0^\infty t^k\|C(t)\|^n\,\mathrm dt\le C_k n^{-(k+1)/2}.
+$$
+
+Since $|\omega|\le n\|J\|$, the first derivative of every matrix term in (B3) is bounded by a constant times $\|f_{n,\omega}\|_2^2$. The weighted second derivative is bounded by a constant times the summand in (B4). Uniform convergence proves the stated sufficiency and first differentiability.
+
+For necessity, restrict the cosine-difference integral to $[0,\delta]$. Its kernels are positive semidefinite by (B2), and
+
+$$
+\int_0^\delta t^2\langle v,\mathscr C_n(t)v\rangle\,\mathrm dt
+\ge c_1 n^{-3/2}\|v\|^2.
+$$
+
+Fatou's lemma therefore forces the positive small-time contribution to the divided difference to diverge when (B4) diverges. The absolute value of the complementary contribution is bounded by
+$C_2\|J\|^2\sup_n(n^2\rho^{n-1})\|f\|_2^2$, using $1-\cos u\le u^2/2$. It cannot cancel the divergence. This also excludes a finite ordinary second derivative. $\square$
+
+### B.2. A uniform matrix Fourier approximation
+
+Define the positive operator on the symmetric tensor space
+
+$$
+A_n=\sum_{j=1}^n I^{\otimes(j-1)}\otimes K\otimes I^{\otimes(n-j)},
+\qquad T_n=A_n/n.
+$$
+
+Its spectrum lies in the fixed interval $[\lambda_{\min}(K),\lambda_{\max}(K)]$. We claim
+
+$$
+\sup_{x\in\mathbb R}(1+|x|)\left\|
+\sqrt n\,\mathscr S_n(\sqrt n x)
+-\sqrt{2\pi}\,T_n^{-1/2}e^{-x^2T_n^{-1}/2}
+\right\|\longrightarrow0. \tag{B5}
+$$
+
+Here the comparison operator depends on $n$; no convergence of $T_n$ is asserted.
+
+To prove (B5), compare $C(|u|/\sqrt n)^{\otimes n}$ with $e^{-A_nu^2/(2n)}$. On $|u|\le\delta\sqrt n$, telescope the tensor factors and use (B1). The norm of the difference is bounded by
+$C_3n^{-1/2}|u|^3e^{-c_3u^2}$. Differentiating the tensor products adds a bound
+$C_4n^{-1/2}(|u|^2+|u|^4)e^{-c_4u^2}$ for the derivative difference. These bounds follow from
+$C(t)-e^{-Kt^2/2}=O(t^3)$ and $C'(t)+(Kt)e^{-Kt^2/2}=O(t^2)$; the other tensor factors supply the Gaussian bound in (B2).
+
+On the complement, for $n\ge2$, the function and derivative integrals for the covariance tensor are bounded respectively by
+
+$$
+2\sqrt n\,\rho^{n-1}\int_\delta^\infty\|C(t)\|\,\mathrm dt,
+\qquad
+2n\rho^{n-2}\int_\delta^\infty\|C(t)\|\,\|C'(t)\|\,\mathrm dt.
+$$
+
+Both tend to zero; the comparison Gaussian has uniformly Gaussian tails. Thus the difference tends to zero in operator-norm $W^{1,1}$. Fourier transformation, and integration by parts for the frequency-weighted transform, prove (B5). Symmetric-tensor restriction can only decrease the operator norm.
+
+### B.3. Exact angular-gap constant and polynomial asymptotics
+
+Define $D_J$ as in (23), using the present Gaussian law and projection. It equals
+
+$$
+\sup_{n,\omega\ne0}\bigl\|\mathscr S_n(\mu\omega)|_{\mathcal H_{n,\omega}}\bigr\|.
+$$
+
+Real observables realise the same supremum by combining conjugate components.
+
+**Proposition B2.** For any fixed $K,\Gamma>0$ and commuting skew $J$, $D_J(\mu)\to0$. If the nonzero angular frequency group is $\omega_*\mathbb Z$, then
+
+$$
+D_J(\mu)\sim\frac{\sqrt{2\pi/e}}{|\mu|\omega_*}. \tag{B6}
+$$
+
+The leading constant is independent of $K$ and $\Gamma$. The Diophantine condition in Proposition 9 still gives $D_J(\mu)=O(|\mu|^{-1/(2\tau+1)})$.
+
+**Proof.** The moment estimate gives $\|\mathscr S_n\|_\infty\le Cn^{-1/2}$. This controls high degrees, and finitely many low-degree spectral matrices vanish at infinity. Thus $D_J\to0$.
+
+For the upper bound in (B6), put $x=|\mu\omega|/\sqrt n$ in (B5). For every positive scalar $\kappa$,
+
+$$
+\sup_{x\ge0}x\kappa^{-1/2}e^{-x^2/(2\kappa)}=e^{-1/2}.
+$$
+
+Functional calculus for $T_n$ therefore bounds the high-degree part of $|\mu|\omega_*D_J(\mu)$ by $\sqrt{2\pi/e}+o(1)$. For each bounded degree, $|\xi|\mathscr S_n(\xi)\to0$, by the Riemann–Lebesgue lemma applied to its integrable derivative. These degrees contribute $o(1)$.
+
+For the lower bound, $K$ and $J$ have a common complex orthonormal eigenbasis. Choose a nonzero symmetric tensor that has angular frequency $\omega_*$ and $A_{n_0}$ eigenvalue $a_0>0$. Append $k$ copies of a conjugate eigenvector pair. Its angular frequency remains $\omega_*$, its degree is $n_0+2k$, and its stiffness eigenvalue is $a_0+2k\kappa$, for some $\kappa>0$. Choose $k$ so that this last value is nearest to $(\mu\omega_*)^2$. The unweighted part of (B5) then gives the lower constant $\sqrt{2\pi/e}$. The tensor is nonzero because it corresponds to a product of nonzero linear polynomials.
+
+Finally, (B5) gives $\sup_{n,\xi}|\xi|\|\mathscr S_n(\xi)\|<\infty$. Combining this with $Cn^{-1/2}$ gives the same degree split as Proposition 9. $\square$
+
+For completeness, fixed polynomials have the matrix counterpart of (24). Let
+$L_n=\sum_{j=1}^n I^{\otimes(j-1)}\otimes L\otimes I^{\otimes(n-j)}$. Six integrations by parts, using $\mathscr C_n'(0)=0$ and $\mathscr C_n'''(0)=L_n$, give
+
+$$
+V_f(\mu)-V_{\Pi_Jf}(0)
+=\frac2{\mu^4}\sum_{n,\omega\ne0}
+\frac{\langle f_{n,\omega},L_nf_{n,\omega}\rangle}{\omega^4}
++O_{f,K,\Gamma,J}(|\mu|^{-6}). \tag{B7}
+$$
+
+The leading coefficient is strictly positive exactly for non-invariant $f$, since every $L_n$ is positive definite. The scalar formulas are recovered by $K=I$, $\Gamma=\gamma I$.

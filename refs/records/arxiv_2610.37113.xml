@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/We8vVcXrzNIIaNOwjQvXOAhvrcg</id>
+  <title>arXiv Query: search_query=&amp;id_list=2610.37113&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-04T07:49:54Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2610.37113" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.37113v1</id>
+    <title>Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields</title>
+    <updated>2026-10-27T12:10:20Z</updated>
+    <link href="https://arxiv.org/abs/2610.37113v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.37113v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We characterize Gaussian fluctuations of Fourier-Hermite functionals of stationary Gaussian fields on locally compact Abelian groups via spectral delocalization: conditional on the total spectral sum being near the probed frequency, no partial sum concentrates. Under suitable assumptions, this reduces Gaussian convergence to small-ball estimates for convolution powers of the spectral measure, without model-specific contraction estimates.
+  On $\mathbb T^d$, the criterion yields CLTs at every fixed frequency for band-limited fields and random trigonometric polynomials, and extends the known failure of Gaussian convergence for planar arithmetic random waves from the fourth chaos to all even orders $q\ge4$. On $\mathbb R^d$ and $\mathbb Z^d$, we establish a Breuer-Major theorem for Fourier functionals at every frequency with nonzero limiting variance. Cyclical long-memory models exhibit frequency-dependent Gaussian convergence.
+  We also establish CLTs and variance asymptotics for singular continuous spectral measures, including those of stationary Gaussian solutions of linear PDEs. At zero frequency, weak Ahlfors regularity of the spectral support and an $L^2$ density suffice for second-chaos CLTs, covering fractal sets, the Airy surface of Gaussian sea waves, and smooth compact manifolds. For a class of smooth hypersurfaces, we obtain the same variance rates and CLTs known for classical nonlinear functionals of Berry's random wave model. Finally, for random waves with spherical spectral densities bounded above and below, we classify Gaussian convergence at every frequency $\|z\|\le q$: it fails only for the planar second chaos when $0&lt;\|z\|&lt;2$.</summary>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T12:10:20Z</published>
+    <arxiv:comment>37 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="math.PR"/>
+    <author>
+      <name>Leonardo Maini</name>
+    </author>
+  </entry>
+</feed>

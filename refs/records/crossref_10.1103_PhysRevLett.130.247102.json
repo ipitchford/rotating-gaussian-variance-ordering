@@ -1,0 +1,562 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 40,
+  "publisher": "American Physical Society (APS)",
+  "issue": "24",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       6,
+       15
+      ]
+     ],
+     "date-time": "2023-06-15T00:00:00Z",
+     "timestamp": 1686787200000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/100015062",
+    "name": "Osaka City University",
+    "doi-asserted-by": "publisher",
+    "id": [
+     {
+      "id": "10.13039/100015062",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001691",
+    "name": "Japan Society for the Promotion of Science",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "JP19KK0066"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JP19KK0066"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001691",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001691",
+    "name": "Japan Society for the Promotion of Science",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "JP20K03765"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JP20K03765"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001691",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001691",
+    "name": "Japan Society for the Promotion of Science",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "JP19K03647"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JP19K03647"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001691",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001691",
+    "name": "Japan Society for the Promotion of Science",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "JP19H05795"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JP19H05795"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001691",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001691",
+    "name": "Japan Society for the Promotion of Science",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "JP20K20425"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JP20K20425"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001691",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001691",
+    "name": "Japan Society for the Promotion of Science",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "JP22H01144"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JP22H01144"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001691",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "name": "MEXT Joint Usage/Research Center on Mathematics and Theoretical Physics",
+    "award": [
+     "JPMXP0619217849"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "JPMXP0619217849"
+      ]
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "journals.aps.org"
+   ],
+   "crossmark-restriction": true
+  },
+  "short-container-title": [
+   "Phys. Rev. Lett."
+  ],
+  "DOI": "10.1103/physrevlett.130.247102",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2023,
+     6,
+     15
+    ]
+   ],
+   "date-time": "2023-06-15T16:29:07Z",
+   "timestamp": 1686846547000
+  },
+  "update-policy": "https://doi.org/10.1103/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 10,
+  "title": [
+   "Control of Metastable States by Heat Flux in the Hamiltonian Potts Model"
+  ],
+  "prefix": "10.1103",
+  "volume": "130",
+  "author": [
+   {
+    "given": "Michikazu",
+    "family": "Kobayashi",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-0000-6325",
+    "authenticated-orcid": true,
+    "given": "Naoko",
+    "family": "Nakagawa",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-6670-4455",
+    "authenticated-orcid": true,
+    "given": "Shin-ichi",
+    "family": "Sasa",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "16",
+  "published-online": {
+   "date-parts": [
+    [
+     2023,
+     6,
+     15
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "key": "PhysRevLett.130.247102Cc1R1",
+    "volume-title": "Fluid Mechanics",
+    "author": "L. D. Landau",
+    "year": "1959"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc2R1",
+    "volume-title": "Non-Equilibrium Thermodynamics",
+    "author": "S. R. de Groot",
+    "year": "1984"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc3R1",
+    "volume-title": "Nonequilibrium Statistical Thermodynamics",
+    "author": "D. N. Zubarev",
+    "year": "1974"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc4R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1063/1.1706081"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc4R2",
+    "volume-title": "Introduction to Non-Equilibrium Statistical Mechanics",
+    "author": "J. A. Mclennan",
+    "year": "1988"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc5R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.112.100602"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc6R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevD.92.065008"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc7R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1016/0003-4916(79)90105-2"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc8R1",
+    "volume-title": "Phase Transition Dynamics",
+    "author": "A. Onuki",
+    "year": "2004"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc9R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/0034-4885/50/7/001"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc10R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.61.2229"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc11R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.129.245701"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc12R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1021/acs.langmuir.2c00590"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc13R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevA.23.2719"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc14R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevB.40.680"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc15R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.74.2737"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc16R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1016/j.ijheatfluidflow.2003.11.005"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc17R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1038/343523a0"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc18R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.70.2399"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc19R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.102.124501"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc20R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1017/jfm.2013.563"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc21R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1073/pnas.1303996110"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc22R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.119.260602"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc23R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1007/s10955-019-02393-2"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc24R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevResearch.4.033155"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc25R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1063/1.436908"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc26R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1016/0003-4916(82)90163-4"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc27R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/0034-4885/51/8/002"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc28R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1143/PTPS.130.29"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc29R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1007/s10955-005-9021-7"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc30R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.75.031120"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc31R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.84.041104"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc32R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.90.062123"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc34R1",
+    "volume-title": "A Practical Guide to Pseudospectral Methods",
+    "author": "B. Fornberg",
+    "year": "1995"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc35R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1017/S0962492902000053"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc36R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.92.012105"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc37R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/RevModPhys.54.235"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc39R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1006/jcis.2000.7203"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc41R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevResearch.4.023147"
+   },
+   {
+    "key": "PhysRevLett.130.247102Cc42R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.103.062129"
+   }
+  ],
+  "container-title": [
+   "Physical Review Letters"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://link.aps.org/article/10.1103/PhysRevLett.130.247102",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "syndication"
+   },
+   {
+    "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.130.247102/fulltext",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     1,
+     3
+    ]
+   ],
+   "date-time": "2025-01-03T00:35:28Z",
+   "timestamp": 1735864528000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://link.aps.org/doi/10.1103/PhysRevLett.130.247102"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2023,
+     6,
+     15
+    ]
+   ]
+  },
+  "references-count": 40,
+  "journal-issue": {
+   "issue": "24",
+   "published-print": {
+    "date-parts": [
+     [
+      2023,
+      6
+     ]
+    ]
+   }
+  },
+  "URL": "https://doi.org/10.1103/physrevlett.130.247102",
+  "relation": {},
+  "ISSN": [
+   "0031-9007",
+   "1079-7114"
+  ],
+  "issn-type": [
+   {
+    "value": "0031-9007",
+    "type": "print"
+   },
+   {
+    "value": "1079-7114",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2023,
+     6,
+     15
+    ]
+   ]
+  },
+  "article-number": "247102"
+ }
+}

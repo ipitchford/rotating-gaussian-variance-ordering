@@ -1,0 +1,320 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 18,
+  "publisher": "American Physical Society (APS)",
+  "issue": "1",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2015,
+       7,
+       6
+      ]
+     ],
+     "date-time": "2015-07-06T00:00:00Z",
+     "timestamp": 1436140800000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "http://link.aps.org/licenses/aps-default-license"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/501100001700",
+    "name": "Ministry of Education, Culture, Sports, Science, and Technology",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "24740263"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "24740263"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001700",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100001700",
+    "name": "Ministry of Education, Culture, Sports, Science, and Technology",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "15H03699"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "15H03699"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100001700",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "Phys. Rev. E"
+  ],
+  "DOI": "10.1103/physreve.92.012105",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2015,
+     7,
+     7
+    ]
+   ],
+   "date-time": "2015-07-07T06:11:56Z",
+   "timestamp": 1436249516000
+  },
+  "source": "Crossref",
+  "is-referenced-by-count": 22,
+  "title": [
+   "Langevin dynamics neglecting detailed balance condition"
+  ],
+  "prefix": "10.1103",
+  "volume": "92",
+  "author": [
+   {
+    "given": "Masayuki",
+    "family": "Ohzeki",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Akihisa",
+    "family": "Ichiki",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "16",
+  "published-online": {
+   "date-parts": [
+    [
+     2015,
+     7,
+     6
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "key": "PhysRevE.92.012105Cc1R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.58.86"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc2R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1143/JPSJ.65.1604"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc3R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1023/A:1008923215028"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc4R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.105.050401"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc5R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.105.120603"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc6R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1016/j.physd.2010.10.003"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc7R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1016/j.cpc.2010.11.017"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc8R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.7566/JPSJ.82.064003"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc9R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/1742-6596/473/1/012012"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc10R1",
+    "volume-title": "Proceedings of the 28th International Conference on Machine Learning (ICML-11), Bellevue, Washington, USA",
+    "author": "M. Welling",
+    "year": "2011"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc11R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.88.020101"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc12R1",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-3-642-61544-3_4",
+    "volume-title": "The Fokker-Planck Equation: Methods of Solutions and Applications",
+    "author": "H. Risken",
+    "year": "1996"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc13R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.83.030105"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc14R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/1742-5468/2013/04/P04012"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc15R1",
+    "volume-title": "Numerical Solution of Stochastic Differential Equations",
+    "author": "P. E. Kloeden",
+    "year": "2011"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc16R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevB.52.4526"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc17R1",
+    "volume-title": "Elements of Phase Transitions and Critical Phenomena, Oxford Graduate Texts",
+    "author": "H. Nishimori",
+    "year": "2011"
+   },
+   {
+    "key": "PhysRevE.92.012105Cc18R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.91.062105"
+   }
+  ],
+  "container-title": [
+   "Physical Review E"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "http://link.aps.org/article/10.1103/PhysRevE.92.012105",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "syndication"
+   },
+   {
+    "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevE.92.012105/fulltext",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2017,
+     6,
+     23
+    ]
+   ],
+   "date-time": "2017-06-23T11:14:59Z",
+   "timestamp": 1498216499000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://link.aps.org/doi/10.1103/PhysRevE.92.012105"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2015,
+     7,
+     6
+    ]
+   ]
+  },
+  "references-count": 18,
+  "journal-issue": {
+   "issue": "1",
+   "published-print": {
+    "date-parts": [
+     [
+      2015,
+      7
+     ]
+    ]
+   }
+  },
+  "URL": "https://doi.org/10.1103/physreve.92.012105",
+  "relation": {},
+  "ISSN": [
+   "1539-3755",
+   "1550-2376"
+  ],
+  "issn-type": [
+   {
+    "value": "1539-3755",
+    "type": "print"
+   },
+   {
+    "value": "1550-2376",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2015,
+     7,
+     6
+    ]
+   ]
+  },
+  "article-number": "012105"
+ }
+}

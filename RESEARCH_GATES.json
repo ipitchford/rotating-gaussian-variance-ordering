@@ -1,0 +1,227 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated novelty audits of 1 November 2026 (base result and matrix extension, plus an independent extension search) and the literature update of the 4 November revision round. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Theorem 1: universal variance ordering in |mu| for every L2 position observable iff gamma >= sqrt2 (endpoint included), with equality classification.",
+   "unit": "statement",
+   "paperLocation": "Section 2, Theorem 1; Section 4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "both available public web-search engines; arXiv; Springer, PLOS, ESAIM/Numdam and other publisher full text; Imperial College Spiral; author-hosted manuscripts; OEIS (research_sampling/review/search_log.md, novelty_report.md)",
+     "query": "perturbed underdamped Langevin variance; nonreversible kinetic Langevin asymptotic variance monotone; papers citing Duncan-Nuesken-Pavliotis 2017; rotating Gaussian process spectral density unimodal; Hermite chaos spectral convolution variance; Student t convolution; Schenker sums"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "revision-round literature update: overdamped nonreversible variance reduction, optimal linear drift and friction, recent Gaussian-field functionals (manuscript Sections 1.1, 1.4 and 10; registry records in refs/records/)",
+     "query": "Hwang Normand Wu variance reduction diffusions; Rey-Bellet Spiliopoulos irreversible samplers; optimal non-reversible linear drift; Fourier functionals of stationary Gaussian fields (Maini 2026); registry records for every bibliography entry"
+    }
+   ],
+   "closestPriorWork": "Duncan, Nuesken and Pavliotis 2017 (local second-derivative result for linear/quadratic observables when gamma > sqrt2, and the all-L2 conjecture); overdamped results of Hwang-Normand-Wu 2015 and Rey-Bellet-Spiliopoulos 2015-2016",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 2: spectral criterion for rotated stationary Gaussian processes, proved by Hermite expansion and closure of symmetric unimodality under convolution.",
+   "unit": "method",
+   "paperLocation": "Section 3, Theorem 2, Lemma 3",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "both available public web-search engines; arXiv; Springer, PLOS, ESAIM/Numdam and other publisher full text; Imperial College Spiral; author-hosted manuscripts; OEIS (research_sampling/review/search_log.md, novelty_report.md)",
+     "query": "perturbed underdamped Langevin variance; nonreversible kinetic Langevin asymptotic variance monotone; papers citing Duncan-Nuesken-Pavliotis 2017; rotating Gaussian process spectral density unimodal; Hermite chaos spectral convolution variance; Student t convolution; Schenker sums"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "revision-round literature update: overdamped nonreversible variance reduction, optimal linear drift and friction, recent Gaussian-field functionals (manuscript Sections 1.1, 1.4 and 10; registry records in refs/records/)",
+     "query": "Hwang Normand Wu variance reduction diffusions; Rey-Bellet Spiliopoulos irreversible samplers; optimal non-reversible linear drift; Fourier functionals of stationary Gaussian fields (Maini 2026); registry records for every bibliography entry"
+    }
+   ],
+   "closestPriorWork": "Breuer-Major 1983 Hermite covariance and spectral convolution identities; Maini 2026 Lemma 3.1 convolution-power variance at a fixed frequency; Lefevre-Utev 2013 convolution closure (all credited)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Theorem 4A: below-threshold comparison with the unrotated sampler (even observables, finitely many hurt odd degrees, one amplitude for all observables).",
+   "unit": "statement",
+   "paperLocation": "Section 4.1, Theorem 4A, Table 1",
+   "searches": [
+    {
+     "date": "2026-11-04",
+     "corpus": "revision-round literature update: overdamped nonreversible variance reduction, optimal linear drift and friction, recent Gaussian-field functionals (manuscript Sections 1.1, 1.4 and 10; registry records in refs/records/)",
+     "query": "Hwang Normand Wu variance reduction diffusions; Rey-Bellet Spiliopoulos irreversible samplers; optimal non-reversible linear drift; Fourier functionals of stationary Gaussian fields (Maini 2026); registry records for every bibliography entry"
+    }
+   ],
+   "closestPriorWork": "DNP 2017 small-friction numerics (Section 6) and the linear-observable formula; no general below-threshold comparison found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 5 and Proposition 6: exact curvature domain and explicit cusps.",
+   "unit": "statement",
+   "paperLocation": "Section 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "both available public web-search engines; arXiv; Springer, PLOS, ESAIM/Numdam and other publisher full text; Imperial College Spiral; author-hosted manuscripts; OEIS (research_sampling/review/search_log.md, novelty_report.md)",
+     "query": "perturbed underdamped Langevin variance; nonreversible kinetic Langevin asymptotic variance monotone; papers citing Duncan-Nuesken-Pavliotis 2017; rotating Gaussian process spectral density unimodal; Hermite chaos spectral convolution variance; Student t convolution; Schenker sums"
+    }
+   ],
+   "closestPriorWork": "DNP 2017 conjecture (derivative form)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Proposition 7, Theorem 8, Proposition 9 and Section 7: large-rotation rates, constant sqrt(2pi/e), arithmetic rates.",
+   "unit": "statement",
+   "paperLocation": "Sections 6-7",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "both available public web-search engines; arXiv; Springer, PLOS, ESAIM/Numdam and other publisher full text; Imperial College Spiral; author-hosted manuscripts; OEIS (research_sampling/review/search_log.md, novelty_report.md)",
+     "query": "perturbed underdamped Langevin variance; nonreversible kinetic Langevin asymptotic variance monotone; papers citing Duncan-Nuesken-Pavliotis 2017; rotating Gaussian process spectral density unimodal; Hermite chaos spectral convolution variance; Student t convolution; Schenker sums"
+    }
+   ],
+   "closestPriorWork": "DNP 2017 Theorem 5 (invariant-projection limit, credited); Franke et al. 2021 (uniform variance convergence for overdamped drift acceleration); Lachieze-Rey 2022 (arithmetic variance effects, different setting)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 10, Lemma 10A, Corollaries 11-12: matrix criterion Gamma^3 - Gamma K - K Gamma >= 0, least friction (2K)^(1/2), replica application.",
+   "unit": "statement",
+   "paperLocation": "Section 8, Appendix B",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "primary papers and preprints on matrix friction, replica coupling and kinetic duplication; public web indexes (research_sampling/review/extension_novelty.md, extension_independent_novelty.md)",
+     "query": "matrix friction kinetic Langevin Loewner order; Gamma^3 - Gamma K - K Gamma; replica coupling nonreversible Langevin; Ohzeki Ichiki duplication; tensor convolution Loewner unimodality"
+    }
+   ],
+   "closestPriorWork": "Replica duplication and averaging (Ohzeki-Ichiki 2015; Ichiki-Ohzeki 2021; Kobayashi-Nakagawa-Sasa 2023; Ohzeki 2026), credited; Chak et al. 2023 optimal friction for a given observable (different question)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Section 9: observation-schedule boundaries (finite horizon, aliasing) and Poisson-sampling identity.",
+   "unit": "statement",
+   "paperLocation": "Section 9",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "both available public web-search engines; arXiv; Springer, PLOS, ESAIM/Numdam and other publisher full text; Imperial College Spiral; author-hosted manuscripts; OEIS (research_sampling/review/search_log.md, novelty_report.md)",
+     "query": "perturbed underdamped Langevin variance; nonreversible kinetic Langevin asymptotic variance monotone; papers citing Duncan-Nuesken-Pavliotis 2017; rotating Gaussian process spectral density unimodal; Hermite chaos spectral convolution variance; Student t convolution; Schenker sums"
+    }
+   ],
+   "closestPriorWork": "Shapiro-Silverman 1960 alias-free Poisson sampling (classical, credited); identity presented as an application",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Duncan, Nuesken and Pavliotis, Using perturbed underdamped Langevin dynamics to efficiently sample from probability distributions, J. Stat. Phys. 169 (2017) 1098-1131, DOI 10.1007/s10955-017-1906-8; arXiv:1705.00170v1",
+   "usedFor": "Originating conjecture, Theorems 3 and 5, numerical experiments",
+   "readWhat": "Sections 3-6 including the conjecture after conditions (27) / (35a)-(35c)",
+   "date": "2026-11-01",
+   "evidenceLocator": "research_sampling/novelty_report.md Section 1; manuscript Section 1.2"
+  },
+  {
+   "citation": "Nuesken, Topics in sampling schemes based on Markov processes, PhD thesis, Imperial College London 2018, DOI 10.25560/63868",
+   "usedFor": "Restatement of the conjecture",
+   "readWhat": "Chapter containing p. 62",
+   "date": "2026-11-01",
+   "evidenceLocator": "manuscript Section 1.2; review/search_log.md"
+  },
+  {
+   "citation": "Breuer and Major, Central limit theorems for non-linear functionals of Gaussian fields, J. Multivariate Anal. 13 (1983) 425-441",
+   "usedFor": "Hermite covariance and spectral-convolution identities",
+   "readWhat": "pp. 428, 430",
+   "date": "2026-11-01",
+   "evidenceLocator": "manuscript Section 1.4"
+  },
+  {
+   "citation": "Maini, Spectral delocalization and central limit theorems for Fourier functionals of stationary Gaussian fields, arXiv:2610.37113",
+   "usedFor": "Convolution-power variance formula credited",
+   "readWhat": "Lemma 3.1 and its setting",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1.4; review/REVIEW_RECORD.md"
+  },
+  {
+   "citation": "Kobayashi, Nakagawa and Sasa, Control of metastable states by heat flux in the Hamiltonian Potts model, Phys. Rev. Lett. 130 (2023) 247102, supplementary material arXiv:2212.12289",
+   "usedFor": "Replica duplication antecedent",
+   "readWhat": "Supplementary equations (S71), (S75)-(S76)",
+   "date": "2026-11-01",
+   "evidenceLocator": "manuscript Section 8.4; review/extension_novelty.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Results hold for exact stationary Gaussian dynamics only.",
+   "closingQuestion": "Is there a perturbative ordering statement for near-Gaussian targets?",
+   "triedOrSearched": "Requires control of couplings between chaos degrees (replacement for (M5)); no known theorem supplies it.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Listed as open in Section 10."
+  },
+  {
+   "limitation": "No discrete-time (integrator) criterion; regular sampling can alias.",
+   "closingQuestion": "What is the exact criterion for a specified splitting integrator with rotation?",
+   "triedOrSearched": "Section 9.3 gives the exact aliasing mechanism; no general rule.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Listed as open in Section 10."
+  },
+  {
+   "limitation": "N(gamma) in Theorem 4A is given by existence; Table 1 values are computed, not proved.",
+   "closingQuestion": "Can N(gamma) or the crossing points be certified?",
+   "triedOrSearched": "Exact exponential-sum formula with quadrature cross-check, odd degrees scanned to 201.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Certification needs interval arithmetic over unbounded families.",
+   "whyNotClosedNow": "The theorem does not depend on the table."
+  },
+  {
+   "limitation": "Unmatched rotations and phase-space observables are outside the ordering theorem.",
+   "closingQuestion": "Does any ordering survive for unmatched rotations?",
+   "triedOrSearched": "Section 9.1 shows momentum observables fail; precision-mismatch formula checked in verify_matrix_extension.py.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Outside the stated claim."
+  },
+  {
+   "limitation": "Verification scripts could silently pass under python -O if they relied on assert.",
+   "closingQuestion": "Do the scripts fail when a check is wrong, including under -O?",
+   "triedOrSearched": "All checks raise RuntimeError; replayed with and without -O; release gate includes a semantic negative control.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  },
+  {
+   "limitation": "Priority holds only within bounded searches.",
+   "closingQuestion": "Have these statements appeared elsewhere?",
+   "triedOrSearched": "Dated searches of 1 November 2026 and the 4 November literature update (see contributionMap); no author enquiry.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Specialist review and correspondence are out of scope.",
+   "whyNotClosedNow": "Requires specialist review."
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, 4 November 2026",
+  "date": "2026-11-04",
+  "proposals": [
+   "Below-threshold comparison for the practically used small-friction regime",
+   "Discrete-time integrator criterion",
+   "Near-Gaussian perturbative result",
+   "Rotation versus friction retuning"
+  ],
+  "actions": [
+   "Theorem 4A and Table 1 added",
+   "Discrete-time criterion left open (aliasing mechanism in Section 9.3)",
+   "Near-Gaussian result left open",
+   "Friction comparison stated as a scope boundary (Section 4.1)"
+  ]
+ }
+}

@@ -1,0 +1,218 @@
+{
+  "description": "Below-threshold crossing points Xi_n(gamma) for odd Hermite degrees",
+  "n_scan": 121,
+  "gammas": {
+    "0.1": {
+      "last_odd_degree_with_crossing_up_to_n_scan": 41,
+      "Xi_max_over_odd_degrees": 3.3576278347452178,
+      "rows_with_crossing": [
+        {
+          "n": 1,
+          "Xi": 1.4106735979665883,
+          "max_relative_excess": 99.24290774869614
+        },
+        {
+          "n": 3,
+          "Xi": 3.258154146254027,
+          "max_relative_excess": 14.550704711198593
+        },
+        {
+          "n": 5,
+          "Xi": 3.3313581686803593,
+          "max_relative_excess": 5.40644345705634
+        },
+        {
+          "n": 7,
+          "Xi": 3.3576278347452178,
+          "max_relative_excess": 2.6909600198834243
+        },
+        {
+          "n": 9,
+          "Xi": 3.3550141518230117,
+          "max_relative_excess": 1.540212925642046
+        },
+        {
+          "n": 11,
+          "Xi": 3.329574508235863,
+          "max_relative_excess": 0.9532660154204025
+        },
+        {
+          "n": 13,
+          "Xi": 3.281795758317675,
+          "max_relative_excess": 0.6184655883249347
+        },
+        {
+          "n": 15,
+          "Xi": 3.206332568892323,
+          "max_relative_excess": 0.4131186451524885
+        },
+        {
+          "n": 17,
+          "Xi": 3.0804249478051906,
+          "max_relative_excess": 0.28085846780432583
+        },
+        {
+          "n": 19,
+          "Xi": 1.5962262910650953,
+          "max_relative_excess": 0.19276800784038886
+        },
+        {
+          "n": 21,
+          "Xi": 1.559684072908806,
+          "max_relative_excess": 0.1327338498800192
+        },
+        {
+          "n": 23,
+          "Xi": 1.516636248392388,
+          "max_relative_excess": 0.09118816210670991
+        },
+        {
+          "n": 25,
+          "Xi": 1.4665165137821083,
+          "max_relative_excess": 0.06216329853806065
+        },
+        {
+          "n": 27,
+          "Xi": 1.408510633463934,
+          "max_relative_excess": 0.04179275953484461
+        },
+        {
+          "n": 29,
+          "Xi": 1.341489476214353,
+          "max_relative_excess": 0.02749717157656541
+        },
+        {
+          "n": 31,
+          "Xi": 1.2638787513342566,
+          "max_relative_excess": 0.017517552992745787
+        },
+        {
+          "n": 33,
+          "Xi": 1.1734119623635393,
+          "max_relative_excess": 0.010634277514885587
+        },
+        {
+          "n": 35,
+          "Xi": 1.0666338003138978,
+          "max_relative_excess": 0.005991171806560937
+        },
+        {
+          "n": 37,
+          "Xi": 0.9377775873904539,
+          "max_relative_excess": 0.002981665462182104
+        },
+        {
+          "n": 39,
+          "Xi": 0.7756756088527681,
+          "max_relative_excess": 0.0011728296269390526
+        },
+        {
+          "n": 41,
+          "Xi": 0.5514449119807168,
+          "max_relative_excess": 0.0002538699846887295
+        }
+      ]
+    },
+    "0.3": {
+      "last_odd_degree_with_crossing_up_to_n_scan": 11,
+      "Xi_max_over_odd_degrees": 1.4890198084637585,
+      "rows_with_crossing": [
+        {
+          "n": 1,
+          "Xi": 1.3820274961085253,
+          "max_relative_excess": 10.366847882789383
+        },
+        {
+          "n": 3,
+          "Xi": 1.4890198084637585,
+          "max_relative_excess": 1.2459068312022001
+        },
+        {
+          "n": 5,
+          "Xi": 1.4272583118418494,
+          "max_relative_excess": 0.319325404450639
+        },
+        {
+          "n": 7,
+          "Xi": 1.2702511525350784,
+          "max_relative_excess": 0.08648345920543157
+        },
+        {
+          "n": 9,
+          "Xi": 0.9960954481048867,
+          "max_relative_excess": 0.016798554363783465
+        },
+        {
+          "n": 11,
+          "Xi": 0.42592908871003254,
+          "max_relative_excess": 0.0003230085076478895
+        }
+      ]
+    },
+    "0.5": {
+      "last_odd_degree_with_crossing_up_to_n_scan": 5,
+      "Xi_max_over_odd_degrees": 1.3228756555322954,
+      "rows_with_crossing": [
+        {
+          "n": 1,
+          "Xi": 1.3228756555322954,
+          "max_relative_excess": 3.2666566479216046
+        },
+        {
+          "n": 3,
+          "Xi": 1.2569770539811569,
+          "max_relative_excess": 0.23318980208831094
+        },
+        {
+          "n": 5,
+          "Xi": 0.7840709437041271,
+          "max_relative_excess": 0.010257569107611124
+        }
+      ]
+    },
+    "0.8": {
+      "last_odd_degree_with_crossing_up_to_n_scan": 3,
+      "Xi_max_over_odd_degrees": 1.16619037896906,
+      "rows_with_crossing": [
+        {
+          "n": 1,
+          "Xi": 1.16619037896906,
+          "max_relative_excess": 0.8601174510222936
+        },
+        {
+          "n": 3,
+          "Xi": 0.04676316696737809,
+          "max_relative_excess": 1.9363488473473044e-07
+        }
+      ]
+    },
+    "1.0": {
+      "last_odd_degree_with_crossing_up_to_n_scan": 1,
+      "Xi_max_over_odd_degrees": 0.9999999999999998,
+      "rows_with_crossing": [
+        {
+          "n": 1,
+          "Xi": 0.9999999999999998,
+          "max_relative_excess": 0.33333329385105886
+        }
+      ]
+    },
+    "1.2": {
+      "last_odd_degree_with_crossing_up_to_n_scan": 1,
+      "Xi_max_over_odd_degrees": 0.7483314773547882,
+      "rows_with_crossing": [
+        {
+          "n": 1,
+          "Xi": 0.7483314773547882,
+          "max_relative_excess": 0.08506941467921007
+        }
+      ]
+    }
+  },
+  "closed_form_vs_quadrature_max_abs_error": 4.1611158962950867e-13,
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

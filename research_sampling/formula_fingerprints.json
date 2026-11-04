@@ -1,0 +1,17 @@
+{
+  "gamma2_zero_frequency": [
+    "4",
+    "5/2",
+    "52/27",
+    "103/64",
+    "4388/3125",
+    "1223/972",
+    "945460/823543",
+    "556403/524288",
+    "42647972/43046721",
+    "7281587/7812500"
+  ],
+  "scaling": "full Fourier transform; spectral probability density S_n/(2pi)",
+  "matrix": "B_mu=[[mu J,-I],[I,gamma I+mu J]]",
+  "source": "generated from exact finite binomial Laplace sum, equation33"
+}

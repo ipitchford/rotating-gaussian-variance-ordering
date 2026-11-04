@@ -1,0 +1,807 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 55,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "6",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2017,
+       11,
+       2
+      ]
+     ],
+     "date-time": "2017-11-02T00:00:00Z",
+     "timestamp": 1509580800000
+    },
+    "content-version": "unspecified",
+    "delay-in-days": 0,
+    "URL": "http://creativecommons.org/licenses/by/4.0"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/L025159/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/L025159/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/L024926/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/L024926/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/L020564/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/L020564/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "EP/J009636/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/J009636/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "link.springer.com"
+   ],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "J Stat Phys"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2017,
+     12
+    ]
+   ]
+  },
+  "DOI": "10.1007/s10955-017-1906-8",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2017,
+     11,
+     2
+    ]
+   ],
+   "date-time": "2017-11-02T20:00:18Z",
+   "timestamp": 1509652818000
+  },
+  "page": "1098-1131",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 28,
+  "title": [
+   "Using Perturbed Underdamped Langevin Dynamics to Efficiently Sample from Probability Distributions"
+  ],
+  "prefix": "10.1007",
+  "volume": "169",
+  "author": [
+   {
+    "given": "A. B.",
+    "family": "Duncan",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-5415-5284",
+    "authenticated-orcid": false,
+    "given": "N.",
+    "family": "Nüsken",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "G. A.",
+    "family": "Pavliotis",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "297",
+  "published-online": {
+   "date-parts": [
+    [
+     2017,
+     11,
+     2
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "issue": "1",
+    "key": "1906_CR1",
+    "first-page": "1",
+    "volume": "6",
+    "author": "F Achleitner",
+    "year": "2015",
+    "unstructured": "Achleitner, F., Arnold, A., Stürzer, D.: Large-time behavior in non-symmetric Fokker-Planck equations. Riv. Math. Univ. Parma (N.S.) 6(1), 1–68 (2015)",
+    "journal-title": "Riv. Math. Univ. Parma (N.S.)"
+   },
+   {
+    "key": "1906_CR2",
+    "unstructured": "Arnold, A., Erb, J.: Sharp entropy decay for hypocoercive and non-symmetric Fokker-Planck equations with linear drift. arXiv:1409.5425v2 (2014)"
+   },
+   {
+    "key": "1906_CR3",
+    "series-title": "Stochastic Modelling and Applied Probability",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-0-387-69033-9",
+    "volume-title": "Stochastic Simulation: Algorithms and Analysis",
+    "author": "S Asmussen",
+    "year": "2007",
+    "unstructured": "Asmussen, S., Glynn, P.W.: Stochastic Simulation: Algorithms and Analysis. Stochastic Modelling and Applied Probability, vol. 57. Springer, New York (2007)"
+   },
+   {
+    "key": "1906_CR4",
+    "unstructured": "Alrachid, H., Mones, L., Ortner, C.: Some remarks on preconditioning molecular dynamics. arXiv preprint arXiv:1612.05435 (2016)"
+   },
+   {
+    "key": "1906_CR5",
+    "volume-title": "Diffusions and Elliptic Operators",
+    "author": "RF Bass",
+    "year": "1998",
+    "unstructured": "Bass, R.F.: Diffusions and Elliptic Operators. Springer, Berlin (1998)"
+   },
+   {
+    "issue": "3",
+    "key": "1906_CR6",
+    "doi-asserted-by": "crossref",
+    "first-page": "267",
+    "DOI": "10.1016/0021-9991(75)90077-7",
+    "volume": "19",
+    "author": "CH Bennett",
+    "year": "1975",
+    "unstructured": "Bennett, C.H.: Mass tensor molecular dynamics. J. Comput. Phys. 19(3), 267–279 (1975)",
+    "journal-title": "J. Comput. Phys."
+   },
+   {
+    "key": "1906_CR7",
+    "volume-title": "Analysis and Geometry of Markov Diffusion Operators",
+    "author": "D Bakry",
+    "year": "2013",
+    "unstructured": "Bakry, D., Gentil, I., Ledoux, M.: Analysis and Geometry of Markov Diffusion Operators, vol. 348. Springer, Berlin (2013)"
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR8",
+    "doi-asserted-by": "crossref",
+    "first-page": "185",
+    "DOI": "10.1007/BF00531822",
+    "volume": "60",
+    "author": "RN Bhattacharya",
+    "year": "1982",
+    "unstructured": "Bhattacharya, R.N.: On the functional central limit theorem and the law of the iterated logarithm for Markov processes. Z. Wahrsch. Verw. Gebiete 60(2), 185–201 (1982)",
+    "journal-title": "Z. Wahrsch. Verw. Gebiete"
+   },
+   {
+    "issue": "10",
+    "key": "1906_CR9",
+    "doi-asserted-by": "crossref",
+    "first-page": "2201",
+    "DOI": "10.1016/j.spa.2011.06.003",
+    "volume": "121",
+    "author": "A Beskos",
+    "year": "2011",
+    "unstructured": "Beskos, A., Pinski, F.J., Sanz-Serna, J.M., Stuart, A.M.: Hybrid Monte Carlo on Hilbert spaces. Stoch. Process. Appl. 121(10), 2201–2230 (2011)",
+    "journal-title": "Stoch. Process. Appl."
+   },
+   {
+    "issue": "3",
+    "key": "1906_CR10",
+    "doi-asserted-by": "crossref",
+    "first-page": "319",
+    "DOI": "10.1142/S0219493708002378",
+    "volume": "8",
+    "author": "A Beskos",
+    "year": "2008",
+    "unstructured": "Beskos, A., Roberts, G., Stuart, A., Voss, J.: MCMC methods for diffusion bridges. Stoch. Dyn. 8(3), 319–350 (2008)",
+    "journal-title": "Stoch. Dyn."
+   },
+   {
+    "key": "1906_CR11",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Beskos, A., Stuart, A.: MCMC methods for sampling function space. In: ICIAM 07—6th International Congress on Industrial and Applied Mathematics, pp. 337–364. European Mathematical Society, Zürich (2009)",
+    "DOI": "10.4171/056-1/16"
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR12",
+    "doi-asserted-by": "crossref",
+    "first-page": "020601",
+    "DOI": "10.1103/PhysRevLett.102.020601",
+    "volume": "102",
+    "author": "M Ceriotti",
+    "year": "2009",
+    "unstructured": "Ceriotti, M., Bussi, G., Parrinello, M.: Langevin equation with colored noise for constant-temperature molecular dynamics simulations. Phys. Rev. Lett. 102(2), 020601 (2009)",
+    "journal-title": "Phys. Rev. Lett."
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR13",
+    "first-page": "337",
+    "volume": "9",
+    "author": "P Cattiaux",
+    "year": "2012",
+    "unstructured": "Cattiaux, P., Chafaı, D., Guillin, A.: Central limit theorems for additive functionals of ergodic markov diffusions processes. ALEA 9(2), 337–382 (2012)",
+    "journal-title": "ALEA"
+   },
+   {
+    "issue": "3",
+    "key": "1906_CR14",
+    "doi-asserted-by": "crossref",
+    "first-page": "457",
+    "DOI": "10.1007/s10955-016-1491-2",
+    "volume": "163",
+    "author": "AB Duncan",
+    "year": "2016",
+    "unstructured": "Duncan, A.B., Lelievre, T., Pavliotis, G.A.: Variance reduction using nonreversible Langevin samplers. J. Stat. Phys. 163(3), 457–491 (2016)",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "issue": "6",
+    "key": "1906_CR15",
+    "doi-asserted-by": "crossref",
+    "first-page": "3807",
+    "DOI": "10.1090/S0002-9947-2015-06012-7",
+    "volume": "367",
+    "author": "J Dolbeault",
+    "year": "2015",
+    "unstructured": "Dolbeault, J., Mouhot, C., Schmeiser, C.: Hypocoercivity for linear kinetic equations conserving mass. Trans. Am. Math. Soc. 367(6), 3807–3828 (2015)",
+    "journal-title": "Trans. Am. Math. Soc."
+   },
+   {
+    "issue": "3–4",
+    "key": "1906_CR16",
+    "doi-asserted-by": "crossref",
+    "first-page": "385",
+    "DOI": "10.1007/BF02183738",
+    "volume": "83",
+    "author": "GL Eyink",
+    "year": "1996",
+    "unstructured": "Eyink, G.L., Lebowitz, J.L., Spohn, H.: Hydrodynamics and fluctuations outside of local equilibrium: driven diffusive systems. J. Stat. Phys. 83(3–4), 385–472 (1996)",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "1906_CR17",
+    "unstructured": "Engel, K.-J., Nagel, R.: One-parameter semigroups for linear evolution equations, volume 194 of Graduate Texts in Mathematics. Springer, New York (2000). With contributions by Brendle, S., Campiti, M., Hahn, T., Metafune, G., Nickel, G., Pallara, D., Perazzoli, C., Rhandi, A., Romanelli, S., Schnaubelt, R"
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR18",
+    "doi-asserted-by": "crossref",
+    "first-page": "123",
+    "DOI": "10.1111/j.1467-9868.2010.00765.x",
+    "volume": "73",
+    "author": "M Girolami",
+    "year": "2011",
+    "unstructured": "Girolami, M., Calderhead, B.: Riemann manifold Langevin and Hamiltonian Monte Carlo methods. J. R. Stat. Soc. Ser. B Stat. Methodol. 73(2), 123–214 (2011). With discussion and a reply by the authors",
+    "journal-title": "J. R. Stat. Soc. Ser. B Stat. Methodol."
+   },
+   {
+    "key": "1906_CR19",
+    "series-title": "Texts in Statistical Science Series",
+    "volume-title": "Bayesian Data Analysis",
+    "author": "A Gelman",
+    "year": "2014",
+    "unstructured": "Gelman, A., Carlin, J.B., Stern, H.S., Dunson, D.B., Vehtari, A., Rubin, D.B.: Bayesian Data Analysis. Texts in Statistical Science Series, 3rd edn. CRC Press, Boca Raton, FL (2014)",
+    "edition": "3"
+   },
+   {
+    "issue": "3",
+    "key": "1906_CR20",
+    "doi-asserted-by": "crossref",
+    "first-page": "897",
+    "DOI": "10.1214/aoap/1177005371",
+    "volume": "3",
+    "author": "C-R Hwang",
+    "year": "1993",
+    "unstructured": "Hwang, C.-R., Hwang-Ma, S., Sheu, S.J.: Accelerating Gaussian diffusions. Ann. Appl. Probab. 3(3), 897–913 (1993)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR21",
+    "doi-asserted-by": "crossref",
+    "first-page": "1433",
+    "DOI": "10.1214/105051605000000025",
+    "volume": "15",
+    "author": "C-R Hwang",
+    "year": "2005",
+    "unstructured": "Hwang, C.-R., Hwang-Ma, S.-Y., Sheu, S.-J.: Accelerating diffusions. Ann. Appl. Probab. 15(2), 1433–1444 (2005)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "1906_CR22",
+    "volume-title": "Matrix Analysis",
+    "author": "Roger A Horn",
+    "year": "2013",
+    "unstructured": "Horn, Roger A., Johnson, Charles R.: Matrix Analysis, 2nd edn. Cambridge University Press, Cambridge (2013)",
+    "edition": "2"
+   },
+   {
+    "issue": "9",
+    "key": "1906_CR23",
+    "doi-asserted-by": "crossref",
+    "first-page": "3522",
+    "DOI": "10.1016/j.spa.2015.03.006",
+    "volume": "125",
+    "author": "C-R Hwang",
+    "year": "2015",
+    "unstructured": "Hwang, C.-R., Normand, R., Wu, S.-J.: Variance reduction for diffusions. Stoch. Process. Appl. 125(9), 3522–3540 (2015)",
+    "journal-title": "Stoch. Process. Appl."
+   },
+   {
+    "issue": "5–6",
+    "key": "1906_CR24",
+    "doi-asserted-by": "crossref",
+    "first-page": "1657",
+    "DOI": "10.1214/07-AAP441",
+    "volume": "17",
+    "author": "M Hairer",
+    "year": "2007",
+    "unstructured": "Hairer, M., Stuart, A.M., Voss, J.: Analysis of SPDEs arising in path sampling. II. The nonlinear case. Ann. Appl. Probab. 17(5–6), 1657–1706 (2007)",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "1906_CR25",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Hairer, M., Stuart, A., Voss, J.: Sampling conditioned diffusions. In: Trends in Stochastic Analysis. London London Mathematical Society Lecture Note Series, vol. 353, pp. 159–185. Cambridge University Press, Cambridge (2009)",
+    "DOI": "10.1017/CBO9781139107020.009"
+   },
+   {
+    "issue": "4",
+    "key": "1906_CR26",
+    "doi-asserted-by": "crossref",
+    "first-page": "587",
+    "DOI": "10.4310/CMS.2005.v3.n4.a8",
+    "volume": "3",
+    "author": "M Hairer",
+    "year": "2005",
+    "unstructured": "Hairer, M., Stuart, A.M., Voss, J., Wiberg, P.: Analysis of SPDEs arising in path sampling. I. The Gaussian case. Commun. Math. Sci. 3(4), 587–603 (2005)",
+    "journal-title": "Commun. Math. Sci."
+   },
+   {
+    "key": "1906_CR27",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Iacobucci, A., Olla, S., Stoltz, G.: Convergence rates for nonequilibrium Langevin dynamics. arXiv:1702.03685 (2017)",
+    "DOI": "10.1007/s40316-017-0091-0"
+   },
+   {
+    "issue": "6",
+    "key": "1906_CR28",
+    "doi-asserted-by": "crossref",
+    "first-page": "2418",
+    "DOI": "10.1214/10-AOP541",
+    "volume": "38",
+    "author": "A Joulin",
+    "year": "2010",
+    "unstructured": "Joulin, A., Ollivier, Y.: Curvature, concentration and error estimates for Markov chain Monte Carlo. Ann. Probab. 38(6), 2418–2442 (2010)",
+    "journal-title": "Ann. Probab."
+   },
+   {
+    "issue": "8",
+    "key": "1906_CR29",
+    "doi-asserted-by": "crossref",
+    "first-page": "903",
+    "DOI": "10.1016/0020-7225(88)90041-9",
+    "volume": "26",
+    "author": "JY Kazakia",
+    "year": "1988",
+    "unstructured": "Kazakia, J.Y.: Orthogonal transformation of a trace free symmetric matrix into one with zero diagonal elements. Int. J. Eng. Sci. 26(8), 903–906 (1988)",
+    "journal-title": "Int. J. Eng. Sci."
+   },
+   {
+    "key": "1906_CR30",
+    "doi-asserted-by": "crossref",
+    "first-page": "690",
+    "DOI": "10.1214/aop/1176992166",
+    "volume": "15",
+    "author": "W Kliemann",
+    "year": "1987",
+    "unstructured": "Kliemann, W.: Recurrence and invariant measures for degenerate diffusions. Ann Probab 15, 690–707 (1987)",
+    "journal-title": "Ann Probab"
+   },
+   {
+    "key": "1906_CR31",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Komorowski, T., Landim, C., Olla, S.: Fluctuations in Markov processes. Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences], vol. 345. Springer, Heidelberg. Time symmetry and martingale approximation (2012)",
+    "DOI": "10.1007/978-3-642-29880-6"
+   },
+   {
+    "key": "1906_CR32",
+    "volume-title": "Monte Carlo Strategies in Scientific Computing",
+    "author": "JS Liu",
+    "year": "2008",
+    "unstructured": "Liu, J.S.: Monte Carlo Strategies in Scientific Computing. Springer, Berlin (2008)"
+   },
+   {
+    "key": "1906_CR33",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Leimkuhler, B., Matthews,C.: Molecular Dynamics. Interdisciplinary Applied Mathematics, vol. 39. Springer, Berlin (2015). With deterministic and stochastic numerical methods",
+    "DOI": "10.1007/978-3-319-16375-8"
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR34",
+    "doi-asserted-by": "crossref",
+    "first-page": "237",
+    "DOI": "10.1007/s10955-013-0769-x",
+    "volume": "152",
+    "author": "T Lelièvre",
+    "year": "2013",
+    "unstructured": "Lelièvre, T., Nier, F., Pavliotis, G.A.: Optimal non-reversible linear drift for the convergence to equilibrium of a diffusion. J. Stat. Phys. 152(2), 237–274 (2013)",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "1906_CR35",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Lelièvre, T., Rousset, M., Stoltz, G.: Free Energy Computations. Imperial College Press, London (2010). A Mathematical Perspective",
+    "DOI": "10.1142/p579"
+   },
+   {
+    "key": "1906_CR36",
+    "doi-asserted-by": "crossref",
+    "first-page": "681",
+    "DOI": "10.1017/S0962492916000039",
+    "volume": "25",
+    "author": "T Lelièvre",
+    "year": "2016",
+    "unstructured": "Lelièvre, T., Stoltz, G.: Partial differential equations and stochastic methods in molecular dynamics. Acta Numer. 25, 681–880 (2016)",
+    "journal-title": "Acta Numer."
+   },
+   {
+    "key": "1906_CR37",
+    "unstructured": "Ma, Y.-A., Chen, T., Fox, E.: A complete recipe for stochastic gradient MCMC. In: Advances in Neural Information Processing Systems, pp. 2899–2907 (2015)"
+   },
+   {
+    "issue": "1",
+    "key": "1906_CR38",
+    "doi-asserted-by": "crossref",
+    "first-page": "40",
+    "DOI": "10.1006/jfan.2002.3978",
+    "volume": "196",
+    "author": "G Metafune",
+    "year": "2002",
+    "unstructured": "Metafune, G., Pallara, D., Priola, E.: Spectrum of Ornstein-Uhlenbeck operators in $$L^p$$ L p spaces with respect to invariant measures. J. Funct. Anal. 196(1), 40–60 (2002)",
+    "journal-title": "J. Funct. Anal."
+   },
+   {
+    "key": "1906_CR39",
+    "first-page": "1",
+    "volume": "19",
+    "author": "PA Markowich",
+    "year": "2000",
+    "unstructured": "Markowich, P.A., Villani, C.: On the trend to equilibrium for the Fokker-Planck equation: an interplay between physics and functional analysis. Mat. Contemp. 19, 1–29 (2000)",
+    "journal-title": "Mat. Contemp."
+   },
+   {
+    "key": "1906_CR40",
+    "unstructured": "Matthews, C., Weare, J., Leimkuhler, B.: Ensemble preconditioning for Markov Chain Monte Carlo simulation. arXiv:1607.03954 (2016)"
+   },
+   {
+    "key": "1906_CR41",
+    "unstructured": "Nüsken, N.: Construction of optimal samplers (in preparation). PhD thesis, Imperial College London (2018)"
+   },
+   {
+    "issue": "5",
+    "key": "1906_CR42",
+    "doi-asserted-by": "crossref",
+    "first-page": "1629",
+    "DOI": "10.1088/0951-7715/24/5/013",
+    "volume": "24",
+    "author": "M Ottobre",
+    "year": "2011",
+    "unstructured": "Ottobre, M., Pavliotis, G.A.: Asymptotic analysis for the generalized Langevin equation. Nonlinearity 24(5), 1629 (2011)",
+    "journal-title": "Nonlinearity"
+   },
+   {
+    "issue": "9",
+    "key": "1906_CR43",
+    "doi-asserted-by": "crossref",
+    "first-page": "4000",
+    "DOI": "10.1016/j.jfa.2012.02.008",
+    "volume": "262",
+    "author": "M Ottobre",
+    "year": "2012",
+    "unstructured": "Ottobre, M., Pavliotis, G.A., Pravda-Starov, K.: Exponential return to equilibrium for hypoelliptic quadratic systems. J. Funct. Anal. 262(9), 4000–4039 (2012)",
+    "journal-title": "J. Funct. Anal."
+   },
+   {
+    "issue": "2",
+    "key": "1906_CR44",
+    "doi-asserted-by": "crossref",
+    "first-page": "676",
+    "DOI": "10.1016/j.jmaa.2015.04.019",
+    "volume": "429",
+    "author": "M Ottobre",
+    "year": "2015",
+    "unstructured": "Ottobre, M., Pavliotis, G.A., Pravda-Starov, K.: Some remarks on degenerate hypoelliptic Ornstein-Uhlenbeck operators. J. Math. Anal. Appl. 429(2), 676–712 (2015)",
+    "journal-title": "J. Math. Anal. Appl."
+   },
+   {
+    "issue": "1",
+    "key": "1906_CR45",
+    "doi-asserted-by": "crossref",
+    "first-page": "60",
+    "DOI": "10.3150/14-BEJ621",
+    "volume": "22",
+    "author": "M Ottobre",
+    "year": "2016",
+    "unstructured": "Ottobre, M., Pillai, N.S., Pinski, F.J., Stuart, A.M.: A function space HMC algorithm with second order Langevin diffusion limit. Bernoulli 22(1), 60–106 (2016)",
+    "journal-title": "Bernoulli"
+   },
+   {
+    "key": "1906_CR46",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-1-4939-1323-7",
+    "volume-title": "Stochastic Processes and Applications: Diffusion Processes, the Fokker-Planck and Langevin Equations",
+    "author": "GA Pavliotis",
+    "year": "2014",
+    "unstructured": "Pavliotis, G.A.: Stochastic Processes and Applications: Diffusion Processes, the Fokker-Planck and Langevin Equations, vol. 60. Springer, Berlin (2014)"
+   },
+   {
+    "key": "1906_CR47",
+    "unstructured": "Poncet, R.: Generalized and hybrid Metropolis-Hastings overdamped Langevin algorithms. arXiv:1701.05833 (2017)"
+   },
+   {
+    "issue": "4",
+    "key": "1906_CR48",
+    "doi-asserted-by": "crossref",
+    "first-page": "527",
+    "DOI": "10.1137/S1540345903421076",
+    "volume": "1",
+    "author": "GA Pavliotis",
+    "year": "2003",
+    "unstructured": "Pavliotis, G.A., Stuart, A.M.: White noise limits for inertial particles in a random field. Multiscale Model. Simul. 1(4), 527–533 (2003). (electronic)",
+    "journal-title": "Multiscale Model. Simul."
+   },
+   {
+    "issue": "1",
+    "key": "1906_CR49",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1137/040610507",
+    "volume": "4",
+    "author": "GA Pavliotis",
+    "year": "2005",
+    "unstructured": "Pavliotis, G.A., Stuart, A.M.: Analysis of white noise limits for stochastic systems with two fast relaxation times. Multiscale Model. Simul. 4(1), 1–35 (2005). (electronic)",
+    "journal-title": "Multiscale Model. Simul."
+   },
+   {
+    "issue": "7",
+    "key": "1906_CR50",
+    "doi-asserted-by": "crossref",
+    "first-page": "2081",
+    "DOI": "10.1088/0951-7715/28/7/2081",
+    "volume": "28",
+    "author": "L Rey-Bellet",
+    "year": "2015",
+    "unstructured": "Rey-Bellet, L., Spiliopoulos, K.: Irreversible Langevin samplers and variance reduction: a large deviations approach. Nonlinearity 28(7), 2081–2103 (2015)",
+    "journal-title": "Nonlinearity"
+   },
+   {
+    "key": "1906_CR51",
+    "unstructured": "Rey-Bellet, L., Spiliopoulos, K.: Variance reduction for irreversible Langevin samplers and diffusion on graphs. Electron. Commun. Probab., vol. 20, pp. 15, 16, (2015)"
+   },
+   {
+    "key": "1906_CR52",
+    "volume-title": "Monte Carlo Statistical Methods",
+    "author": "C Robert",
+    "year": "2013",
+    "unstructured": "Robert, C., Casella, G.: Monte Carlo Statistical Methods. Springer, Berlin (2013)"
+   },
+   {
+    "key": "1906_CR53",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Roussel, J., Stoltz, G.: Spectral methods for Langevin dynamics and associated error estimates. arXiv:1702.04718 (2017)",
+    "DOI": "10.1051/m2an/2017044"
+   },
+   {
+    "key": "1906_CR54",
+    "unstructured": "Villani, C.: Hypocoercivity. Number 949-951. American Mathematical Society (2009)"
+   },
+   {
+    "issue": "3",
+    "key": "1906_CR55",
+    "doi-asserted-by": "crossref",
+    "first-page": "571",
+    "DOI": "10.1007/s10955-014-0963-5",
+    "volume": "155",
+    "author": "S-J Wu",
+    "year": "2014",
+    "unstructured": "Wu, S.-J., Hwang, C.-R., Chu, M.T.: Attaining the optimal Gaussian diffusion acceleration. J. Stat. Phys. 155(3), 571–590 (2014)",
+    "journal-title": "J. Stat. Phys."
+   }
+  ],
+  "container-title": [
+   "Journal of Statistical Physics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "http://link.springer.com/article/10.1007/s10955-017-1906-8/fulltext.html",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://link.springer.com/content/pdf/10.1007/s10955-017-1906-8.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://link.springer.com/content/pdf/10.1007/s10955-017-1906-8.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2023,
+     8,
+     27
+    ]
+   ],
+   "date-time": "2023-08-27T18:22:33Z",
+   "timestamp": 1693160553000
+  },
+  "resource": {
+   "primary": {
+    "URL": "http://link.springer.com/10.1007/s10955-017-1906-8"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2017,
+     11,
+     2
+    ]
+   ]
+  },
+  "references-count": 55,
+  "journal-issue": {
+   "issue": "6",
+   "published-print": {
+    "date-parts": [
+     [
+      2017,
+      12
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "1906"
+  ],
+  "URL": "https://doi.org/10.1007/s10955-017-1906-8",
+  "relation": {},
+  "ISSN": [
+   "0022-4715",
+   "1572-9613"
+  ],
+  "issn-type": [
+   {
+    "value": "0022-4715",
+    "type": "print"
+   },
+   {
+    "value": "1572-9613",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2017,
+     11,
+     2
+    ]
+   ]
+  }
+ }
+}

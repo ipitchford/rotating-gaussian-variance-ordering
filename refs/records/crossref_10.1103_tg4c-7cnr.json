@@ -1,0 +1,675 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 59,
+  "publisher": "American Physical Society (APS)",
+  "issue": "3",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2026,
+       8,
+       10
+      ]
+     ],
+     "date-time": "2026-08-10T00:00:00Z",
+     "timestamp": 1786320000000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/501100002770",
+    "name": "Cabinet Office, Government of Japan",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "23836436"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "23836436"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100002770",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "journals.aps.org"
+   ],
+   "crossmark-restriction": true
+  },
+  "short-container-title": [
+   "Phys. Rev. Research"
+  ],
+  "accepted": {
+   "date-parts": [
+    [
+     2026,
+     7,
+     14
+    ]
+   ]
+  },
+  "abstract": "<jats:p>We formulate stationary-density-preserving nonreversible perturbations of Fokker-Planck dynamics as gauge fields that deform relaxation spectra while leaving the invariant state fixed. When detailed balance holds, a similarity transformation maps the reversible Fokker-Planck operator to the scalar sector of a Witten-Laplacian-type supersymmetric Hamiltonian; nonreversible gauges then appear as non-Hermitian perturbations that preserve the zero mode but modify the excited spectrum. This operator viewpoint gives a common language for relaxation gaps, circulating probability currents, hypocoercive acceleration, and finite control costs. We represent admissible gauge currents by antisymmetric tensor fields and identify the detailed-balance-violating Ohzeki-Ichiki force as a constant symplectic example whose infinite-strength limit is Hamiltonian dynamics. The continuous-time spectral gap alone does not select a finite gauge strength, so we introduce a finite-time regularized objective and an actor-critic procedure for learning the gauge. An exactly solvable anisotropic Gaussian Ornstein-Uhlenbeck benchmark separates the spectral transition from the finite-time optimum and shows that the learned gauge recovers the Lyapunov-equation optimum. A double-well benchmark then illustrates the same constrained selection in a nonconvex metastable landscape. Stochastic gradient methods enter this framework as physically relevant Fokker-Planck systems: Minibatch noise acts as an effective diffusion tensor, and adaptive methods such as Adam correspond to metric choices with possible nonequilibrium currents.</jats:p>",
+  "DOI": "10.1103/tg4c-7cnr",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2026,
+     7,
+     14
+    ]
+   ],
+   "date-time": "2026-07-14T14:44:18Z",
+   "timestamp": 1784040258000
+  },
+  "update-policy": "https://doi.org/10.1103/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+   "Nonreversible gauge fields in Fokker-Planck dynamics: Supersymmetric Hamiltonians and learned finite forces"
+  ],
+  "prefix": "10.1103",
+  "volume": "8",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-9151-2914",
+    "authenticated-orcid": true,
+    "given": "Masayuki",
+    "family": "Ohzeki",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "id": [
+       {
+        "id": "https://ror.org/01dq60k83",
+        "id-type": "ROR",
+        "asserted-by": "publisher"
+       }
+      ],
+      "name": "Tohoku University"
+     },
+     {
+      "id": [
+       {
+        "id": "https://ror.org/05dqf9946",
+        "id-type": "ROR",
+        "asserted-by": "publisher"
+       }
+      ],
+      "name": "Institute of Science Tokyo"
+     },
+     {
+      "id": [
+       {
+        "id": "https://ror.org/02cgss904",
+        "id-type": "ROR",
+        "asserted-by": "publisher"
+       }
+      ],
+      "name": "Kumamoto University"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "16",
+  "published-online": {
+   "date-parts": [
+    [
+     2026,
+     8,
+     10
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "key": "tg4c-7cnrCc1R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.88.020101",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc2R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.92.012105",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc3R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/1742-6596/638/1/012003",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc4R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1007/s10955-016-1565-1",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc5R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1007/s10955-016-1491-2",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc7R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.75.697",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc8R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1023/A:1023084404080",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc9R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1146/annurev-conmatphys-040821-125506",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc10R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1038/s41467-017-01378-7",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc11R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.127.048001",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc12R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.127.178001",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc13R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.129.090601",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc14R1",
+    "doi-asserted-by": "crossref",
+    "DOI": "10.1007/978-3-642-96807-5",
+    "type": "book",
+    "volume-title": "The Fokker–Planck Equation: Methods of Solution and Applications",
+    "author": "H. Risken",
+    "year": "1984"
+   },
+   {
+    "key": "tg4c-7cnrCc15R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.4310/jdg/1214437492",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc16R1",
+    "volume-title": "Proceedings of the 28th International Conference on Machine Learning",
+    "author": "M. Welling",
+    "year": "2011",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc17R1",
+    "volume-title": "Proceedings of the 31st International Conference on Machine Learning",
+    "author": "I. Sato",
+    "year": "2014",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc18R1",
+    "first-page": "1",
+    "type": "journal-article",
+    "volume": "18",
+    "author": "S. Mandt",
+    "year": "2017",
+    "journal-title": "J. Mach. Learn. Res."
+   },
+   {
+    "key": "tg4c-7cnrCc19R1",
+    "volume-title": "Artificial Neural Networks and Machine Learning - ICANN 2018",
+    "author": "S. Jastrzębski",
+    "year": "2018",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc20R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "S. L. Smith",
+    "year": "2018",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc21R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.4171/JEMS/1461",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc22R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "S. Yaida",
+    "year": "2019",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc23R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/1742-5468/ac841d",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc24R1",
+    "volume-title": "Proceedings of the 36th International Conference on Machine Learning",
+    "author": "Z. Zhu",
+    "year": "2019",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc25R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1007/s42519-020-00120-9",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc26R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.130.237101",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc27R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1109/TPAMI.1984.4767596",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc28R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1287/moor.13.2.311",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc29R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "S. L. Smith",
+    "year": "2018",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc30R1",
+    "volume-title": "Proceedings of the 37th International Conference on Machine Learning",
+    "author": "S. L. Smith",
+    "year": "2020",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc31R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "D. P. Kingma",
+    "year": "2015",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc32R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1111/j.1467-9868.2010.00765.x",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc33R1",
+    "volume-title": "Advances in Neural Information Processing Systems",
+    "author": "S. Patterson",
+    "year": "2013",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc34R1",
+    "volume-title": "Advances in Neural Information Processing Systems",
+    "author": "Y.-A. Ma",
+    "year": "2015",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc35R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/1742-6596/699/1/012019",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc36R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.97.032117",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc37R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1088/1742-5468/ab190f",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc38R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevE.99.042128",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc39R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "I. Loshchilov",
+    "year": "2019",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc40R1",
+    "volume-title": "Proceedings of the 35th International Conference on Machine Learning",
+    "author": "N. Shazeer",
+    "year": "2018",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc41R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "H. Liu",
+    "year": "2024",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc42R1",
+    "volume-title": "Advances in Neural Information Processing Systems",
+    "author": "X. Chen",
+    "year": "2023",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc43R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "N. S. Keskar",
+    "year": "2017",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc46R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "L. Luo",
+    "year": "2019",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc47R1",
+    "volume-title": "Advances in Neural Information Processing Systems 30",
+    "author": "A. C. Wilson",
+    "year": "2017",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc48R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "S. J. Reddi",
+    "year": "2018",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc49R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "J. Cohen",
+    "year": "2021",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc51R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "P. Foret",
+    "year": "2021",
+    "type": "conference-proceedings"
+   },
+   {
+    "key": "tg4c-7cnrCc52R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1007/s002110050002",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc53R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1137/S0036141096303359",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc54R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1103/PhysRevLett.131.257101",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc55R1",
+    "volume-title": "Advances in Neural Information Processing Systems",
+    "author": "R. S. Sutton",
+    "year": "2000",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc56R1",
+    "volume-title": "Advances in Neural Information Processing Systems",
+    "author": "V. R. Konda",
+    "year": "2000",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc57R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1063/1.1699114",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc58R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1093/biomet/57.1.97",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc59R1",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1016/0370-2693(87)91197-X",
+    "type": "journal-article"
+   },
+   {
+    "key": "tg4c-7cnrCc60R1",
+    "first-page": "1593",
+    "type": "journal-article",
+    "volume": "15",
+    "author": "M. D. Hoffman",
+    "year": "2014",
+    "journal-title": "J. Mach. Learn. Res."
+   },
+   {
+    "key": "tg4c-7cnrCc61R1",
+    "volume-title": "Séminaire de Probabilités XIX 1983/84",
+    "author": "D. Bakry",
+    "year": "1985",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc62R1",
+    "volume-title": "Advances in Neural Information Processing Systems 30",
+    "author": "J. Song",
+    "year": "2017",
+    "type": "book"
+   },
+   {
+    "key": "tg4c-7cnrCc63R1",
+    "volume-title": "International Conference on Learning Representations",
+    "author": "D. Levy",
+    "year": "2018",
+    "type": "conference-proceedings"
+   }
+  ],
+  "container-title": [
+   "Physical Review Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://link.aps.org/article/10.1103/tg4c-7cnr",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "syndication"
+   },
+   {
+    "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/tg4c-7cnr/fulltext",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     8,
+     10
+    ]
+   ],
+   "date-time": "2026-08-10T12:47:23Z",
+   "timestamp": 1786366043000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://link.aps.org/doi/10.1103/tg4c-7cnr"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2026,
+     8,
+     10
+    ]
+   ]
+  },
+  "references-count": 59,
+  "journal-issue": {
+   "issue": "3",
+   "published-print": {
+    "date-parts": [
+     [
+      2026,
+      8
+     ]
+    ]
+   }
+  },
+  "URL": "https://doi.org/10.1103/tg4c-7cnr",
+  "relation": {
+   "has-preprint": [
+    {
+     "id-type": "doi",
+     "id": "10.48550/arXiv.2606.06412",
+     "asserted-by": "subject"
+    }
+   ]
+  },
+  "ISSN": [
+   "2643-1564"
+  ],
+  "issn-type": [
+   {
+    "value": "2643-1564",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2026,
+     8,
+     10
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "2026-06-04",
+    "name": "date_received",
+    "label": "Date Received",
+    "group": {
+     "name": "publication_dates",
+     "label": "Publication dates"
+    }
+   },
+   {
+    "value": "Published by the American Physical Society. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+    "name": "copyright_statement",
+    "label": "Copyright statement",
+    "group": {
+     "name": "copyright",
+     "label": "copyright"
+    }
+   },
+   {
+    "value": "2026",
+    "name": "copyright_year",
+    "label": "Copyright year",
+    "group": {
+     "name": "copyright",
+     "label": "copyright"
+    }
+   },
+   {
+    "value": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "creative_commons_license",
+    "label": "Creative Commons license",
+    "group": {
+     "name": "licenses",
+     "label": "Licenses"
+    }
+   },
+   {
+    "value": "©2026 The authors",
+    "name": "copyright_holder",
+    "label": "Copyright holder",
+    "group": {
+     "name": "copyright",
+     "label": "copyright"
+    }
+   }
+  ],
+  "article-number": "033170"
+ }
+}

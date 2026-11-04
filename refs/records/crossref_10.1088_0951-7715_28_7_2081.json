@@ -1,0 +1,732 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 35,
+  "publisher": "IOP Publishing",
+  "issue": "7",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2015,
+       5,
+       19
+      ]
+     ],
+     "date-time": "2015-05-19T00:00:00Z",
+     "timestamp": 1431993600000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://publishingsupport.iopscience.iop.org/iop-standard/v1"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2015,
+       5,
+       19
+      ]
+     ],
+     "date-time": "2015-05-19T00:00:00Z",
+     "timestamp": 1431993600000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+   }
+  ],
+  "funder": [
+   {
+    "name": "Division of Mathematical Sciences",
+    "award": [
+     "DMS 1109316"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "DMS 1109316"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "https://ror.org/051fftw81",
+      "id-type": "ROR",
+      "asserted-by": "crossref"
+     }
+    ]
+   },
+   {
+    "name": "U.S. Department of Energy",
+    "award": [
+     "ER 26161"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "ER 26161"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "https://ror.org/01bj3aw27",
+      "id-type": "ROR",
+      "asserted-by": "crossref"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "iopscience.iop.org"
+   ],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "Nonlinearity"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2015,
+     7,
+     1
+    ]
+   ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>In order to sample from a given target distribution (often of Gibbs type), the Monte Carlo Markov chain method consists of constructing an ergodic Markov process whose invariant measure is the target distribution. By sampling the Markov process one can then compute, approximately, expectations of observables with respect to the target distribution. Often the Markov processes used in practice are time-reversible (i.e. they satisfy detailed balance), but our main goal here is to assess and quantify how the addition of a non-reversible part to the process can be used to improve the sampling properties. We focus on the diffusion setting (overdamped Langevin equations) where the drift consists of a gradient vector field as well as another drift which breaks the reversibility of the process but is chosen to preserve the Gibbs measure. In this paper we use the large deviation rate function for the empirical measure as a tool to analyze the speed of convergence to the invariant measure. We show that the addition of an irreversible drift leads to a larger rate function and it strictly improves the speed of convergence of ergodic average for (generic smooth) observables. We also deduce from this result that the asymptotic variance decreases under the addition of the irreversible drift and we give an explicit characterization of the observables whose variance is not reduced reduced, in terms of a nonlinear Poisson equation. Our theoretical results are illustrated and supplemented by numerical simulations.</jats:p>",
+  "DOI": "10.1088/0951-7715/28/7/2081",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2015,
+     5,
+     19
+    ]
+   ],
+   "date-time": "2015-05-19T16:13:22Z",
+   "timestamp": 1432052002000
+  },
+  "page": "2081-2103",
+  "update-policy": "https://doi.org/10.1088/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 78,
+  "title": [
+   "Irreversible Langevin samplers and variance reduction: a large deviations approach"
+  ],
+  "prefix": "10.1088",
+  "volume": "28",
+  "author": [
+   {
+    "given": "Luc",
+    "family": "Rey-Bellet",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "University of Massachusetts Amherst"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Konstantinos",
+    "family": "Spiliopoulos",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Boston University"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "266",
+  "published-online": {
+   "date-parts": [
+    [
+     2015,
+     5,
+     19
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "key": "non513640bib01",
+    "doi-asserted-by": "publisher",
+    "first-page": "197",
+    "DOI": "10.1016/0047-259X(91)90080-L",
+    "type": "journal-article",
+    "article-title": "Comparing sweeping strategies for stochastic relaxation",
+    "volume": "37",
+    "author": "Amit",
+    "year": "1991",
+    "journal-title": "J. Multivariate Anal."
+   },
+   {
+    "key": "non513640bib02",
+    "author": "Asmussen",
+    "year": "2007",
+    "type": "book"
+   },
+   {
+    "key": "non513640bib03",
+    "doi-asserted-by": "publisher",
+    "first-page": "69",
+    "DOI": "10.1214/aos/1033066200",
+    "type": "journal-article",
+    "article-title": "On the convergence of the Markov chain simulation method",
+    "volume": "24",
+    "author": "Athreya",
+    "year": "1996",
+    "journal-title": "Ann. Stat."
+   },
+   {
+    "key": "non513640bib04",
+    "doi-asserted-by": "publisher",
+    "first-page": "309",
+    "DOI": "10.1090/S0033-569X-2011-01215-2",
+    "type": "journal-article",
+    "article-title": "Representation of divergence-free vector fields",
+    "volume": "69",
+    "author": "Barbarosie",
+    "year": "2011",
+    "journal-title": "Q. Appl. Math."
+   },
+   {
+    "key": "non513640bib05",
+    "doi-asserted-by": "publisher",
+    "first-page": "483",
+    "DOI": "10.1002/cjs.5550360401",
+    "type": "journal-article",
+    "article-title": "Optimal scaling of metropolis algorithms: heading towards general target distributions",
+    "volume": "36",
+    "author": "Bedard",
+    "year": "2008",
+    "journal-title": "Can. J. Stat."
+   },
+   {
+    "key": "non513640bib06",
+    "author": "Bierkens",
+    "year": "2014",
+    "type": "preprint"
+   },
+   {
+    "key": "non513640bib07",
+    "doi-asserted-by": "publisher",
+    "first-page": "643",
+    "DOI": "10.4007/annals.2008.168.643",
+    "type": "journal-article",
+    "article-title": "Diffusion and mixing in fluid flow",
+    "volume": "168",
+    "author": "Constantin",
+    "year": "2008",
+    "journal-title": "Ann. Math."
+   },
+   {
+    "key": "non513640bib08",
+    "author": "Den Hollander",
+    "year": "2000",
+    "type": "book"
+   },
+   {
+    "key": "non513640bib09",
+    "first-page": "726",
+    "type": "journal-article",
+    "article-title": "Analysis of a nonreversible Markov chain sampler",
+    "volume": "10",
+    "author": "Diaconis",
+    "year": "2010",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "non513640bib10",
+    "doi-asserted-by": "publisher",
+    "first-page": "573",
+    "DOI": "10.5802/afst.1383",
+    "type": "journal-article",
+    "article-title": "On the spectral analysis of second-order Markov chains",
+    "volume": "3",
+    "author": "Diaconis",
+    "year": "2013",
+    "journal-title": "Ann. Fac. Sci. Toulouse Math."
+   },
+   {
+    "key": "non513640bib11a",
+    "doi-asserted-by": "publisher",
+    "first-page": "1",
+    "DOI": "10.1002/cpa.3160280102",
+    "type": "journal-article",
+    "article-title": "Asymptotic evaluation of certain Markov process expectations for large times, I",
+    "volume": "28",
+    "author": "Donsker",
+    "year": "1975",
+    "journal-title": "Commun. Pure Appl. Math."
+   },
+   {
+    "key": "non513640bib11b",
+    "doi-asserted-by": "publisher",
+    "first-page": "279",
+    "DOI": "10.1002/cpa.3160280206",
+    "type": "journal-article",
+    "article-title": "Asymptotic evaluation of certain Markov process expectations for large times, II",
+    "volume": "28",
+    "author": "Donsker",
+    "year": "1975",
+    "journal-title": "Commun. Pure Appl. Math."
+   },
+   {
+    "key": "non513640bib11c",
+    "doi-asserted-by": "publisher",
+    "first-page": "389",
+    "DOI": "10.1002/cpa.3160290405",
+    "type": "journal-article",
+    "article-title": "Asymptotic evaluation of certain Markov process expectations for large times, III",
+    "volume": "29",
+    "author": "Donsker",
+    "year": "1976",
+    "journal-title": "Commun. Pure Appl. Math."
+   },
+   {
+    "key": "non513640bib12",
+    "doi-asserted-by": "publisher",
+    "first-page": "503",
+    "DOI": "10.1002/cpa.3160080406",
+    "type": "journal-article",
+    "article-title": "Interior estimates for elliptic systems of partial differential equations",
+    "volume": "8",
+    "author": "Douglis",
+    "year": "1975",
+    "journal-title": "Commun. Pure Appl. Math."
+   },
+   {
+    "key": "non513640bib13",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1063/1.3643325",
+    "type": "journal-article",
+    "article-title": "An infinite swapping approach to the rare-event sampling problem",
+    "volume": "135",
+    "author": "Plattner",
+    "year": "2011",
+    "journal-title": "J. Chem. Phys."
+   },
+   {
+    "key": "non513640bib14",
+    "doi-asserted-by": "publisher",
+    "first-page": "986",
+    "DOI": "10.1137/110853145",
+    "type": "journal-article",
+    "article-title": "On the infinite swapping limit for parallel tempering",
+    "volume": "10",
+    "author": "Dupuis",
+    "year": "2012",
+    "journal-title": "SIAM Multiscale Modeling Simul."
+   },
+   {
+    "key": "non513640bib15",
+    "doi-asserted-by": "publisher",
+    "first-page": "1325",
+    "DOI": "10.1090/S0002-9947-09-04939-3",
+    "type": "journal-article",
+    "article-title": "The behavior of the spectral gap under growing drift",
+    "volume": "362",
+    "author": "Franke",
+    "year": "2010",
+    "journal-title": "Trans. Am. Math. Soc."
+   },
+   {
+    "key": "non513640bib16",
+    "doi-asserted-by": "publisher",
+    "first-page": "205",
+    "DOI": "10.1111/j.2517-6161.1993.tb01479.x",
+    "type": "journal-article",
+    "article-title": "Convergence rates of the Gibbs sampler, the Metropolis algorithm, and their single-site updating dynamics",
+    "volume": "55",
+    "author": "Frigessi",
+    "year": "1993",
+    "journal-title": "J. R. Stat. Soc. B"
+   },
+   {
+    "key": "non513640bib17",
+    "doi-asserted-by": "publisher",
+    "first-page": "610",
+    "DOI": "10.1214/aoap/1177005652",
+    "type": "journal-article",
+    "article-title": "Optimal spectral structures of reversible stochatic matrices, Monte Carlo methods and the simulation of Markov random fields",
+    "volume": "2",
+    "author": "Frigessi",
+    "year": "1992",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "non513640bib18",
+    "doi-asserted-by": "publisher",
+    "first-page": "24",
+    "DOI": "10.1137/1122003",
+    "type": "journal-article",
+    "article-title": "On large deviations from the invariant measure",
+    "volume": "22",
+    "author": "Gärtner",
+    "year": "1977",
+    "journal-title": "Theory Probab. Appl."
+   },
+   {
+    "key": "non513640bib19",
+    "first-page": "89",
+    "type": "book",
+    "article-title": "Strategies for improving MCMC",
+    "author": "Gilks",
+    "year": "1996"
+   },
+   {
+    "key": "non513640bib20",
+    "doi-asserted-by": "publisher",
+    "first-page": "897",
+    "DOI": "10.1214/aoap/1177005371",
+    "type": "journal-article",
+    "article-title": "Accelerating gaussian diffusions",
+    "volume": "3",
+    "author": "Hwang",
+    "year": "1993",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "non513640bib21",
+    "doi-asserted-by": "publisher",
+    "first-page": "1433",
+    "DOI": "10.1214/105051605000000025",
+    "type": "journal-article",
+    "article-title": "Accelerating diffusions",
+    "volume": "15",
+    "author": "Hwang",
+    "year": "2005",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "non513640bib22",
+    "author": "Kato",
+    "year": "1969",
+    "type": "book"
+   },
+   {
+    "key": "non513640bib23",
+    "doi-asserted-by": "publisher",
+    "first-page": "237",
+    "DOI": "10.1007/s10955-013-0769-x",
+    "type": "journal-article",
+    "article-title": "Optimal non-reversible linear drift for the convergence to equilibrium of a diffusion",
+    "volume": "152",
+    "author": "Lelievre",
+    "year": "2013",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "non513640bib24",
+    "doi-asserted-by": "publisher",
+    "first-page": "237",
+    "DOI": "10.1016/S0370-1573(98)00083-0",
+    "type": "journal-article",
+    "article-title": "Simplified models for turbulent diffusion: theory, numerical modelling and physical phenomena",
+    "volume": "314",
+    "author": "Majda",
+    "year": "1999",
+    "journal-title": "Phys. Rep."
+   },
+   {
+    "key": "non513640bib25",
+    "doi-asserted-by": "publisher",
+    "DOI": "10.1017/CBO9780511626630",
+    "type": "book",
+    "author": "Meyn",
+    "year": "2009",
+    "edition": "2nd edn"
+   },
+   {
+    "key": "non513640bib26",
+    "doi-asserted-by": "publisher",
+    "first-page": "340",
+    "DOI": "10.1214/ss/1015346319",
+    "type": "journal-article",
+    "article-title": "Ordering and improving the performance of Monte Carlo Markov chains",
+    "volume": "16",
+    "author": "Mira",
+    "year": "2001",
+    "journal-title": "Stat. Sci."
+   },
+   {
+    "key": "non513640bib27",
+    "doi-asserted-by": "publisher",
+    "first-page": "95",
+    "DOI": "10.1090/fic/026/07",
+    "type": "book",
+    "article-title": "On non-reversible Markov chains",
+    "author": "Mira",
+    "year": "2000"
+   },
+   {
+    "key": "non513640bib28",
+    "article-title": "Improving asymptotic variance of MCMC estimators: non-reversible chains are better",
+    "author": "Neal",
+    "year": "2004",
+    "type": "report"
+   },
+   {
+    "key": "non513640bib29",
+    "doi-asserted-by": "publisher",
+    "first-page": "101",
+    "DOI": "10.1214/aos/1033066201",
+    "type": "journal-article",
+    "article-title": "Rates of convergence of the Hastings and Metropolis algorithms",
+    "volume": "24",
+    "author": "Mergessen",
+    "year": "1996",
+    "journal-title": "Ann. Stat."
+   },
+   {
+    "key": "non513640bib30",
+    "doi-asserted-by": "publisher",
+    "first-page": "607",
+    "DOI": "10.1093/biomet/60.3.607",
+    "type": "journal-article",
+    "article-title": "Optimum Monte-Carlo sampling using Markov Chains",
+    "volume": "60",
+    "author": "Peskun",
+    "year": "1973",
+    "journal-title": "Biometrika"
+   },
+   {
+    "key": "non513640bib31",
+    "doi-asserted-by": "publisher",
+    "first-page": "20",
+    "DOI": "10.1214/154957804100000024",
+    "type": "journal-article",
+    "article-title": "General state space Markov Chain and MCMC algorithms",
+    "volume": "1",
+    "author": "Roberts",
+    "year": "2004",
+    "journal-title": "Probab. Surv."
+   },
+   {
+    "key": "non513640bib32",
+    "doi-asserted-by": "publisher",
+    "author": "Rockafellar",
+    "year": "1970",
+    "DOI": "10.1515/9781400873173",
+    "type": "book"
+   },
+   {
+    "key": "non513640bib33",
+    "doi-asserted-by": "publisher",
+    "first-page": "1",
+    "DOI": "10.1214/aoap/1027961031",
+    "type": "journal-article",
+    "article-title": "A Note on Metropolis-Hastings kernels for general state spaces",
+    "volume": "8",
+    "author": "Tierney",
+    "year": "1998",
+    "journal-title": "Ann. Appl. Probab."
+   }
+  ],
+  "container-title": [
+   "Nonlinearity"
+  ],
+  "original-title": [],
+  "link": [
+   {
+    "URL": "http://stacks.iop.org/0951-7715/28/i=7/a=2081/pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://stacks.iop.org/0951-7715/28/i=7/a=2081?key=crossref.9279ec96e62229304772690b4933cfe2",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://iopscience.iop.org/article/10.1088/0951-7715/28/7/2081",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://iopscience.iop.org/article/10.1088/0951-7715/28/7/2081/pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://stacks.iop.org/0951-7715/28/i=7/a=2081/ampdf",
+    "content-type": "application/pdf",
+    "content-version": "am",
+    "intended-application": "unspecified"
+   },
+   {
+    "URL": "https://iopscience.iop.org/article/10.1088/0951-7715/28/7/2081/pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "syndication"
+   },
+   {
+    "URL": "http://stacks.iop.org/0951-7715/28/i=7/a=2081/pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   },
+   {
+    "URL": "http://stacks.iop.org/0951-7715/28/i=7/a=2081?key=crossref.9279ec96e62229304772690b4933cfe2",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   },
+   {
+    "URL": "https://iopscience.iop.org/article/10.1088/0951-7715/28/7/2081/pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     10,
+     10
+    ]
+   ],
+   "date-time": "2026-10-10T12:34:57Z",
+   "timestamp": 1791635697000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://iopscience.iop.org/article/10.1088/0951-7715/28/7/2081"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2015,
+     5,
+     19
+    ]
+   ]
+  },
+  "references-count": 35,
+  "journal-issue": {
+   "issue": "7",
+   "published-online": {
+    "date-parts": [
+     [
+      2015,
+      5,
+      19
+     ]
+    ]
+   },
+   "published-print": {
+    "date-parts": [
+     [
+      2015,
+      7,
+      1
+     ]
+    ]
+   }
+  },
+  "URL": "https://doi.org/10.1088/0951-7715/28/7/2081",
+  "relation": {},
+  "ISSN": [
+   "0951-7715",
+   "1361-6544"
+  ],
+  "issn-type": [
+   {
+    "value": "0951-7715",
+    "type": "print"
+   },
+   {
+    "value": "1361-6544",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2015,
+     5,
+     19
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "Irreversible Langevin samplers and variance reduction: a large deviations approach",
+    "name": "article_title",
+    "label": "Article Title"
+   },
+   {
+    "value": "Nonlinearity",
+    "name": "journal_title",
+    "label": "Journal Title"
+   },
+   {
+    "value": "paper",
+    "name": "article_type",
+    "label": "Article Type"
+   },
+   {
+    "value": "© 2015 IOP Publishing Ltd & London Mathematical Society. All rights, including for text and data mining, AI training, and similar technologies, are reserved.",
+    "name": "copyright_information",
+    "label": "Copyright Information"
+   },
+   {
+    "value": "2014-08-27",
+    "name": "date_received",
+    "label": "Date Received",
+    "group": {
+     "name": "publication_dates",
+     "label": "Publication dates"
+    }
+   },
+   {
+    "value": "2015-04-22",
+    "name": "date_accepted",
+    "label": "Date Accepted",
+    "group": {
+     "name": "publication_dates",
+     "label": "Publication dates"
+    }
+   },
+   {
+    "value": "2015-05-19",
+    "name": "date_epub",
+    "label": "Online publication date",
+    "group": {
+     "name": "publication_dates",
+     "label": "Publication dates"
+    }
+   }
+  ]
+ }
+}

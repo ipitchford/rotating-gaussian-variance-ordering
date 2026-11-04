@@ -1,0 +1,57 @@
+target_id: matched-rotation-underdamped-gaussian-variance
+search_date: 2026-11-01
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    Let d>=2, J be a nonzero real skew-symmetric d by d matrix, gamma>0,
+    and let (q,p) be the stationary diffusion dq=(p-mu Jq)dt,
+    dp=(-q-gamma p-mu Jp)dt+sqrt(2gamma)dW with invariant N(0,I_2d).
+    For every real f in L2(N(0,I_d)), define V_f(mu) as the limit of
+    T Var[T^-1 integral_0^T f(q_t)dt]. The candidate theorem states that
+    V_f(mu) is nonincreasing in |mu| for all f if and only if gamma>=sqrt(2).
+    When gamma>=sqrt(2), strict decrease holds for all 0<=a<b unless
+    f is invariant under the one-parameter rotation exp(tJ).
+    A separate regularity theorem must state precisely when V_f''(0)
+    exists finitely; do not assume arbitrary L2 observables have finite curvature.
+  exclusions:
+    - Not a theorem for non-Gaussian targets or unmatched rotations.
+    - Not a computational-cost, finite-time, or numerical-discretisation guarantee.
+    - Not a claim that finite second derivatives exist for every L2 observable.
+    - Do not claim novelty of the already-known strong-rotation invariant-projection limit.
+source:
+  originating_reference: Duncan, Nusken and Pavliotis (2017), Using Perturbed Underdamped Langevin Dynamics to Efficiently Sample from Probability Distributions, conjecture after Eq. (27); Theorem 3.
+  url: https://doi.org/10.1007/s10955-017-1906-8
+normalisation:
+  indices: n>=1 is position Hermite-chaos degree; omega is real rotation frequency.
+  scaling: V=2*sigma_squared in the 2017 paper; time in units with unit harmonic frequency.
+  basis_order: q first, p second; J^T=-J.
+  symmetries: [mu sign reversal, orthogonal coordinate change, adding constants to f]
+sequences:
+  - name: full Fourier transforms at zero for gamma=2 and n=1,2,3
+    exact_values: ['4', '5/2', '52/27']
+    natural_scalings: []
+generating_functions:
+  - name: oscillator spectral density
+    expression: 2*gamma/(s^4+(gamma^2-2)*s^2+1)
+    variables: [s, gamma]
+  - name: critical damping chaos transform
+    expression: 2*Re(sum(binomial(n,k)*factorial(k)/(n-i*s)^(k+1),k=0..n))
+    variables: [s, n]
+matrices:
+  - name: planar unit rotation J
+    entries: [['0','-1'],['1','0']]
+  - name: drift B at gamma=2, mu=1
+    entries: [['0','-1','-1','0'],['1','0','0','-1'],['1','0','2','-1'],['0','1','1','2']]
+aliases:
+  analysis: [Fourier transform of powers, symmetric unimodal convolution, Gaussian Hermite chaos]
+  probability: [nonreversible MCMC, Gaussian stationary process, asymptotic variance ordering]
+  combinatorics: [Wick products, symmetric tensor powers]
+  mathematical_physics: [damped harmonic oscillator, Langevin dynamics, rotating frame, resonance]
+  statistics_optimisation_ml: [kinetic Langevin sampling, nonreversible Monte Carlo, variance reduction]
+known_invariants:
+  stationary_covariance: I_2d
+  position_lag_covariance: r_gamma(t)*exp(-mu*J*t)
+  correlation_ode: r''+gamma*r'+r=0; r(0)=1; r'(0)=0
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [live web search, arXiv, Springer full text, Imperial Spiral thesis repository, author manuscripts]

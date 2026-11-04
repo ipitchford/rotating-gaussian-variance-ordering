@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Sharp variance ordering for rotating Gaussian samplers"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23941497
+date-released: 2026-11-04
+repository-code: "https://github.com/ipitchford/rotating-gaussian-variance-ordering"
+url: "https://evidencepress.org/releases/rotating-gaussian-variance-ordering/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23941497
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23941496
+    description: "Concept DOI (all versions)"
+keywords:
+  - kinetic Langevin dynamics
+  - nonreversible sampling
+  - asymptotic variance
+  - Gaussian chaos
+  - friction threshold
+abstract: "For kinetic (underdamped) Langevin samplers of a Gaussian target with matched target-preserving rotations, every square-integrable position observable has a long-run variance that never increases with rotation strength if and only if the friction is at least sqrt(2), a global form of a conjecture of Duncan, Nuesken and Pavliotis (2017). Also: the exact domain of the second-derivative statement; a below-threshold comparison (even observables always improve, finitely many odd degrees can be hurt, one finite rotation strength improves every observable); sharp large-rotation rates; the matrix criterion Gamma^3 - Gamma K - K Gamma >= 0 with least safe friction (2K)^(1/2); and observation schedules that do or do not preserve the ordering. Exact stationary Gaussian dynamics only; no claim about discretised integrators or cost. Unrefereed candidate; internal AI-assisted review only. Text CC0-1.0; code MIT."

@@ -1,0 +1,93 @@
+target_id: matrix-kinetic-curvature-and-uniform-rates-v1_1
+search_date: 2026-11-01
+intended_contribution_unit: theorem_and_quantitative_extension
+source:
+  manuscript_section: Appendix B
+  inspected_appendix_sha256: 84ff26c6f190399f7befae6c6499a72f3d68810f018c3cec4e7b356bdbeecbfd
+  technical_source: ../extensions/matrix_rates_appendix.md
+  relationship_to_existing_gates: scalar target plus matrix criterion target
+claim:
+  common_hypotheses: |
+    K and Gamma are real symmetric positive definite, J is real skew,
+    [J,K]=[J,Gamma]=0, and the stationary unit-mass kinetic system has
+    dq=(p-mu Jq)dt, dp=(-Kq-Gamma p-mu Jp)dt+sqrt(2Gamma)dW.
+    No inequality Gamma^3-Gamma K-K Gamma>=0 is required here.
+    A kernel of J is allowed; K and Gamma need not commute.
+    Whiten positions x=K^(1/2)q; write C(t)=Cov(x_t^0,x_0^0).
+  units:
+    - name: exact_curvature_domain
+      exact_statement: |
+        Every real L2 position observable has V_f in C1(R), with V_f'(0)=0.
+        A finite ordinary V_f''(0), V_f in C2(R), and
+        Q_f=sum_(n>=1,omega) omega^2 n^(-3/2)||f_(n,omega)||_2^2<infinity
+        are equivalent. If Q_f diverges, (V_f(mu)-V_f(0))/mu^2 tends to
+        negative infinity as mu tends to zero.
+    - name: weighted_operator_Fourier_approximation
+      exact_statement: |
+        Let A_n=dGamma_n(K)=sum_j I^(tensor(j-1)) tensor K tensor
+        I^(tensor(n-j)), T_n=A_n/n, restricted to symmetric tensors.
+        Let S_n be the Fourier transform of C(t)^(tensor n).
+        The operator-valued difference
+        C(abs(u)/sqrt(n))^(tensor n)-exp(-T_n u^2/2)
+        tends to zero in operator-norm W^(1,1).
+        Hence sup_x(1+abs(x))||sqrt(n)S_n(sqrt(n)x)
+        -sqrt(2pi)T_n^(-1/2)exp(-x^2 T_n^(-1)/2)|| tends to zero.
+        T_n itself need not converge.
+    - name: exact_uniform_angular_gap_rate
+      exact_statement: |
+        D_J(mu)=sup_(real centered f,||f||_2=1)
+        [V_f(mu)-V_(Pi_J f)(0)] tends to zero for each fixed K,Gamma,J.
+        If the nonzero angular frequency group is omega_* Z with omega_*>0,
+        then D_J(mu) is asymptotic to sqrt(2pi/e)/(abs(mu)omega_*).
+        This constant is independent of K and Gamma. If every nonzero
+        degree-n frequency satisfies abs(omega)>=c n^(-tau), then
+        D_J(mu)=O(abs(mu)^(-1/(2tau+1))).
+    - name: fixed_polynomial_tail
+      exact_statement: |
+        For each fixed polynomial f, put L=K^(1/2)Gamma K^(1/2)
+        and L_n=dGamma_n(L). Then
+        V_f(mu)-V_(Pi_J f)(0)
+        =2 mu^(-4) sum_(n,omega!=0)
+        <f_(n,omega),L_n f_(n,omega)>/omega^4
+        +O_(f,K,Gamma,J)(abs(mu)^(-6)).
+        The leading coefficient is positive exactly for non-invariant f.
+  exclusions:
+    - No priority claim for generic local central limit theorems.
+    - No priority claim for tensor Gaussian representations or Fourier integration by parts.
+    - No claim that fixed polynomials attain the worst-case L2 rate.
+    - No claim of a spectral gap for incommensurate angular frequencies.
+    - No new claim for non-Gaussian targets or noncommuting rotations.
+    - No claim that uniform-over-observable convergence is a new general phenomenon.
+normalisation:
+  Fourier_transform: integral_R exp(-i*xi*t) C(t) dt
+  variance: full stationary time-average CLT variance, twice DNP convention
+  chaos: isometric symmetric tensor representation for whitened Gaussian positions
+  angular_sum: both positive and negative frequencies included
+fingerprints:
+  short_time_covariance: C(t)=I-K*t^2/2+K^(1/2)*Gamma*K^(1/2)*t^3/6+O(t^4), t>=0
+  moment_scale: integral_0^infinity t^k||C(t)||^n dt=O(n^(-(k+1)/2))
+  exact_gap_constant: sqrt(2*pi/e)
+  optimisation_identity: sup_(x>=0) x*kappa^(-1/2)*exp(-x^2/(2*kappa))=exp(-1/2)
+  curvature_operator_alias: domain of angular_generator times number_operator^(-3/4)
+  polynomial_tail_operator: 2*dGamma_n(K^(1/2)*Gamma*K^(1/2))
+aliases:
+  analysis:
+    - operator-valued local Fourier limit
+    - tensor Gaussian approximation
+    - second quantisation
+    - weighted Hermite Sobolev domain
+    - operator-norm W1,1
+  probability:
+    - kinetic Langevin asymptotic variance
+    - Gaussian chaos high degree
+    - uniform variance reduction
+    - strong drift limit
+  dynamics:
+    - angular spectral gap
+    - commensurate rotations
+    - Diophantine small divisors
+search_constraints:
+  bounded_rerun: true
+  reuse_existing_scalar_and_matrix_audits: true
+  primary_sources_for_load_bearing_comparisons: true
+  log_location: extension_novelty.md, Appendix A

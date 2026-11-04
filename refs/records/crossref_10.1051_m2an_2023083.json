@@ -1,0 +1,866 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "reference-count": 70,
+  "publisher": "EDP Sciences",
+  "issue": "6",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       11,
+       29
+      ]
+     ],
+     "date-time": "2023-11-29T00:00:00Z",
+     "timestamp": 1701216000000
+    },
+    "content-version": "vor",
+    "delay-in-days": 28,
+    "URL": "https://creativecommons.org/licenses/by/4.0"
+   }
+  ],
+  "funder": [
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "crossref",
+    "award": [
+     "2129618"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "2129618"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "crossref"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000266",
+    "name": "Engineering and Physical Sciences Research Council",
+    "doi-asserted-by": "crossref",
+    "award": [
+     "EP/P031587/1"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "EP/P031587/1"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/501100000266",
+      "id-type": "DOI",
+      "asserted-by": "crossref"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/100004332",
+    "name": "JPMorgan Chase and Company",
+    "doi-asserted-by": "crossref",
+    "id": [
+     {
+      "id": "10.13039/100004332",
+      "id-type": "DOI",
+      "asserted-by": "crossref"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/100004332",
+    "name": "JPMorgan Chase and Company",
+    "doi-asserted-by": "crossref",
+    "id": [
+     {
+      "id": "10.13039/100004332",
+      "id-type": "DOI",
+      "asserted-by": "crossref"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/501100000275",
+    "name": "Leverhulme Trust",
+    "doi-asserted-by": "crossref",
+    "id": [
+     {
+      "id": "10.13039/501100000275",
+      "id-type": "DOI",
+      "asserted-by": "crossref"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "ESAIM: M2AN"
+  ],
+  "accepted": {
+   "date-parts": [
+    [
+     2023,
+     10,
+     3
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2023,
+     11
+    ]
+   ]
+  },
+  "abstract": "<jats:p>We propose a procedure for optimising the friction matrix of underdamped Langevin dynamics when used for continuous time Markov Chain Monte Carlo. Starting from a central limit theorem for the ergodic average, we present a new expression of the gradient of the asymptotic variance with respect to friction matrix. In addition, we present an approximation method that uses simulations of the associated first variation/tangent process. Our algorithm is applied to a variety of numerical examples such as toy problems with tractable asymptotic variance, diffusion bridge sampling and Bayesian inference problems for high dimensional logistic regression.</jats:p>",
+  "DOI": "10.1051/m2an/2023083",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2023,
+     10,
+     17
+    ]
+   ],
+   "date-time": "2023-10-17T15:05:38Z",
+   "timestamp": 1697555138000
+  },
+  "page": "3335-3371",
+  "source": "Crossref",
+  "is-referenced-by-count": 10,
+  "title": [
+   "Optimal friction matrix for underdamped Langevin sampling"
+  ],
+  "prefix": "10.1051",
+  "volume": "57",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-5012-0172",
+    "authenticated-orcid": false,
+    "given": "Martin",
+    "family": "Chak",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-4936-8469",
+    "authenticated-orcid": false,
+    "given": "Nikolas",
+    "family": "Kantas",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-3412-113X",
+    "authenticated-orcid": false,
+    "given": "Tony",
+    "family": "Lelièvre",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-3468-9227",
+    "authenticated-orcid": false,
+    "given": "Grigorios A.",
+    "family": "Pavliotis",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "250",
+  "published-online": {
+   "date-parts": [
+    [
+     2023,
+     11,
+     29
+    ]
+   ]
+  },
+  "reference": [
+   {
+    "key": "R1",
+    "unstructured": "Aliprantis C.D. and Border K.C., Infinite Dimensional Analysis: A Hitchhiker’s Guide. 3rd edition. Springer, Berlin (2006)."
+   },
+   {
+    "key": "R2",
+    "doi-asserted-by": "crossref",
+    "first-page": "57",
+    "DOI": "10.5802/smai-jcm.29",
+    "volume": "4",
+    "author": "AlRachid",
+    "year": "2018",
+    "journal-title": "SMAI J. Comput. Math."
+   },
+   {
+    "key": "R3",
+    "doi-asserted-by": "crossref",
+    "first-page": "343",
+    "DOI": "10.1007/s11222-008-9110-y",
+    "volume": "18",
+    "author": "Andrieu",
+    "year": "2008",
+    "journal-title": "Stat. Comput."
+   },
+   {
+    "key": "R4",
+    "unstructured": "Angeli L., Crisan D. and Ottobre M., Uniform in time convergence of numerical schemes for stochastic differential equations via Strong Exponential stability: Euler methods. Split-Step and Tamed Schemes. Preprint arXiv:2303.15463 (2023)."
+   },
+   {
+    "key": "R5",
+    "doi-asserted-by": "crossref",
+    "first-page": "599",
+    "DOI": "10.1007/s11222-018-9826-2",
+    "volume": "29",
+    "author": "Baker",
+    "year": "2019",
+    "journal-title": "Stat. Comput."
+   },
+   {
+    "key": "R6",
+    "doi-asserted-by": "crossref",
+    "first-page": "973",
+    "DOI": "10.1007/s11222-020-09931-z",
+    "volume": "30",
+    "author": "Belomestny",
+    "year": "2020",
+    "journal-title": "Stat. Comput."
+   },
+   {
+    "key": "R7",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Beskos A. and Stuart A., MCMC methods for sampling function space, in ICIAM 07 – 6th International Congress on Industrial and Applied Mathematics. Eur. Math. Soc., Zürich (2009) 337–364.",
+    "DOI": "10.4171/056-1/16"
+   },
+   {
+    "key": "R8",
+    "doi-asserted-by": "crossref",
+    "first-page": "319",
+    "DOI": "10.1142/S0219493708002378",
+    "volume": "8",
+    "author": "Beskos",
+    "year": "2008",
+    "journal-title": "Stoch. Dyn."
+   },
+   {
+    "key": "R9",
+    "doi-asserted-by": "crossref",
+    "first-page": "185",
+    "DOI": "10.1007/BF00531822",
+    "volume": "60",
+    "author": "Bhattacharya",
+    "year": "1982",
+    "journal-title": "Z. Wahrsch. Verw. Gebiete"
+   },
+   {
+    "key": "R10",
+    "doi-asserted-by": "crossref",
+    "first-page": "867",
+    "DOI": "10.1051/m2an/2010045",
+    "volume": "44",
+    "author": "Bolley",
+    "year": "2010",
+    "journal-title": "M2AN Math. Model. Numer. Anal."
+   },
+   {
+    "key": "R11",
+    "doi-asserted-by": "crossref",
+    "first-page": "056707",
+    "DOI": "10.1103/PhysRevE.75.056707",
+    "volume": "75",
+    "author": "Bussi",
+    "year": "2007",
+    "journal-title": "Phys. Rev. E"
+   },
+   {
+    "key": "R12",
+    "first-page": "337",
+    "volume": "9",
+    "author": "Cattiaux",
+    "year": "2012",
+    "journal-title": "ALEA Lat. Am. J Probab. Math. Stat."
+   },
+   {
+    "key": "R13",
+    "doi-asserted-by": "crossref",
+    "first-page": "139",
+    "DOI": "10.1137/21M1462970",
+    "volume": "11",
+    "author": "Chak",
+    "year": "2023",
+    "journal-title": "SIAM/ASA J. Uncertainty Quantif."
+   },
+   {
+    "key": "R14",
+    "first-page": "764",
+    "volume": "80",
+    "author": "Chatterji",
+    "year": "2018",
+    "journal-title": "PMLR"
+   },
+   {
+    "key": "R15",
+    "unstructured": "Chen X., Liu S., Sun R. and Hong M., On the convergence of a class of adam-type algorithms for non-convex optimization, in 2019. 7th International Conference on Learning Representations, ICLR 2019. Conference date: 06–05-2019 Through 09–05-2019 (2019)."
+   },
+   {
+    "key": "R16",
+    "unstructured": "Cheng X., Chatterji N.S., Bartlett P.L. and Jordan M.I., Underdamped Langevin MCMC: a non-asymptotic analysis, in Proceedings of the 31st Conference On Learning Theory. Vol. 75 of Proceedings of Machine Learning Research, edited by Bubeck S., Perchet V. and Rigollet P.. 06–09 Jul 2018. PMLR (2018) 300–323."
+   },
+   {
+    "key": "R17",
+    "doi-asserted-by": "crossref",
+    "first-page": "3289",
+    "DOI": "10.1090/tran/8301",
+    "volume": "374",
+    "author": "Crisan",
+    "year": "2021",
+    "journal-title": "Trans. Am. Math. Soc."
+   },
+   {
+    "key": "R18",
+    "unstructured": "Crisan D., Dobson P., Goddard B., Ottobre M. and Souttar I., Poisson equations with locally-Lipschitz coefficients and uniform in time averaging for stochastic differential equations via strong exponential stability. Preprint arXiv:2204.02679 (2022)."
+   },
+   {
+    "key": "R19",
+    "doi-asserted-by": "crossref",
+    "first-page": "1956",
+    "DOI": "10.3150/19-BEJ1178",
+    "volume": "26",
+    "author": "Dalalyan",
+    "year": "2020",
+    "journal-title": "Bernoulli"
+   },
+   {
+    "key": "R20",
+    "doi-asserted-by": "crossref",
+    "first-page": "1660",
+    "DOI": "10.1016/j.spa.2006.04.004",
+    "volume": "116",
+    "author": "Delyon",
+    "year": "2006",
+    "journal-title": "Stochastic Process. Appl."
+   },
+   {
+    "key": "R21",
+    "unstructured": "Ding Z., Li Q., Lu J. and Wright S.J., Random coordinate underdamped Langevin Monte Carlo. Preprint arXiv:2010.11366 (2020)."
+   },
+   {
+    "key": "R22",
+    "doi-asserted-by": "crossref",
+    "first-page": "26",
+    "DOI": "10.1214/EJP.v19-3120",
+    "volume": "19",
+    "author": "Dong",
+    "year": "2014",
+    "journal-title": "Electron. J. Probab."
+   },
+   {
+    "key": "R23",
+    "doi-asserted-by": "crossref",
+    "first-page": "457",
+    "DOI": "10.1007/s10955-016-1491-2",
+    "volume": "163",
+    "author": "Duncan",
+    "year": "2016",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "R24",
+    "doi-asserted-by": "crossref",
+    "first-page": "1098",
+    "DOI": "10.1007/s10955-017-1906-8",
+    "volume": "169",
+    "author": "Duncan",
+    "year": "2017",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "R25",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Durmus A. and Moulines E., High-dimensional Bayesian inference via the unadjusted Langevin algorithm. Preprint arXiv:1605.01559 (2018).",
+    "DOI": "10.3150/18-BEJ1073"
+   },
+   {
+    "key": "R26",
+    "unstructured": "Durmus A., Enfroy A., Moulines É. and Stoltz G., Uniform minorization condition and convergence bounds for discretizations of kinetic Langevin dynamics. Preprint arXiv:2107.14542 (2021)."
+   },
+   {
+    "key": "R27",
+    "doi-asserted-by": "crossref",
+    "first-page": "105",
+    "DOI": "10.1007/s002200000216",
+    "volume": "212",
+    "author": "Eckmann",
+    "year": "2000",
+    "journal-title": "Comm. Math. Phys."
+   },
+   {
+    "key": "R28",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Ethier S.N. and Kurtz T.G., Markov Processes: Characterization and Convergence. Wiley Series in Probability and Mathematical Statistics: Probability and Mathematical Statistics. John Wiley & Sons, Inc., New York (1986).",
+    "DOI": "10.1002/9780470316658"
+   },
+   {
+    "key": "R29",
+    "unstructured": "Foster J., Lyons T. and Oberhauser H., The shifted ODE method for underdamped Langevin MCMC. Preprint arXiv:2101.03446 (2021)."
+   },
+   {
+    "key": "R30",
+    "doi-asserted-by": "crossref",
+    "first-page": "391",
+    "DOI": "10.1007/s007800050068",
+    "volume": "3",
+    "author": "Fournié",
+    "year": "1999",
+    "journal-title": "Finan. Stoch."
+   },
+   {
+    "key": "R31",
+    "unstructured": "Friedman A., Stochastic differential equations and applications. Vol. 1, in Probability and Mathematical Statistics, Vol. 28. Academic Press [Harcourt Brace Jovanovich, Publishers], New York-London (1975)."
+   },
+   {
+    "key": "R32",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Ghadimi E., Feyzmahdavian H.R. and Johansson M., Global convergence of the heavy-ball method for convex optimization, in 2015 European Control Conference (ECC). (2015) 310–315.",
+    "DOI": "10.1109/ECC.2015.7330562"
+   },
+   {
+    "key": "R33",
+    "doi-asserted-by": "crossref",
+    "first-page": "14",
+    "DOI": "10.1214/16-ECP25",
+    "volume": "21",
+    "author": "Guillin",
+    "year": "2016",
+    "journal-title": "Electron. Commun. Probab."
+   },
+   {
+    "key": "R34",
+    "doi-asserted-by": "crossref",
+    "first-page": "20",
+    "DOI": "10.1016/j.jde.2012.03.014",
+    "volume": "253",
+    "author": "Guillin",
+    "year": "2012",
+    "journal-title": "J. Differ. Equ."
+   },
+   {
+    "key": "R35",
+    "doi-asserted-by": "crossref",
+    "first-page": "587",
+    "DOI": "10.4310/CMS.2005.v3.n4.a8",
+    "volume": "3",
+    "author": "Hairer",
+    "year": "2005",
+    "journal-title": "Commun. Math. Sci."
+   },
+   {
+    "key": "R36",
+    "doi-asserted-by": "crossref",
+    "first-page": "1657",
+    "DOI": "10.1214/07-AAP441",
+    "volume": "17",
+    "author": "Hairer",
+    "year": "2007",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "R37",
+    "doi-asserted-by": "crossref",
+    "first-page": "669",
+    "DOI": "10.1214/10-AAP708",
+    "volume": "21",
+    "author": "Hairer",
+    "year": "2011",
+    "journal-title": "Ann. Appl. Probab."
+   },
+   {
+    "key": "R38",
+    "first-page": "7366",
+    "volume": "33",
+    "author": "He",
+    "year": "2020",
+    "journal-title": "Adv. Neural Inf. Process. Syst."
+   },
+   {
+    "key": "R39",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Helffer B. and Nier F., Hypoelliptic Estimates and Spectral Theory for Fokker–Planck Operators and Witten Laplacians. Vol. 1862 of Lecture Notes in Mathematics. Springer-Verlag, Berlin (2005).",
+    "DOI": "10.1007/b104762"
+   },
+   {
+    "key": "R40",
+    "doi-asserted-by": "crossref",
+    "first-page": "147",
+    "DOI": "10.1007/BF02392081",
+    "volume": "119",
+    "author": "Hörmander",
+    "year": "1967",
+    "journal-title": "Acta Math."
+   },
+   {
+    "key": "R41",
+    "doi-asserted-by": "crossref",
+    "first-page": "510",
+    "DOI": "10.1016/0550-3213(87)90159-3",
+    "volume": "280",
+    "author": "Horowitz",
+    "year": "1987",
+    "journal-title": "Nucl. Phys. B"
+   },
+   {
+    "key": "R42",
+    "doi-asserted-by": "crossref",
+    "first-page": "247",
+    "DOI": "10.1016/0370-2693(91)90812-5",
+    "volume": "268",
+    "author": "Horowitz",
+    "year": "1991",
+    "journal-title": "Phys. Lett. B"
+   },
+   {
+    "key": "R43",
+    "doi-asserted-by": "crossref",
+    "first-page": "1259",
+    "DOI": "10.1007/s00220-014-2233-4",
+    "volume": "336",
+    "author": "Hottovy",
+    "year": "2015",
+    "journal-title": "Comm. Math. Phys."
+   },
+   {
+    "key": "R44",
+    "doi-asserted-by": "crossref",
+    "first-page": "911",
+    "DOI": "10.1080/08927022.2020.1791858",
+    "volume": "46",
+    "author": "Kavalur",
+    "year": "2020",
+    "journal-title": "Mol. Simul."
+   },
+   {
+    "key": "R45",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Khasminskii R., Stochastic Stability of Differential Equations. Vol. 66 of Stochastic Modelling and Applied Probability, 2nd edition. Springer, Heidelberg (2012). With contributions by G.N. Milstein and M.B. Nevelson.",
+    "DOI": "10.1007/978-3-642-23280-0_5"
+   },
+   {
+    "key": "R46",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Komorowski T., Landim C. and Olla S., Fluctuations in Markov Processes: Time Symmetry and Martingale Approximation. Vol. 345 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer, Heidelberg (2012).",
+    "DOI": "10.1007/978-3-642-29880-6_11"
+   },
+   {
+    "key": "R47",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Krylov N.V., On Kolmogorov’s equations for finite-dimensional diffusions, in Stochastic PDE’s and Kolmogorov Equations in Infinite Dimensions (Cetraro, 1998). Vol. 1715 of Lecture Notes in Math. Springer, Berlin (1998) 1–63.",
+    "DOI": "10.1007/BFb0092417"
+   },
+   {
+    "key": "R48",
+    "first-page": "34",
+    "volume": "2013",
+    "author": "Leimkuhler",
+    "year": "2013",
+    "journal-title": "Appl. Math. Res. Express. AMRX"
+   },
+   {
+    "key": "R49",
+    "doi-asserted-by": "crossref",
+    "first-page": "174102",
+    "DOI": "10.1063/1.4802990",
+    "volume": "138",
+    "author": "Leimkuhler",
+    "year": "2013",
+    "journal-title": "J. Chem. Phys."
+   },
+   {
+    "key": "R50",
+    "first-page": "13",
+    "volume": "36",
+    "author": "Leimkuhler",
+    "year": "2016",
+    "journal-title": "IMA J. Numer. Anal."
+   },
+   {
+    "key": "R51",
+    "doi-asserted-by": "crossref",
+    "first-page": "681",
+    "DOI": "10.1017/S0962492916000039",
+    "volume": "25",
+    "author": "Lelièvre",
+    "year": "2016",
+    "journal-title": "Acta Numer."
+   },
+   {
+    "key": "R52",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Lelièvre T., Rousset M. and Stoltz G., Free Energy Computations: A Mathematical Perspective. Imperial College Press, London (2010).",
+    "DOI": "10.1142/p579"
+   },
+   {
+    "key": "R53",
+    "doi-asserted-by": "crossref",
+    "first-page": "237",
+    "DOI": "10.1007/s10955-013-0769-x",
+    "volume": "152",
+    "author": "Lelièvre",
+    "year": "2013",
+    "journal-title": "J. Stat. Phys."
+   },
+   {
+    "key": "R54",
+    "doi-asserted-by": "crossref",
+    "first-page": "4117",
+    "DOI": "10.1214/21-EJS1888",
+    "volume": "15",
+    "author": "Monmarché",
+    "year": "2021",
+    "journal-title": "Electron. J. Stat."
+   },
+   {
+    "key": "R55",
+    "doi-asserted-by": "crossref",
+    "first-page": "316",
+    "DOI": "10.1016/j.spa.2023.04.006",
+    "volume": "161",
+    "author": "Monmarché",
+    "year": "2023",
+    "journal-title": "Stochastic Process. Appl."
+   },
+   {
+    "key": "R56",
+    "first-page": "41",
+    "volume": "22",
+    "author": "Mou",
+    "year": "2021",
+    "journal-title": "J. Mach. Learn. Res."
+   },
+   {
+    "key": "R57",
+    "doi-asserted-by": "crossref",
+    "first-page": "433",
+    "DOI": "10.1080/01621459.2020.1847120",
+    "volume": "116",
+    "author": "Nemeth",
+    "year": "2021",
+    "journal-title": "J. Am. Stat. Assoc."
+   },
+   {
+    "key": "R58",
+    "doi-asserted-by": "crossref",
+    "first-page": "738",
+    "DOI": "10.1080/10618600.2017.1336446",
+    "volume": "26",
+    "author": "Owen",
+    "year": "2017",
+    "journal-title": "J. Comput. Graph. Stat."
+   },
+   {
+    "key": "R59",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Pavliotis G.A., Asymptotic analysis of the Green-Kubo formula. IMA J. Appl. Math. 75 (6) 951–967",
+    "DOI": "10.1093/imamat/hxq039"
+   },
+   {
+    "key": "R60",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Pavliotis G.A., Stochastic Processes and Applications: Diffusion Processes, the Fokker–Planck and Langevin Equations, Vol. 60 of Texts in Applied Mathematics. Springer, New York (2014)",
+    "DOI": "10.1007/978-1-4939-1323-7"
+   },
+   {
+    "key": "R61",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1016/0041-5553(64)90137-5",
+    "volume": "4",
+    "author": "Polyak",
+    "year": "1964",
+    "journal-title": "USSR Comput. Math. Math. Phys."
+   },
+   {
+    "key": "R62",
+    "doi-asserted-by": "crossref",
+    "unstructured": "Protter P.E., Stochastic Integration and Differential Equations: Stochastic Modelling and Applied Probability. Vol. 21 of Applications of Mathematics (New York), 2nd edition. Springer-Verlag, Berlin (2004).",
+    "DOI": "10.1007/978-3-662-10061-5"
+   },
+   {
+    "key": "R63",
+    "doi-asserted-by": "crossref",
+    "first-page": "647",
+    "DOI": "10.3390/e19120647",
+    "volume": "19",
+    "author": "Sachs",
+    "year": "2017",
+    "journal-title": "Entropy"
+   },
+   {
+    "key": "R64",
+    "first-page": "37",
+    "volume": "22",
+    "author": "Sanz-Serna",
+    "year": "2021",
+    "journal-title": "J. Mach. Learn. Res."
+   },
+   {
+    "key": "R65",
+    "doi-asserted-by": "crossref",
+    "first-page": "114105",
+    "DOI": "10.1063/1.2354490",
+    "volume": "125",
+    "author": "Scemama",
+    "year": "2006",
+    "journal-title": "J. Chem. Phys."
+   },
+   {
+    "key": "R66",
+    "unstructured": "Shen R. and Lee Y.T., The randomized midpoint method for log-concave sampling, in: Advances in Neural Information Processing Systems, edited by Wallach H., Larochelle H., Beygelzimer A., d’ Alché-Buc F., Fox E. and Garnett R.. Vol. 32. Curran Associates, Inc. (2019)."
+   },
+   {
+    "key": "R67",
+    "doi-asserted-by": "crossref",
+    "first-page": "1",
+    "DOI": "10.1140/epjb/s10051-021-00182-z",
+    "volume": "94",
+    "author": "Skeel",
+    "year": "2021",
+    "journal-title": "Eur. Phys. J. B"
+   },
+   {
+    "key": "R68",
+    "doi-asserted-by": "crossref",
+    "first-page": "865",
+    "DOI": "10.1214/22-BA1328",
+    "volume": "18",
+    "author": "South",
+    "year": "2023",
+    "journal-title": "Bayesian Anal."
+   },
+   {
+    "key": "R69",
+    "first-page": "647",
+    "volume": "462",
+    "author": "Teichmann",
+    "year": "2006",
+    "journal-title": "Proc. R. Soc. Lond. Ser. A Math. Phys. Eng. Sci."
+   },
+   {
+    "key": "R70",
+    "unstructured": "Zou D. and Gu Q., On the convergence of Hamiltonian Monte Carlo with stochastic gradients. Proceedings of the 38th International Conference on Machine Learning. . Vol. 139 of Proceedings of Machine Learning Research, edited by Meila M. and Zhang T.. PMLR (2021) 13012–13022."
+   }
+  ],
+  "container-title": [
+   "ESAIM: Mathematical Modelling and Numerical Analysis"
+  ],
+  "original-title": [],
+  "link": [
+   {
+    "URL": "https://www.esaim-m2an.org/10.1051/m2an/2023083/pdf",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2023,
+     11,
+     29
+    ]
+   ],
+   "date-time": "2023-11-29T04:03:45Z",
+   "timestamp": 1701230625000
+  },
+  "resource": {
+   "primary": {
+    "URL": "https://www.esaim-m2an.org/10.1051/m2an/2023083"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2023,
+     11
+    ]
+   ]
+  },
+  "references-count": 70,
+  "journal-issue": {
+   "issue": "6"
+  },
+  "alternative-id": [
+   "m2an220173"
+  ],
+  "URL": "https://doi.org/10.1051/m2an/2023083",
+  "relation": {},
+  "ISSN": [
+   "2822-7840",
+   "2804-7214"
+  ],
+  "issn-type": [
+   {
+    "value": "2822-7840",
+    "type": "print"
+   },
+   {
+    "value": "2804-7214",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2023,
+     11
+    ]
+   ]
+  }
+ }
+}
